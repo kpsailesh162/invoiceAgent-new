@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1020
+PO Number:,PO0030
+Invoice Date:,2023-07-05
+Due Date:,2023-08-04
+
+Vendor Information
+Name:,Manufacturing Supplies Co.
+ID:,V009
+
+Line Items
+Description,Quantity,Unit Price,Total
+Docking Station,10,$199.99,$1999.90
+Network Switch,3,$299.99,$899.97
+Desktop Computer,5,$899.99,$4499.95
+Desktop Computer,6,$899.99,$5399.94
+
+,,Subtotal:,$12799.76
+,,Tax Amount:,$1279.98
+,,Total Amount:,$14079.74
+
+Payment Terms:,Net 30
+Currency:,USD

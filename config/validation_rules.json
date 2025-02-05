@@ -1,0 +1,174 @@
+{
+    "invoice_number": [
+        {
+            "type": "required",
+            "message": "Invoice number is required"
+        },
+        {
+            "type": "regex",
+            "pattern": "^(?:INV|INVOICE|BILL)-?[A-Z0-9]{6,20}$",
+            "message": "Invalid invoice number format"
+        },
+        {
+            "type": "unique",
+            "message": "Invoice number must be unique"
+        }
+    ],
+    "date": [
+        {
+            "type": "required",
+            "message": "Date is required"
+        },
+        {
+            "type": "date_format",
+            "formats": [
+                "%Y-%m-%d",
+                "%d/%m/%Y",
+                "%m/%d/%Y",
+                "%B %d, %Y"
+            ],
+            "message": "Invalid date format"
+        },
+        {
+            "type": "date_range",
+            "min_years_past": 2,
+            "max_years_future": 1,
+            "message": "Date must be within reasonable range"
+        }
+    ],
+    "total_amount": [
+        {
+            "type": "required",
+            "message": "Total amount is required"
+        },
+        {
+            "type": "range",
+            "min": 0.01,
+            "max": 1000000.00,
+            "message": "Amount must be between 0.01 and 1,000,000.00"
+        },
+        {
+            "type": "decimal_places",
+            "places": 2,
+            "message": "Amount must have exactly 2 decimal places"
+        },
+        {
+            "type": "sum_check",
+            "fields": ["subtotal", "tax_amount"],
+            "tolerance": 0.01,
+            "message": "Total amount must equal sum of subtotal and tax"
+        }
+    ],
+    "vendor_name": [
+        {
+            "type": "required",
+            "message": "Vendor name is required"
+        },
+        {
+            "type": "length",
+            "min": 2,
+            "max": 100,
+            "message": "Vendor name must be between 2 and 100 characters"
+        },
+        {
+            "type": "allowed_chars",
+            "pattern": "^[A-Za-z0-9\\s\\-&.,']+ (Inc\\.|LLC|Ltd\\.|Corp\\.|Limited)?$",
+            "message": "Vendor name contains invalid characters"
+        },
+        {
+            "type": "verified_vendor",
+            "message": "Vendor must exist in approved vendor list"
+        }
+    ],
+    "currency": [
+        {
+            "type": "required",
+            "message": "Currency is required"
+        },
+        {
+            "type": "enum",
+            "values": ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "CNY", "INR"],
+            "message": "Unsupported currency"
+        },
+        {
+            "type": "consistency",
+            "fields": ["total_amount", "subtotal", "tax_amount"],
+            "message": "Currency must be consistent across all amount fields"
+        }
+    ],
+    "tax_amount": [
+        {
+            "type": "required",
+            "message": "Tax amount is required"
+        },
+        {
+            "type": "range",
+            "min": 0.00,
+            "max": 1000000.00,
+            "message": "Tax amount must be between 0.00 and 1,000,000.00"
+        },
+        {
+            "type": "tax_rate_check",
+            "field": "subtotal",
+            "rates": [0.00, 0.05, 0.10, 0.15, 0.20],
+            "tolerance": 0.01,
+            "message": "Tax amount does not match any standard tax rate"
+        }
+    ],
+    "line_items": [
+        {
+            "type": "required",
+            "message": "At least one line item is required"
+        },
+        {
+            "type": "array_length",
+            "min": 1,
+            "max": 100,
+            "message": "Number of line items must be between 1 and 100"
+        },
+        {
+            "type": "line_item_structure",
+            "required_fields": [
+                "description",
+                "quantity",
+                "unit_price",
+                "total"
+            ],
+            "message": "Each line item must have all required fields"
+        },
+        {
+            "type": "line_item_calculation",
+            "formula": "quantity * unit_price = total",
+            "tolerance": 0.01,
+            "message": "Line item total must equal quantity times unit price"
+        }
+    ],
+    "payment_terms": [
+        {
+            "type": "enum",
+            "values": [
+                "Net 30",
+                "Net 60",
+                "Net 90",
+                "Due on Receipt",
+                "2% 10 Net 30"
+            ],
+            "message": "Invalid payment terms"
+        }
+    ],
+    "bank_details": [
+        {
+            "type": "conditional_required",
+            "condition": {
+                "field": "payment_method",
+                "value": "bank_transfer"
+            },
+            "message": "Bank details required for bank transfer payment method"
+        },
+        {
+            "type": "bank_account_format",
+            "country_specific": true,
+            "message": "Invalid bank account format"
+        }
+    ]
+} 

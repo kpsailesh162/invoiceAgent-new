@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1009
+PO Number:,PO0013
+Invoice Date:,2023-12-11
+Due Date:,2024-01-10
+
+Vendor Information
+Name:,Digital Systems LLC
+ID:,V005
+
+Line Items
+Description,Quantity,Unit Price,Total
+Mouse,5,$49.99,$249.95
+Network Switch,7,$299.99,$2099.93
+Desktop Computer,8,$899.99,$7199.92
+Printer,1,$399.99,$399.99
+
+,,Subtotal:,$9949.79
+,,Tax Amount:,$994.98
+,,Total Amount:,$10944.77
+
+Payment Terms:,Net 30
+Currency:,USD

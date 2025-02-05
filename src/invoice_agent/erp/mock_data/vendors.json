@@ -1,0 +1,122 @@
+[
+  {
+    "id": "V001",
+    "name": "Tech Solutions Inc.",
+    "tax_id": "TAX827092",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@techsolutionsinc..com",
+      "phone": "+1-807-741-4909"
+    }
+  },
+  {
+    "id": "V002",
+    "name": "Global Supply Co.",
+    "tax_id": "TAX794845",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@globalsupplyco..com",
+      "phone": "+1-290-591-1783"
+    }
+  },
+  {
+    "id": "V003",
+    "name": "Office Essentials Ltd.",
+    "tax_id": "TAX876624",
+    "payment_terms": "Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@officeessentialsltd..com",
+      "phone": "+1-754-697-6159"
+    }
+  },
+  {
+    "id": "V004",
+    "name": "Industrial Parts Corp.",
+    "tax_id": "TAX479842",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@industrialpartscorp..com",
+      "phone": "+1-934-182-3168"
+    }
+  },
+  {
+    "id": "V005",
+    "name": "Digital Systems LLC",
+    "tax_id": "TAX975704",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@digitalsystemsllc.com",
+      "phone": "+1-416-835-1195"
+    }
+  },
+  {
+    "id": "V006",
+    "name": "Hardware Wholesale Inc.",
+    "tax_id": "TAX169116",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@hardwarewholesaleinc..com",
+      "phone": "+1-611-164-8244"
+    }
+  },
+  {
+    "id": "V007",
+    "name": "Software Solutions Pro",
+    "tax_id": "TAX799973",
+    "payment_terms": "Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@softwaresolutionspro.com",
+      "phone": "+1-872-369-4807"
+    }
+  },
+  {
+    "id": "V008",
+    "name": "Electronics Depot Corp.",
+    "tax_id": "TAX179256",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@electronicsdepotcorp..com",
+      "phone": "+1-960-508-8090"
+    }
+  },
+  {
+    "id": "V009",
+    "name": "Manufacturing Supplies Co.",
+    "tax_id": "TAX682877",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@manufacturingsuppliesco..com",
+      "phone": "+1-953-554-8136"
+    }
+  },
+  {
+    "id": "V010",
+    "name": "IT Equipment Direct",
+    "tax_id": "TAX494498",
+    "payment_terms": "2% 10 Net 30",
+    "currency": "USD",
+    "status": "active",
+    "contact": {
+      "email": "accounts@itequipmentdirect.com",
+      "phone": "+1-403-447-4660"
+    }
+  }
+]

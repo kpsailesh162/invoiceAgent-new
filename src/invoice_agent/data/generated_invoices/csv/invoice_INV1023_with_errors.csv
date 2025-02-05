@@ -1,0 +1,20 @@
+Invoice Information
+Invoice Number:,INV1023
+PO Number:,PO0033
+Invoice Date:,2023-10-25
+Due Date:,2023-11-24
+
+Vendor Information
+Name:,Manufacturing Supplies Co.
+ID:,V009
+
+Line Items
+Description,Quantity,Unit Price,Total
+Server Rack,5,$899.99,$4499.95
+
+,,Subtotal:,$4499.95
+,,Tax Amount:,$450.00
+,,Total Amount:,$4949.95
+
+Payment Terms:,Net 60
+Currency:,USD

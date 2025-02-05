@@ -1,0 +1,21 @@
+{
+    "invoice_number": "INV-000001",
+    "invoice_date": "2024-02-01",
+    "vendor_info": {
+        "id": "V003",
+        "name": "Office Essentials Ltd.",
+        "email": "billing@officeessentials.com"
+    },
+    "po_number": "PO1003",
+    "total_amount": "3000.00",
+    "currency": "USD",
+    "line_items": [
+        {
+            "sku": "ITEM003",
+            "description": "Office Supplies Bundle",
+            "quantity": 2,
+            "unit_price": "1500.00",
+            "total": "3000.00"
+        }
+    ]
+} 

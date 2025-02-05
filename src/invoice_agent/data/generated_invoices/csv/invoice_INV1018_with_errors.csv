@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1018
+PO Number:,PO0027
+Invoice Date:,2023-05-26
+Due Date:,2023-06-25
+
+Vendor Information
+Name:,Manufacturing Supplies Co.
+ID:,V009
+
+Line Items
+Description,Quantity,Unit Price,Total
+Mouse,6,$49.99,$299.94
+Network Switch,3,$299.99,$899.97
+Docking Station,1,$199.99,$199.99
+Laptop,4,$1299.99,$5199.96
+Monitor,10,$299.99,$2999.90
+
+,,Subtotal:,$9599.76
+,,Tax Amount:,$959.98
+,,Total Amount:,$10559.74
+
+Payment Terms:,2% 10 Net 30

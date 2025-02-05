@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1033
+PO Number:,PO0046
+Invoice Date:,2023-09-13
+Due Date:,2023-10-13
+
+Vendor Information
+Name:,Digital Systems LLC
+ID:,V005
+
+Line Items
+Description,Quantity,Unit Price,Total
+UPS Battery,6,$599.99,$3599.94
+Laptop,3,$1299.99,$3899.97
+Keyboard,10,$79.99,$799.90
+Laptop,7,$1299.99,$9099.93
+
+,,Subtotal:,$17399.74
+,,Tax Amount:,$1739.97
+,,Total Amount:,$19139.71
+
+Payment Terms:,Net 30
+Currency:,USD

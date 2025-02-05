@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1013
+PO Number:,PO0020
+Invoice Date:,2023-11-22
+Due Date:,2023-12-22
+
+Vendor Information
+Name:,Software Solutions Pro
+ID:,V007
+
+Line Items
+Description,Quantity,Unit Price,Total
+Monitor,7,$299.99,$2099.93
+Mouse,1,$49.99,$49.99
+Printer,9,$399.99,$3599.91
+Laptop,7,$1299.99,$9099.93
+
+,,Subtotal:,$14849.76
+,,Tax Amount:,$1484.98
+,,Total Amount:,$16334.74
+
+Payment Terms:,Net 30
+Currency:,USD

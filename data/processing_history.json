@@ -1,0 +1,448 @@
+[
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T16:59:30.861057",
+    "status": "exception",
+    "confidence_score": 0.3,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 0.0,
+        "gr_match": 0.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.000725
+  },
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T17:01:30.344418",
+    "status": "exception",
+    "confidence_score": 0.46,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 0.4,
+        "gr_match": 0.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.00076
+  },
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T17:04:41.374887",
+    "status": "exception",
+    "confidence_score": 0.46,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 0.4,
+        "gr_match": 0.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.000645
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:05:26.525358",
+    "status": "exception",
+    "confidence_score": 0.46,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 0.4,
+        "gr_match": 0.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.000699
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:06:51.606267",
+    "status": "exception",
+    "confidence_score": 1.0,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 1.0,
+        "gr_match": 1.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.001101
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:07:38.110688",
+    "status": "exception",
+    "confidence_score": 1.0,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 1.0,
+        "gr_match": 1.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.000688
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:08:53.031717",
+    "status": "scheduled",
+    "confidence_score": 1.0,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 1.0,
+        "gr_match": 1.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.001189
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:10:16.474104",
+    "status": "scheduled",
+    "confidence_score": 1.0,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 1.0,
+        "gr_match": 1.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.000649
+  },
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T17:24:46.218718",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000824
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:24:46.220409",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000803
+  },
+  {
+    "invoice_number": "INV1019",
+    "timestamp": "2025-02-01T17:24:46.223123",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000689
+  },
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T17:25:24.269286",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.001062
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:25:24.270847",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000897
+  },
+  {
+    "invoice_number": "INV1019",
+    "timestamp": "2025-02-01T17:25:24.273668",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000731
+  },
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T17:26:55.451466",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000828
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:26:55.453026",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000724
+  },
+  {
+    "invoice_number": "INV-000001",
+    "timestamp": "2025-02-01T17:26:55.454774",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000785
+  },
+  {
+    "invoice_number": "INV1019",
+    "timestamp": "2025-02-01T17:26:55.455994",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000657
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:28:21.089474",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000833
+  },
+  {
+    "invoice_number": "INV-000001",
+    "timestamp": "2025-02-01T17:28:21.091158",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000768
+  },
+  {
+    "invoice_number": "INV1019",
+    "timestamp": "2025-02-01T17:28:21.093000",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ]
+    },
+    "processing_time": 0.000887
+  },
+  {
+    "invoice_number": "INV1018",
+    "timestamp": "2025-02-01T17:29:12.229951",
+    "status": "scheduled",
+    "confidence_score": 1.0,
+    "match_details": {
+      "matched_fields": [
+        "total_amount"
+      ],
+      "mismatched_fields": [],
+      "missing_fields": [],
+      "confidence_scores": {
+        "po_match": 1.0,
+        "gr_match": 1.0,
+        "amount_match": 1.0
+      }
+    },
+    "processing_time": 0.001202
+  },
+  {
+    "invoice_number": "INV1020",
+    "timestamp": "2025-02-01T17:29:12.231797",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ],
+      "confidence_scores": {}
+    },
+    "processing_time": 0.000866
+  },
+  {
+    "invoice_number": "INV-000001",
+    "timestamp": "2025-02-01T17:29:12.233613",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ],
+      "confidence_scores": {}
+    },
+    "processing_time": 0.000773
+  },
+  {
+    "invoice_number": "INV1019",
+    "timestamp": "2025-02-01T17:29:12.235424",
+    "status": "exception",
+    "confidence_score": 0.0,
+    "match_details": {
+      "matched_fields": [],
+      "mismatched_fields": [],
+      "missing_fields": [
+        "invoice_date",
+        "vendor_info.id",
+        "vendor_info.name",
+        "po_number"
+      ],
+      "confidence_scores": {}
+    },
+    "processing_time": 0.000913
+  }
+]

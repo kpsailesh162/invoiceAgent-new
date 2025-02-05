@@ -1,0 +1,21 @@
+Invoice Information
+Invoice Number:,INV1000
+PO Number:,PO0002
+Invoice Date:,2023-12-07
+Due Date:,2024-01-06
+
+Vendor Information
+Name:,Electronics Depot Corp.
+ID:,V008
+
+Line Items
+Description,Quantity,Unit Price,Total
+Mouse,9,$49.99,$449.91
+Mouse,10,$49.99,$499.90
+
+,,Subtotal:,$949.81
+,,Tax Amount:,$94.98
+,,Total Amount:,$1044.79
+
+Payment Terms:,Net 30
+Currency:,USD

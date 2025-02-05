@@ -1,0 +1,89 @@
+# Default configuration
+default: &default
+  pool_size: 5
+  max_overflow: 10
+  pool_timeout: 30
+  pool_recycle: 1800
+  echo: false
+
+# Development environment
+development:
+  <<: *default
+  databases:
+    postgres:
+      url: "postgresql://dev_user:dev_password@localhost:5432/invoice_dev"
+      schema: public
+    
+    oracle:
+      url: "oracle://dev_user:dev_password@localhost:1521/XEPDB1"
+      schema: INVOICE_DEV
+      
+    mysql:
+      url: "mysql+pymysql://dev_user:dev_password@localhost:3306/invoice_dev"
+      charset: utf8mb4
+
+# Testing environment
+testing:
+  <<: *default
+  databases:
+    postgres:
+      url: "postgresql://test_user:test_password@localhost:5432/invoice_test"
+      schema: public
+
+# Staging environment
+staging:
+  <<: *default
+  databases:
+    postgres:
+      url: "${POSTGRES_URL}"
+      schema: public
+    
+    oracle:
+      url: "${ORACLE_URL}"
+      schema: INVOICE_STAGE
+
+# Production environment
+production:
+  pool_size: 20
+  max_overflow: 40
+  pool_timeout: 60
+  pool_recycle: 3600
+  echo: false
+  databases:
+    postgres:
+      url: "${POSTGRES_PROD_URL}"
+      schema: public
+      ssl_mode: verify-full
+      ssl_cert: "/path/to/cert"
+    
+    oracle:
+      url: "${ORACLE_PROD_URL}"
+      schema: INVOICE_PROD
+      wallet_location: "/path/to/wallet"
+      
+    mysql:
+      url: "${MYSQL_PROD_URL}"
+      charset: utf8mb4
+      ssl_ca: "/path/to/ca"
+
+# Security settings (common across environments)
+security:
+  encrypt_sensitive_data: true
+  key_rotation_interval_days: 90
+  audit_logging: true
+  
+# Connection pooling settings
+connection_pool:
+  recycle_connections: true
+  pre_ping: true
+  reset_on_return: true
+
+# Backup configuration
+backup:
+  enabled: true
+  retention_days: 30
+  schedule: "0 0 * * *"  # Daily at midnight
+  storage:
+    type: "s3"
+    bucket: "${BACKUP_BUCKET}"
+    path: "database_backups" 

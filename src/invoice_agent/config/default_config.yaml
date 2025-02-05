@@ -1,0 +1,25 @@
+environments:
+  development:
+    security:
+      session_timeout: 3600
+      max_login_attempts: 5
+      mfa_required: false
+      cors_origins: ["*"]
+    
+    tenants:
+      default:
+        name: "Default Company"
+        database_url: "sqlite:///invoice_agent.db"
+        email_domain: "gmail.com"  # Allow any Gmail account for development
+        features:
+          advanced_ocr: true
+          batch_processing: true
+        rate_limits:
+          api_calls_per_minute: 100
+          uploads_per_day: 1000
+          view_dashboard: 100
+          process_invoice: 50
+          manage_templates: 50
+          view_reports: 50
+        storage_quota: 10737418240  # 10GB
+        admin_emails: ["admin@gmail.com"] 

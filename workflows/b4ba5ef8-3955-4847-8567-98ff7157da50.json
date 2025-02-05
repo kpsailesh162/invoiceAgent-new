@@ -1,0 +1,75 @@
+{
+  "id": "b4ba5ef8-3955-4847-8567-98ff7157da50",
+  "template_id": "default",
+  "document_path": "temp_invoice_INV1013_normal.pdf",
+  "status": "failed",
+  "created_at": "2025-02-02T01:26:31.041156",
+  "updated_at": "2025-02-02T01:26:31.062673",
+  "created_by": "183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com",
+  "extraction_results": {
+    "po_number": "Number",
+    "invoice_number": "INV1013",
+    "total_amount": "14849.76",
+    "validation_results": {
+      "invoice_number": {
+        "valid": true,
+        "value": "INV1013"
+      },
+      "date": {
+        "valid": false,
+        "value": null,
+        "error": "Missing required field: date"
+      },
+      "total_amount": {
+        "valid": true,
+        "value": "14849.76"
+      },
+      "po_number": {
+        "valid": true,
+        "value": "Number"
+      }
+    },
+    "processed_doc": {
+      "text": "Invoice INV1013\nInvoice Information\nInvoice Number:\nINV1013\nPO Number:\nPO0020\nInvoice Date:\n2023-11-22\nDue Date:\n2023-12-22\nVendor Information\nName:\nSoftware Solutions Pro\nID:\nV007\nLine Items\nDescription\nQuantity\nUnit Price\nTotal\nMonitor\n7\n$299.99\n$2099.93\nMouse\n1\n$49.99\n$49.99\nPrinter\n9\n$399.99\n$3599.91\nLaptop\n7\n$1299.99\n$9099.93\nSubtotal:\n$14849.76\nTax Amount:\n$1484.98\nTotal Amount:\n$16334.74\nPayment Terms:\nNet 30\n\nCurrency:\nUSD\n",
+      "has_images": true
+    }
+  },
+  "validation_results": null,
+  "matching_results": null,
+  "analysis_results": null,
+  "processing_log": [
+    {
+      "timestamp": "2025-02-02T01:26:31.041741",
+      "status": "loading",
+      "message": "Loading document for processing",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:26:31.042655",
+      "status": "processing",
+      "message": "Extracting data from document",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:26:31.061394",
+      "status": "erp_connection",
+      "message": "Retrieving data from ERP system",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:26:31.062141",
+      "status": "po_retrieval",
+      "message": "Retrieving PO: Number",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:26:31.062677",
+      "status": "failed",
+      "message": "Processing failed: Purchase Order Number not found",
+      "error": "Purchase Order Number not found"
+    }
+  ],
+  "retry_count": 0,
+  "processing_time": null,
+  "error": "Purchase Order Number not found"
+}

@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1002
+PO Number:,PO0005
+Invoice Date:,2023-07-03
+Due Date:,2023-08-02
+
+Vendor Information
+Name:,IT Equipment Direct
+ID:,V010
+
+Line Items
+Description,Quantity,Unit Price,Total
+Printer,7,$399.99,$2799.93
+Desktop Computer,3,$899.99,$2699.97
+Printer,1,$399.99,$399.99
+Docking Station,9,$199.99,$1799.91
+
+,,Subtotal:,$7699.80
+,,Tax Amount:,$769.98
+,,Total Amount:,$8469.78
+
+Payment Terms:,Net 30
+Currency:,USD

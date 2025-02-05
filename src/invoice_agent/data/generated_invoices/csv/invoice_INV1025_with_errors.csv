@@ -1,0 +1,20 @@
+Invoice Information
+Invoice Number:,INV1025
+PO Number:,PO0034
+Invoice Date:,2023-10-07
+Due Date:,2023-11-06
+
+Vendor Information
+Name:,Manufacturing Supplies Co.
+ID:,V009
+
+Line Items
+Description,Quantity,Unit Price,Total
+Mouse,7,$49.99,$349.93
+
+,,Subtotal:,$349.93
+,,Tax Amount:,$34.99
+,,Total Amount:,$381.28
+
+Payment Terms:,Net 45
+Currency:,USD

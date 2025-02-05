@@ -1,0 +1,24 @@
+Invoice Information
+Invoice Number:,INV1035
+PO Number:,PO0049
+Invoice Date:,2023-04-29
+Due Date:,2023-05-29
+
+Vendor Information
+Name:,Digital Systems LLC
+ID:,V005
+
+Line Items
+Description,Quantity,Unit Price,Total
+Network Switch,8,$299.99,$2399.92
+Keyboard,2,$79.99,$159.98
+Server Rack,2,$899.99,$1799.98
+Printer,8,$399.99,$3199.92
+Docking Station,5,$199.99,$999.95
+
+,,Subtotal:,$8559.75
+,,Tax Amount:,$855.98
+,,Total Amount:,$9415.73
+
+Payment Terms:,Net 30
+Currency:,USD

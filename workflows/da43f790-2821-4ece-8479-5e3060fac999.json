@@ -1,0 +1,81 @@
+{
+  "id": "da43f790-2821-4ece-8479-5e3060fac999",
+  "template_id": "default",
+  "document_path": "temp_invoice_INV1015_normal.pdf",
+  "status": "failed",
+  "created_at": "2025-02-02T01:31:44.287803",
+  "updated_at": "2025-02-02T01:31:44.299254",
+  "created_by": "183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com",
+  "extraction_results": {
+    "po_number": "PO0026",
+    "invoice_number": "INV1015",
+    "total_amount": "12399.79",
+    "validation_results": {
+      "invoice_number": {
+        "valid": true,
+        "value": "INV1015"
+      },
+      "date": {
+        "valid": false,
+        "value": null,
+        "error": "Missing required field: date"
+      },
+      "total_amount": {
+        "valid": true,
+        "value": "12399.79"
+      },
+      "po_number": {
+        "valid": true,
+        "value": "PO0026"
+      }
+    },
+    "processed_doc": {
+      "text": "Invoice INV1015\nInvoice Information\nInvoice Number:\nINV1015\nPO Number:\nPO0026\nInvoice Date:\n2023-12-14\nDue Date:\n2024-01-13\nVendor Information\nName:\nOffice Essentials Ltd.\nID:\nV003\nLine Items\nDescription\nQuantity\nUnit Price\nTotal\nDocking Station\n9\n$199.99\n$1799.91\nLaptop\n8\n$1299.99\n$10399.92\nMouse\n4\n$49.99\n$199.96\nSubtotal:\n$12399.79\nTax Amount:\n$1239.98\nTotal Amount:\n$13639.77\nPayment Terms:\nNet 30\nCurrency:\nUSD\n",
+      "has_images": true
+    }
+  },
+  "validation_results": null,
+  "matching_results": null,
+  "analysis_results": null,
+  "processing_log": [
+    {
+      "timestamp": "2025-02-02T01:31:44.288311",
+      "status": "loading",
+      "message": "Loading document for processing",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:31:44.288858",
+      "status": "processing",
+      "message": "Extracting data from document",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:31:44.297380",
+      "status": "erp_connection",
+      "message": "Retrieving data from ERP system",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:31:44.297989",
+      "status": "po_retrieval",
+      "message": "Retrieving PO: PO0026",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:31:44.298634",
+      "status": "gr_retrieval",
+      "message": "Retrieving Goods Receipt for PO: PO0026",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:31:44.299256",
+      "status": "failed",
+      "message": "Processing failed: 'ERPMockData' object has no attribute 'get_gr_by_number'",
+      "error": "'ERPMockData' object has no attribute 'get_gr_by_number'"
+    }
+  ],
+  "retry_count": 0,
+  "processing_time": null,
+  "error": "'ERPMockData' object has no attribute 'get_gr_by_number'"
+}

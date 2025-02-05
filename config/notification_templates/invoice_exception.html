@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Invoice Exception Alert</h2>
+    <p>An exception has been detected for invoice processing:</p>
+    <ul>
+        <li>Invoice Number: {{ invoice_number }}</li>
+        <li>Vendor: {{ vendor_name }}</li>
+        <li>Amount: {{ amount }} {{ currency }}</li>
+    </ul>
+    <h3>Exception Details:</h3>
+    <ul>
+    {% for desc in description %}
+        <li>{{ desc }}</li>
+    {% endfor %}
+    </ul>
+    <p>Please review and take necessary action.</p>
+</body>
+</html> 

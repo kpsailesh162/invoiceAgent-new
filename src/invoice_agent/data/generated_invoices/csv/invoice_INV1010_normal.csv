@@ -1,0 +1,22 @@
+Invoice Information
+Invoice Number:,INV1010
+PO Number:,PO0018
+Invoice Date:,2023-03-24
+Due Date:,2023-04-23
+
+Vendor Information
+Name:,Electronics Depot Corp.
+ID:,V008
+
+Line Items
+Description,Quantity,Unit Price,Total
+Server Rack,8,$899.99,$7199.92
+Monitor,7,$299.99,$2099.93
+Laptop,8,$1299.99,$10399.92
+
+,,Subtotal:,$19699.77
+,,Tax Amount:,$1969.98
+,,Total Amount:,$21669.75
+
+Payment Terms:,Net 30
+Currency:,USD

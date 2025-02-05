@@ -1,0 +1,97 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "required": ["type", "message"],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "required",
+                        "regex",
+                        "range",
+                        "length",
+                        "enum",
+                        "unique",
+                        "date_format",
+                        "date_range",
+                        "decimal_places",
+                        "sum_check",
+                        "allowed_chars",
+                        "verified_vendor",
+                        "consistency",
+                        "tax_rate_check",
+                        "array_length",
+                        "line_item_structure",
+                        "line_item_calculation",
+                        "conditional_required",
+                        "bank_account_format"
+                    ]
+                },
+                "message": {
+                    "type": "string"
+                },
+                "pattern": {
+                    "type": "string"
+                },
+                "min": {
+                    "type": "number"
+                },
+                "max": {
+                    "type": "number"
+                },
+                "values": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "formats": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "tolerance": {
+                    "type": "number"
+                },
+                "places": {
+                    "type": "integer"
+                },
+                "condition": {
+                    "type": "object",
+                    "properties": {
+                        "field": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["field", "value"]
+                },
+                "country_specific": {
+                    "type": "boolean"
+                },
+                "required_fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "formula": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+} 

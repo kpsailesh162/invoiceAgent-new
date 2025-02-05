@@ -1,0 +1,21 @@
+Invoice Information
+Invoice Number:,INV1014
+PO Number:,PO0021
+Invoice Date:,2023-05-21
+Due Date:,2023-06-20
+
+Vendor Information
+Name:,Tech Solutions Inc.
+ID:,V001
+
+Line Items
+Description,Quantity,Unit Price,Total
+Laptop,5,$1299.99,$6499.95
+Monitor,6,$299.99,$1799.94
+
+,,Subtotal:,$8299.89
+,,Tax Amount:,$829.99
+,,Total Amount:,$9129.88
+
+Payment Terms:,Net 30
+Currency:,USD

@@ -1,0 +1,22 @@
+Invoice Information
+Invoice Number:,INV1029
+PO Number:,PO0048
+Invoice Date:,2023-12-07
+Due Date:,2024-01-06
+
+Vendor Information
+Name:,IT Equipment Direct
+ID:,V010
+
+Line Items
+Description,Quantity,Unit Price,Total
+Network Switch,1,$299.99,$299.99
+Printer,6,$389.22,$2335.32
+Mouse,2,$49.99,$99.98
+
+,,Subtotal:,$2735.29
+,,Tax Amount:,$273.53
+,,Total Amount:,$3008.82
+
+Payment Terms:,Net 30
+Currency:,USD

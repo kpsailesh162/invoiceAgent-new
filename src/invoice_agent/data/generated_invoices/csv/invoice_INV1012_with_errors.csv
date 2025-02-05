@@ -1,0 +1,21 @@
+Invoice Information
+Invoice Number:,INV1012
+PO Number:,PO0019
+Invoice Date:,2023-07-20
+Due Date:,2023-08-19
+
+Vendor Information
+Name:,Tech Solutions Inc.
+ID:,V001
+
+Line Items
+Description,Quantity,Unit Price,Total
+Monitor,8,$299.99,$2399.92
+Server Rack,6,$899.99,$5399.94
+
+,,Subtotal:,$7799.86
+,,Tax Amount:,$779.99
+,,Total Amount:,$8669.12
+
+Payment Terms:,Net 60
+Currency:,USD

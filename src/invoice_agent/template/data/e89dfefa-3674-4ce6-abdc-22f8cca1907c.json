@@ -1,0 +1,25 @@
+{
+  "id": "e89dfefa-3674-4ce6-abdc-22f8cca1907c",
+  "name": "Company-1",
+  "fields": [
+    "invoice_number",
+    "po_number",
+    "invoice_date",
+    "due_date",
+    "status",
+    "vendor_info.id",
+    "vendor_info.name",
+    "vendor_info.email",
+    "vendor_info.phone",
+    "description",
+    "quantity",
+    "unit_price",
+    "total",
+    "subtotal",
+    "tax_amount",
+    "total_amount",
+    "currency",
+    "payment_terms"
+  ],
+  "created_at": "2025-02-01 14:10:22.275213"
+}

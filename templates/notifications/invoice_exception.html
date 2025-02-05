@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { background-color: #f8f9fa; padding: 20px; }
+        .content { padding: 20px; }
+        .details { margin: 20px 0; }
+        .footer { color: #6c757d; font-size: 0.9em; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Invoice Exception Notification</h2>
+    </div>
+    <div class="content">
+        <p>An exception has been detected for the following invoice:</p>
+        <div class="details">
+            <p><strong>Invoice Number:</strong> {{ invoice_number }}</p>
+            <p><strong>Vendor:</strong> {{ vendor_name }}</p>
+            <p><strong>Amount:</strong> {{ amount }} {{ currency }}</p>
+        </div>
+        <div class="issues">
+            <h3>Issues Detected:</h3>
+            <ul>
+            {% for desc in description %}
+                <li>{{ desc }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% if details %}
+        <div class="additional-details">
+            <h3>Additional Details:</h3>
+            {% if details.line_items %}
+            <h4>Line Item Issues:</h4>
+            <ul>
+            {% for item in details.line_items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            {% if details.tax_issues %}
+            <h4>Tax Issues:</h4>
+            <ul>
+            {% for issue in details.tax_issues %}
+                <li>{{ issue }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="footer">
+        <p>This is an automated notification. Please do not reply to this email.</p>
+    </div>
+</body>
+</html> 

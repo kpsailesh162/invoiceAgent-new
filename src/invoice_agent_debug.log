@@ -1,0 +1,262 @@
+2025-02-04 20:36:29,298 - __main__ - DEBUG - Python version: 3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-02-04 20:36:29,298 - __main__ - DEBUG - Python executable: /Users/sailesh/Documents/GitHub/aiagent/venv/bin/python3.12
+2025-02-04 20:36:29,298 - __main__ - DEBUG - Current working directory: /Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:36:29,298 - __main__ - DEBUG - PYTHONPATH: :/Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:36:29,298 - __main__ - DEBUG - Sys.path: ['invoice_agent/ui/app.py', 'invoice_agent/ui', '/Users/sailesh/Documents/GitHub/aiagent/venv/bin', '/Users/sailesh/Documents/GitHub/invoiceAgent/src', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/sailesh/Documents/GitHub/aiagent/venv/lib/python3.12/site-packages']
+2025-02-04 20:36:29,300 - __main__ - DEBUG - Environment variables loaded
+2025-02-04 20:36:29,300 - __main__ - DEBUG - Attempting to import invoice_agent modules...
+2025-02-04 20:36:29,301 - __main__ - DEBUG - Adding project root to sys.path: /Users/sailesh/Documents/GitHub/invoiceAgent
+2025-02-04 20:36:29,301 - __main__ - DEBUG - Importing invoice_agent modules...
+2025-02-04 20:36:32,009 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:36:32,009 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:36:32,009 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:36:32,009 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:36:32,033 - __main__ - DEBUG - Imported InvoiceAgent
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Imported config_loader
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Imported AuthManager
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Imported TemplateManager
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Imported WorkflowManager
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Imported MetricsManager
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Initializing AuthManager...
+2025-02-04 20:36:32,034 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:36:32,034 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:36:32,034 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:36:32,034 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:36:32,034 - __main__ - DEBUG - AuthManager initialized successfully
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Initializing MetricsManager...
+2025-02-04 20:36:32,034 - __main__ - DEBUG - MetricsManager initialized successfully
+2025-02-04 20:36:32,034 - __main__ - DEBUG - Initializing InvoiceAgent...
+2025-02-04 20:36:32,038 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-02-04 20:36:32,202 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 20:36:32,390 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 20:36:32,565 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 20:36:32,696 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 20:36:32,792 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 20:36:33,038 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:36:33,087 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:36:33,214 - __main__ - DEBUG - InvoiceAgent initialized successfully
+2025-02-04 20:36:33,214 - __main__ - DEBUG - Initializing WorkflowManager...
+2025-02-04 20:36:33,216 - __main__ - DEBUG - WorkflowManager initialized successfully
+2025-02-04 20:36:33,216 - __main__ - DEBUG - Initializing TemplateManager...
+2025-02-04 20:36:33,216 - __main__ - DEBUG - TemplateManager initialized successfully
+2025-02-04 20:36:33,216 - __main__ - DEBUG - Server settings configured
+2025-02-04 20:36:33,218 - __main__ - DEBUG - Starting main application
+2025-02-04 20:36:33,218 - __main__ - DEBUG - Initial session state: {}
+2025-02-04 20:36:33,220 - __main__ - DEBUG - Session state after initialization: {'auth_error': None, 'initialized': True, 'auth_flow_started': False, 'page': 'Dashboard', 'authenticated': False, 'last_activity': 1738719393.21941, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:33,220 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 20:36:33,220 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 20:36:33,220 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 20:36:33,220 - __main__ - DEBUG - Rendering authentication page
+2025-02-04 20:36:33,221 - __main__ - DEBUG - Current session state: {'auth_error': None, 'initialized': True, 'auth_flow_started': False, 'page': 'Dashboard', 'authenticated': False, 'last_activity': 1738719393.21941, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:33,222 - __main__ - DEBUG - Showing Google sign-in button
+2025-02-04 20:36:33,223 - __main__ - DEBUG - Showing Microsoft sign-in button
+2025-02-04 20:36:33,223 - __main__ - DEBUG - Showing Service Account sign-in form
+2025-02-04 20:36:40,007 - __main__ - DEBUG - Python version: 3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-02-04 20:36:40,008 - __main__ - DEBUG - Python executable: /Users/sailesh/Documents/GitHub/aiagent/venv/bin/python3.12
+2025-02-04 20:36:40,008 - __main__ - DEBUG - Current working directory: /Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:36:40,008 - __main__ - DEBUG - PYTHONPATH: :/Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:36:40,008 - __main__ - DEBUG - Sys.path: ['invoice_agent/ui/app.py', '/Users/sailesh/Documents/GitHub/invoiceAgent', 'invoice_agent/ui', '/Users/sailesh/Documents/GitHub/aiagent/venv/bin', '/Users/sailesh/Documents/GitHub/invoiceAgent/src', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/sailesh/Documents/GitHub/aiagent/venv/lib/python3.12/site-packages', '/var/folders/0c/vbd1lzvs6p35p66t1zm047sh0000gn/T/tmpqbis6bx3']
+2025-02-04 20:36:40,012 - __main__ - DEBUG - Environment variables loaded
+2025-02-04 20:36:40,012 - __main__ - DEBUG - Attempting to import invoice_agent modules...
+2025-02-04 20:36:40,012 - __main__ - DEBUG - Importing invoice_agent modules...
+2025-02-04 20:36:40,012 - __main__ - DEBUG - Imported InvoiceAgent
+2025-02-04 20:36:40,012 - __main__ - DEBUG - Imported config_loader
+2025-02-04 20:36:40,013 - __main__ - DEBUG - Imported AuthManager
+2025-02-04 20:36:40,013 - __main__ - DEBUG - Imported TemplateManager
+2025-02-04 20:36:40,013 - __main__ - DEBUG - Imported WorkflowManager
+2025-02-04 20:36:40,013 - __main__ - DEBUG - Imported MetricsManager
+2025-02-04 20:36:40,014 - __main__ - DEBUG - Initializing AuthManager...
+2025-02-04 20:36:40,014 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:36:40,014 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:36:40,014 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:36:40,014 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:36:40,015 - __main__ - DEBUG - AuthManager initialized successfully
+2025-02-04 20:36:40,015 - __main__ - DEBUG - Initializing MetricsManager...
+2025-02-04 20:36:40,016 - __main__ - DEBUG - MetricsManager initialized successfully
+2025-02-04 20:36:40,016 - __main__ - DEBUG - Initializing InvoiceAgent...
+2025-02-04 20:36:40,078 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 20:36:40,144 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 20:36:40,411 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 20:36:40,467 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 20:36:40,833 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 20:36:41,242 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:36:41,300 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:36:41,353 - __main__ - DEBUG - InvoiceAgent initialized successfully
+2025-02-04 20:36:41,354 - __main__ - DEBUG - Initializing WorkflowManager...
+2025-02-04 20:36:41,354 - __main__ - DEBUG - WorkflowManager initialized successfully
+2025-02-04 20:36:41,354 - __main__ - DEBUG - Initializing TemplateManager...
+2025-02-04 20:36:41,354 - __main__ - DEBUG - TemplateManager initialized successfully
+2025-02-04 20:36:41,354 - __main__ - DEBUG - Server settings configured
+2025-02-04 20:36:41,355 - __main__ - DEBUG - Starting main application
+2025-02-04 20:36:41,355 - __main__ - DEBUG - Initial session state: {'auth_error': None, 'initialized': True, 'auth_flow_started': False, 'page': 'Dashboard', 'google_signin': True, 'authenticated': False, 'last_activity': 1738719393.21941, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:41,355 - __main__ - DEBUG - Session state after initialization: {'auth_error': None, 'initialized': True, 'auth_flow_started': False, 'page': 'Dashboard', 'google_signin': True, 'authenticated': False, 'last_activity': 1738719401.3556778, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:41,355 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 20:36:41,356 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 20:36:41,356 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 20:36:41,356 - __main__ - DEBUG - Rendering authentication page
+2025-02-04 20:36:41,356 - __main__ - DEBUG - Current session state: {'auth_error': None, 'initialized': True, 'auth_flow_started': False, 'page': 'Dashboard', 'google_signin': True, 'authenticated': False, 'last_activity': 1738719401.3556778, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:41,357 - __main__ - DEBUG - Showing Google sign-in button
+2025-02-04 20:36:41,357 - __main__ - INFO - Google sign-in button clicked
+2025-02-04 20:36:41,357 - __main__ - DEBUG - Starting Google OAuth authentication flow
+2025-02-04 20:36:41,357 - __main__ - DEBUG - Received query parameters: {}
+2025-02-04 20:36:41,357 - __main__ - DEBUG - Auth code present: False
+2025-02-04 20:36:41,357 - __main__ - DEBUG - State present: False
+2025-02-04 20:36:41,357 - __main__ - DEBUG - Current session state: {'auth_error': None, 'initialized': True, 'auth_flow_started': False, 'page': 'Dashboard', 'google_signin': True, 'authenticated': False, 'last_activity': 1738719401.3556778, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:41,357 - __main__ - INFO - Initiating Google OAuth flow...
+2025-02-04 20:36:41,357 - invoice_agent.security.auth - DEBUG - Generated new state token: NAI-zzYQDG...
+2025-02-04 20:36:41,357 - invoice_agent.security.auth - DEBUG - Using redirect URI: http://localhost:8501
+2025-02-04 20:36:41,357 - invoice_agent.security.auth - INFO - Generated auth URL with state token: NAI-zzYQDG...
+2025-02-04 20:36:41,357 - invoice_agent.security.auth - DEBUG - Full auth URL: https://accounts.google.com/o/oauth2/v2/auth?client_id=183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8501&response_type=code&scope=openid+email+profile&access_type=offline&state=NAI-zzYQDGzLDCXbl-CZ11CXYbikLBzKWQ9apa6qP9U&prompt=consent&include_granted_scopes=true
+2025-02-04 20:36:41,357 - __main__ - DEBUG - Generated auth URL: https://accounts.google.com/o/oauth2/v2/auth?client_id=183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8501&response_type=code&scope=openid+email+profile&access_type=offline&state=NAI-zzYQDGzLDCXbl-CZ11CXYbikLBzKWQ9apa6qP9U&prompt=consent&include_granted_scopes=true
+2025-02-04 20:36:41,358 - __main__ - DEBUG - Auth flow started flag set to True
+2025-02-04 20:36:41,358 - __main__ - DEBUG - Session state before redirect: {'auth_error': None, 'initialized': True, 'auth_flow_started': True, 'page': 'Dashboard', 'google_signin': True, 'authenticated': False, 'last_activity': 1738719401.3556778, 'user_info': None, 'connection_attempts': 0}
+2025-02-04 20:36:41,358 - __main__ - INFO - Redirecting to Google OAuth consent screen...
+2025-02-04 20:40:09,017 - __main__ - DEBUG - Python version: 3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-02-04 20:40:09,018 - __main__ - DEBUG - Python executable: /Users/sailesh/Documents/GitHub/aiagent/venv/bin/python3.12
+2025-02-04 20:40:09,018 - __main__ - DEBUG - Current working directory: /Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:40:09,018 - __main__ - DEBUG - PYTHONPATH: :.
+2025-02-04 20:40:09,018 - __main__ - DEBUG - Sys.path: ['invoice_agent/ui/app.py', 'invoice_agent/ui', '/Users/sailesh/Documents/GitHub/aiagent/venv/bin', '/Users/sailesh/Documents/GitHub/invoiceAgent/src', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/sailesh/Documents/GitHub/aiagent/venv/lib/python3.12/site-packages']
+2025-02-04 20:40:09,019 - __main__ - DEBUG - Environment variables loaded
+2025-02-04 20:40:09,019 - __main__ - DEBUG - Attempting to import invoice_agent modules...
+2025-02-04 20:40:09,020 - __main__ - DEBUG - Adding project root to sys.path: /Users/sailesh/Documents/GitHub/invoiceAgent
+2025-02-04 20:40:09,020 - __main__ - DEBUG - Importing invoice_agent modules...
+2025-02-04 20:40:11,734 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:40:11,734 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:40:11,734 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:40:11,734 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:40:11,757 - __main__ - DEBUG - Imported InvoiceAgent
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Imported config_loader
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Imported AuthManager
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Imported TemplateManager
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Imported WorkflowManager
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Imported MetricsManager
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Initializing AuthManager...
+2025-02-04 20:40:11,758 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:40:11,758 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:40:11,758 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:40:11,758 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:40:11,758 - __main__ - DEBUG - AuthManager initialized successfully
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Initializing MetricsManager...
+2025-02-04 20:40:11,758 - __main__ - DEBUG - MetricsManager initialized successfully
+2025-02-04 20:40:11,758 - __main__ - DEBUG - Initializing InvoiceAgent...
+2025-02-04 20:40:11,761 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-02-04 20:40:11,900 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 20:40:11,973 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 20:40:12,103 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 20:40:12,164 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 20:40:12,261 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 20:40:12,428 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:40:12,486 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:40:12,612 - __main__ - DEBUG - InvoiceAgent initialized successfully
+2025-02-04 20:40:12,612 - __main__ - DEBUG - Initializing WorkflowManager...
+2025-02-04 20:40:12,614 - __main__ - DEBUG - WorkflowManager initialized successfully
+2025-02-04 20:40:12,614 - __main__ - DEBUG - Initializing TemplateManager...
+2025-02-04 20:40:12,615 - __main__ - DEBUG - TemplateManager initialized successfully
+2025-02-04 20:40:12,615 - __main__ - DEBUG - Server settings configured
+2025-02-04 20:40:12,617 - __main__ - DEBUG - Starting main application
+2025-02-04 20:40:12,617 - __main__ - DEBUG - Initial session state: {}
+2025-02-04 20:40:12,618 - __main__ - DEBUG - Session state after initialization: {'user_info': None, 'auth_flow_started': False, 'page': 'Dashboard', 'last_activity': 1738719612.617624, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:12,618 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 20:40:12,618 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 20:40:12,618 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 20:40:12,618 - __main__ - DEBUG - Rendering authentication page
+2025-02-04 20:40:12,618 - __main__ - DEBUG - Current session state: {'user_info': None, 'auth_flow_started': False, 'page': 'Dashboard', 'last_activity': 1738719612.617624, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:12,619 - __main__ - DEBUG - Showing Google sign-in button
+2025-02-04 20:40:12,619 - __main__ - DEBUG - Showing Microsoft sign-in button
+2025-02-04 20:40:12,619 - __main__ - DEBUG - Showing Service Account sign-in form
+2025-02-04 20:40:16,491 - __main__ - DEBUG - Python version: 3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-02-04 20:40:16,493 - __main__ - DEBUG - Python executable: /Users/sailesh/Documents/GitHub/aiagent/venv/bin/python3.12
+2025-02-04 20:40:16,493 - __main__ - DEBUG - Current working directory: /Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:40:16,494 - __main__ - DEBUG - PYTHONPATH: :.
+2025-02-04 20:40:16,494 - __main__ - DEBUG - Sys.path: ['invoice_agent/ui/app.py', '/Users/sailesh/Documents/GitHub/invoiceAgent', 'invoice_agent/ui', '/Users/sailesh/Documents/GitHub/aiagent/venv/bin', '/Users/sailesh/Documents/GitHub/invoiceAgent/src', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/sailesh/Documents/GitHub/aiagent/venv/lib/python3.12/site-packages', '/var/folders/0c/vbd1lzvs6p35p66t1zm047sh0000gn/T/tmpjpp5c0uc']
+2025-02-04 20:40:16,497 - __main__ - DEBUG - Environment variables loaded
+2025-02-04 20:40:16,497 - __main__ - DEBUG - Attempting to import invoice_agent modules...
+2025-02-04 20:40:16,497 - __main__ - DEBUG - Importing invoice_agent modules...
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Imported InvoiceAgent
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Imported config_loader
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Imported AuthManager
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Imported TemplateManager
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Imported WorkflowManager
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Imported MetricsManager
+2025-02-04 20:40:16,498 - __main__ - DEBUG - Initializing AuthManager...
+2025-02-04 20:40:16,499 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:40:16,499 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:40:16,499 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:40:16,499 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:40:16,500 - __main__ - DEBUG - AuthManager initialized successfully
+2025-02-04 20:40:16,500 - __main__ - DEBUG - Initializing MetricsManager...
+2025-02-04 20:40:16,501 - __main__ - DEBUG - MetricsManager initialized successfully
+2025-02-04 20:40:16,501 - __main__ - DEBUG - Initializing InvoiceAgent...
+2025-02-04 20:40:16,563 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 20:40:16,634 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 20:40:16,859 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 20:40:16,922 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 20:40:16,985 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 20:40:17,149 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:40:17,198 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:40:17,235 - __main__ - DEBUG - InvoiceAgent initialized successfully
+2025-02-04 20:40:17,235 - __main__ - DEBUG - Initializing WorkflowManager...
+2025-02-04 20:40:17,236 - __main__ - DEBUG - WorkflowManager initialized successfully
+2025-02-04 20:40:17,236 - __main__ - DEBUG - Initializing TemplateManager...
+2025-02-04 20:40:17,236 - __main__ - DEBUG - TemplateManager initialized successfully
+2025-02-04 20:40:17,236 - __main__ - DEBUG - Server settings configured
+2025-02-04 20:40:17,236 - __main__ - DEBUG - Starting main application
+2025-02-04 20:40:17,236 - __main__ - DEBUG - Initial session state: {'user_info': None, 'google_signin': True, 'auth_flow_started': False, 'page': 'Dashboard', 'last_activity': 1738719612.617624, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:17,236 - __main__ - DEBUG - Session state after initialization: {'user_info': None, 'google_signin': True, 'auth_flow_started': False, 'page': 'Dashboard', 'last_activity': 1738719617.236834, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:17,237 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 20:40:17,237 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 20:40:17,237 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 20:40:17,237 - __main__ - DEBUG - Rendering authentication page
+2025-02-04 20:40:17,237 - __main__ - DEBUG - Current session state: {'user_info': None, 'google_signin': True, 'auth_flow_started': False, 'page': 'Dashboard', 'last_activity': 1738719617.236834, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:17,238 - __main__ - DEBUG - Showing Google sign-in button
+2025-02-04 20:40:17,238 - __main__ - INFO - Google sign-in button clicked
+2025-02-04 20:40:17,238 - __main__ - DEBUG - Starting Google OAuth authentication flow
+2025-02-04 20:40:17,238 - __main__ - DEBUG - Received query parameters: {}
+2025-02-04 20:40:17,238 - __main__ - DEBUG - Auth code present: False
+2025-02-04 20:40:17,238 - __main__ - DEBUG - State present: False
+2025-02-04 20:40:17,238 - __main__ - DEBUG - Current session state: {'user_info': None, 'google_signin': True, 'auth_flow_started': False, 'page': 'Dashboard', 'last_activity': 1738719617.236834, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:17,238 - __main__ - INFO - Initiating Google OAuth flow...
+2025-02-04 20:40:17,238 - invoice_agent.security.auth - DEBUG - Generated new state token: qduuxYQA1X...
+2025-02-04 20:40:17,238 - invoice_agent.security.auth - DEBUG - Using redirect URI: http://localhost:8501
+2025-02-04 20:40:17,238 - invoice_agent.security.auth - INFO - Generated auth URL with state token: qduuxYQA1X...
+2025-02-04 20:40:17,239 - invoice_agent.security.auth - DEBUG - Full auth URL: https://accounts.google.com/o/oauth2/v2/auth?client_id=183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8501&response_type=code&scope=openid+email+profile&access_type=offline&state=qduuxYQA1XmzVbW7hSjpejdSSkWpzYcYBS8oEEJUxvs&prompt=consent&include_granted_scopes=true
+2025-02-04 20:40:17,239 - __main__ - DEBUG - Generated auth URL: https://accounts.google.com/o/oauth2/v2/auth?client_id=183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8501&response_type=code&scope=openid+email+profile&access_type=offline&state=qduuxYQA1XmzVbW7hSjpejdSSkWpzYcYBS8oEEJUxvs&prompt=consent&include_granted_scopes=true
+2025-02-04 20:40:17,239 - __main__ - DEBUG - Auth flow started flag set to True
+2025-02-04 20:40:17,239 - __main__ - DEBUG - Session state before redirect: {'user_info': None, 'google_signin': True, 'auth_flow_started': True, 'page': 'Dashboard', 'last_activity': 1738719617.236834, 'initialized': True, 'authenticated': False, 'auth_error': None, 'connection_attempts': 0}
+2025-02-04 20:40:17,239 - __main__ - INFO - Redirecting to Google OAuth consent screen...
+2025-02-04 20:40:28,256 - __main__ - DEBUG - Python version: 3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-02-04 20:40:28,257 - __main__ - DEBUG - Python executable: /Users/sailesh/Documents/GitHub/aiagent/venv/bin/python3.12
+2025-02-04 20:40:28,257 - __main__ - DEBUG - Current working directory: /Users/sailesh/Documents/GitHub/invoiceAgent/src
+2025-02-04 20:40:28,257 - __main__ - DEBUG - PYTHONPATH: :.
+2025-02-04 20:40:28,257 - __main__ - DEBUG - Sys.path: ['invoice_agent/ui/app.py', '/Users/sailesh/Documents/GitHub/invoiceAgent', 'invoice_agent/ui', '/Users/sailesh/Documents/GitHub/aiagent/venv/bin', '/Users/sailesh/Documents/GitHub/invoiceAgent/src', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12', '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload', '/Users/sailesh/Documents/GitHub/aiagent/venv/lib/python3.12/site-packages', '/var/folders/0c/vbd1lzvs6p35p66t1zm047sh0000gn/T/tmpjpp5c0uc']
+2025-02-04 20:40:28,259 - __main__ - DEBUG - Environment variables loaded
+2025-02-04 20:40:28,259 - __main__ - DEBUG - Attempting to import invoice_agent modules...
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Importing invoice_agent modules...
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Imported InvoiceAgent
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Imported config_loader
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Imported AuthManager
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Imported TemplateManager
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Imported WorkflowManager
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Imported MetricsManager
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Initializing AuthManager...
+2025-02-04 20:40:28,260 - invoice_agent.security.auth - INFO - AuthManager initialized with redirect URI: http://localhost:8501
+2025-02-04 20:40:28,260 - invoice_agent.security.auth - INFO - Using Streamlit port: 8501
+2025-02-04 20:40:28,260 - invoice_agent.security.auth - DEBUG - Google Client ID configured: True
+2025-02-04 20:40:28,260 - invoice_agent.security.auth - DEBUG - Google Client Secret configured: True
+2025-02-04 20:40:28,260 - __main__ - DEBUG - AuthManager initialized successfully
+2025-02-04 20:40:28,260 - __main__ - DEBUG - Initializing MetricsManager...
+2025-02-04 20:40:28,261 - __main__ - DEBUG - MetricsManager initialized successfully
+2025-02-04 20:40:28,261 - __main__ - DEBUG - Initializing InvoiceAgent...
+2025-02-04 20:40:28,320 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 20:40:28,394 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 20:40:28,575 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 20:40:28,631 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 20:40:28,692 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 20:40:28,895 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:40:28,951 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 20:40:28,995 - __main__ - DEBUG - InvoiceAgent initialized successfully
+2025-02-04 20:40:28,995 - __main__ - DEBUG - Initializing WorkflowManager...
+2025-02-04 20:40:28,997 - __main__ - DEBUG - WorkflowManager initialized successfully
+2025-02-04 20:40:28,997 - __main__ - DEBUG - Initializing TemplateManager...
+2025-02-04 20:40:28,997 - __main__ - DEBUG - TemplateManager initialized successfully
+2025-02-04 20:40:28,997 - __main__ - DEBUG - Server settings configured

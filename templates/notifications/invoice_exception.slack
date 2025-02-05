@@ -1,0 +1,75 @@
+[
+    {
+        "type": "header",
+        "text": {
+            "type": "plain_text",
+            "text": "🚨 Invoice Exception Alert"
+        }
+    },
+    {
+        "type": "section",
+        "fields": [
+            {
+                "type": "mrkdwn",
+                "text": "*Invoice Number:*\n{{ invoice_number }}"
+            },
+            {
+                "type": "mrkdwn",
+                "text": "*Vendor:*\n{{ vendor_name }}"
+            }
+        ]
+    },
+    {
+        "type": "section",
+        "fields": [
+            {
+                "type": "mrkdwn",
+                "text": "*Amount:*\n{{ amount }} {{ currency }}"
+            }
+        ]
+    },
+    {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": "*Issues Detected:*"
+        }
+    },
+    {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": "{% for desc in description %}• {{ desc }}\n{% endfor %}"
+        }
+    }
+    {% if details %}
+    ,
+    {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": "*Additional Details:*"
+        }
+    }
+    {% if details.line_items %}
+    ,
+    {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": "*Line Item Issues:*\n{% for item in details.line_items %}• {{ item }}\n{% endfor %}"
+        }
+    }
+    {% endif %}
+    {% if details.tax_issues %}
+    ,
+    {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": "*Tax Issues:*\n{% for issue in details.tax_issues %}• {{ issue }}\n{% endfor %}"
+        }
+    }
+    {% endif %}
+    {% endif %}
+] 

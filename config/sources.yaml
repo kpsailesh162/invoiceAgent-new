@@ -1,0 +1,11 @@
+sources:
+  email:
+    host: "imap.gmail.com"
+    username: "${EMAIL_USERNAME}"
+    password: "${EMAIL_PASSWORD}"
+    folder: "INBOX"
+    
+  sap:
+    base_url: "${SAP_API_URL}"
+    api_key: "${SAP_API_KEY}"
+    company_code: "1000" 

@@ -1,0 +1,29 @@
+[
+    {
+        "type": "header",
+        "text": {
+            "type": "plain_text",
+            "text": "🚨 Invoice Exception Alert"
+        }
+    },
+    {
+        "type": "section",
+        "fields": [
+            {
+                "type": "mrkdwn",
+                "text": "*Invoice:* {{ invoice_number }}"
+            },
+            {
+                "type": "mrkdwn",
+                "text": "*Vendor:* {{ vendor_name }}"
+            }
+        ]
+    },
+    {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": "*Exception Details:*\n{% for desc in description %}• {{ desc }}\n{% endfor %}"
+        }
+    }
+] 

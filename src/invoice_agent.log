@@ -1,0 +1,86 @@
+2025-02-04 19:36:27,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-02-04 19:36:27,608 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 19:36:27,676 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 19:36:27,985 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 19:36:28,068 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 19:36:28,129 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 19:36:28,506 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:36:28,566 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:36:28,690 - __main__ - DEBUG - Starting main application
+2025-02-04 19:36:28,691 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 19:36:28,692 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 19:36:28,692 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 19:36:55,911 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-02-04 19:36:56,009 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 19:36:56,072 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 19:36:56,213 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 19:36:56,276 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 19:36:56,330 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 19:36:56,588 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:36:56,650 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:36:56,765 - __main__ - DEBUG - Starting main application
+2025-02-04 19:36:56,766 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 19:36:56,766 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 19:36:56,766 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 19:37:00,638 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 19:37:00,690 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 19:37:00,834 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 19:37:00,885 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 19:37:00,939 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 19:37:01,187 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:37:01,249 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:37:01,283 - __main__ - DEBUG - Starting main application
+2025-02-04 19:37:01,283 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 19:37:01,283 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 19:37:01,283 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 19:37:01,284 - __main__ - DEBUG - Starting Google OAuth authentication flow
+2025-02-04 19:37:01,285 - __main__ - DEBUG - Received query parameters: {}
+2025-02-04 19:37:01,285 - __main__ - DEBUG - Auth code present: False
+2025-02-04 19:37:01,285 - __main__ - DEBUG - State present: False
+2025-02-04 19:37:01,285 - __main__ - INFO - Initiating Google OAuth flow...
+2025-02-04 19:37:01,285 - __main__ - DEBUG - Generated auth URL: https://accounts.google.com/o/oauth2/v2/auth?client_id=183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com&redirect_uri=http%3A//localhost%3A8502&response_type=code&scope=openid%20email%20profile&access_type=offline&state=qutrrKOPlEftwRstqYOuvhNnLPG5J5y9CA1WpoPy7YA&prompt=consent&include_granted_scopes=true
+2025-02-04 19:40:57,026 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-02-04 19:40:57,159 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 19:40:57,238 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 19:40:57,391 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 19:40:57,448 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 19:40:57,514 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 19:40:57,698 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:40:57,752 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:40:57,849 - __main__ - DEBUG - Starting main application
+2025-02-04 19:40:57,849 - __main__ - DEBUG - Initial session state: {}
+2025-02-04 19:40:57,850 - __main__ - DEBUG - Session state after initialization: {'initialized': True, 'last_activity': 1738716057.850272, 'auth_flow_started': False, 'user_info': None, 'authenticated': False, 'connection_attempts': 0, 'page': 'Dashboard', 'auth_error': None}
+2025-02-04 19:40:57,851 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 19:40:57,851 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 19:40:57,851 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 19:40:57,851 - __main__ - DEBUG - Rendering authentication page
+2025-02-04 19:40:57,851 - __main__ - DEBUG - Current session state: {'initialized': True, 'last_activity': 1738716057.850272, 'auth_flow_started': False, 'user_info': None, 'authenticated': False, 'connection_attempts': 0, 'page': 'Dashboard', 'auth_error': None}
+2025-02-04 19:40:57,851 - __main__ - DEBUG - Showing Google sign-in button
+2025-02-04 19:40:57,852 - __main__ - DEBUG - Showing Microsoft sign-in button
+2025-02-04 19:40:57,852 - __main__ - DEBUG - Showing Service Account sign-in form
+2025-02-04 19:40:59,485 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-02-04 19:40:59,613 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2025-02-04 19:40:59,722 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-02-04 19:40:59,900 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/processor_config.json HTTP/1.1" 404 0
+2025-02-04 19:40:59,957 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.json HTTP/1.1" 404 0
+2025-02-04 19:41:00,011 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-02-04 19:41:00,174 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:41:00,235 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /microsoft/layoutlmv3-base/resolve/main/config.json HTTP/1.1" 200 0
+2025-02-04 19:41:00,275 - __main__ - DEBUG - Starting main application
+2025-02-04 19:41:00,275 - __main__ - DEBUG - Initial session state: {'initialized': True, 'last_activity': 1738716057.850272, 'auth_flow_started': False, 'user_info': None, 'authenticated': False, 'connection_attempts': 0, 'page': 'Dashboard', 'auth_error': None, 'google_signin': True}
+2025-02-04 19:41:00,276 - __main__ - DEBUG - Session state after initialization: {'initialized': True, 'last_activity': 1738716060.27602, 'auth_flow_started': False, 'user_info': None, 'authenticated': False, 'connection_attempts': 0, 'page': 'Dashboard', 'auth_error': None, 'google_signin': True}
+2025-02-04 19:41:00,276 - __main__ - DEBUG - Checking for OAuth callback parameters
+2025-02-04 19:41:00,276 - __main__ - DEBUG - Query parameters: {}
+2025-02-04 19:41:00,276 - __main__ - DEBUG - User not authenticated, showing auth page
+2025-02-04 19:41:00,276 - __main__ - DEBUG - Rendering authentication page
+2025-02-04 19:41:00,276 - __main__ - DEBUG - Current session state: {'initialized': True, 'last_activity': 1738716060.27602, 'auth_flow_started': False, 'user_info': None, 'authenticated': False, 'connection_attempts': 0, 'page': 'Dashboard', 'auth_error': None, 'google_signin': True}
+2025-02-04 19:41:00,277 - __main__ - DEBUG - Showing Google sign-in button
+2025-02-04 19:41:00,277 - __main__ - INFO - Google sign-in button clicked
+2025-02-04 19:41:00,277 - __main__ - DEBUG - Starting Google OAuth authentication flow
+2025-02-04 19:41:00,277 - __main__ - DEBUG - Received query parameters: {}
+2025-02-04 19:41:00,277 - __main__ - DEBUG - Auth code present: False
+2025-02-04 19:41:00,278 - __main__ - DEBUG - State present: False
+2025-02-04 19:41:00,278 - __main__ - INFO - Initiating Google OAuth flow...
+2025-02-04 19:41:00,278 - __main__ - DEBUG - Generated auth URL: https://accounts.google.com/o/oauth2/v2/auth?client_id=183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com&redirect_uri=http%3A//localhost%3A8502&response_type=code&scope=openid%20email%20profile&access_type=offline&state=MiycQWJG2iqRaT7aXygMbdghFBzDpU2WKbjIJpVjixw&prompt=consent&include_granted_scopes=true
+2025-02-04 19:41:00,278 - __main__ - DEBUG - Auth flow started flag set to True
+2025-02-04 19:41:00,278 - __main__ - INFO - Redirecting to Google OAuth consent screen...

@@ -1,0 +1,21 @@
+{
+    "invoice_number": "INV1020",
+    "invoice_date": "2024-02-01",
+    "vendor_info": {
+        "id": "V002",
+        "name": "Global Supply Co.",
+        "email": "accounts@globalsupply.com"
+    },
+    "po_number": "PO1002",
+    "total_amount": "7500.00",
+    "currency": "USD",
+    "line_items": [
+        {
+            "sku": "ITEM002",
+            "description": "Enterprise Support",
+            "quantity": 3,
+            "unit_price": "2500.00",
+            "total": "7500.00"
+        }
+    ]
+} 

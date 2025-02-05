@@ -1,0 +1,21 @@
+{
+    "invoice_number": "INV1018",
+    "invoice_date": "2024-02-01",
+    "vendor_info": {
+        "id": "V001",
+        "name": "Tech Solutions Inc.",
+        "email": "billing@techsolutions.com"
+    },
+    "po_number": "PO1001",
+    "total_amount": "5000.00",
+    "currency": "USD",
+    "line_items": [
+        {
+            "sku": "ITEM001",
+            "description": "Software License",
+            "quantity": 5,
+            "unit_price": "1000.00",
+            "total": "5000.00"
+        }
+    ]
+} 

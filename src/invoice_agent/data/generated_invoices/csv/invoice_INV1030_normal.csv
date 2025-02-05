@@ -1,0 +1,21 @@
+Invoice Information
+Invoice Number:,INV1030
+PO Number:,PO0041
+Invoice Date:,2023-05-12
+Due Date:,2023-06-11
+
+Vendor Information
+Name:,IT Equipment Direct
+ID:,V010
+
+Line Items
+Description,Quantity,Unit Price,Total
+UPS Battery,3,$599.99,$1799.97
+Laptop,1,$1299.99,$1299.99
+
+,,Subtotal:,$3099.96
+,,Tax Amount:,$310.00
+,,Total Amount:,$3409.96
+
+Payment Terms:,Net 30
+Currency:,USD

@@ -1,0 +1,21 @@
+Invoice Information
+Invoice Number:,INV1027
+PO Number:,PO0037
+Invoice Date:,2023-08-17
+Due Date:,2023-09-16
+
+Vendor Information
+Name:,Electronics Depot Corp.
+ID:,V008
+
+Line Items
+Description,Quantity,Unit Price,Total
+Desktop Computer,4,$899.99,$3599.96
+Keyboard,2,$79.99,$159.98
+
+,,Subtotal:,$3759.94
+,,Tax Amount:,$375.99
+,,Total Amount:,$4135.93
+
+Payment Terms:,Net 30
+Currency:,USD

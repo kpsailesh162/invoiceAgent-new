@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: invoice_agent
+Version: 0.1.0
+Summary: An invoice processing agent with OCR and matching capabilities
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/invoice_agent
+Project-URL: Bug Tracker, https://github.com/yourusername/invoice_agent/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: requires-python

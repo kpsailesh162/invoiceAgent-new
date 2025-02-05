@@ -1,0 +1,23 @@
+Invoice Information
+Invoice Number:,INV1006
+PO Number:,PO0009
+Invoice Date:,2023-04-24
+Due Date:,2023-05-24
+
+Vendor Information
+Name:,Software Solutions Pro
+ID:,V007
+
+Line Items
+Description,Quantity,Unit Price,Total
+Monitor,7,$299.99,$2099.93
+Network Switch,7,$299.99,$2099.93
+Laptop,10,$1299.99,$12999.90
+Network Switch,1,$299.99,$299.99
+
+,,Subtotal:,$17499.75
+,,Tax Amount:,$1749.98
+,,Total Amount:,$19249.73
+
+Payment Terms:,Net 30
+Currency:,USD

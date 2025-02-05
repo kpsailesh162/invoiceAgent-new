@@ -1,0 +1,29 @@
+environments:
+  test:
+    auth:
+      google_client_id: "test_google_client_id"
+      google_client_secret: "test_google_client_secret"
+      microsoft_client_id: "test_microsoft_client_id"
+      microsoft_client_secret: "test_microsoft_client_secret"
+    storage:
+      template_dir: "tests/fixtures/templates"
+      workflow_dir: "tests/fixtures/workflows"
+      metrics_dir: "tests/fixtures/metrics"
+    processing:
+      max_file_size_mb: 10
+      supported_formats:
+        - pdf
+        - png
+        - jpg
+        - jpeg
+      ocr_enabled: true
+      validation_rules:
+        - required_fields:
+            - invoice_number
+            - date
+            - amount
+            - vendor
+        - amount_threshold: 10000
+    monitoring:
+      metrics_port: 9090
+      log_level: "DEBUG" 

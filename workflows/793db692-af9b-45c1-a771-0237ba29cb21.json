@@ -1,0 +1,107 @@
+{
+  "id": "793db692-af9b-45c1-a771-0237ba29cb21",
+  "template_id": "default",
+  "document_path": "temp_invoice_INV1032_normal.pdf",
+  "status": "completed_with_discrepancies",
+  "created_at": "2025-02-02T01:34:43.192551",
+  "updated_at": "2025-02-02T01:34:43.202804",
+  "created_by": "183173833346-kmsle3f3phtd3f71jms96q3uvcoqv0vu.apps.googleusercontent.com",
+  "extraction_results": {
+    "po_number": "PO0044",
+    "invoice_number": "INV1032",
+    "total_amount": "6949.71",
+    "validation_results": {
+      "invoice_number": {
+        "valid": true,
+        "value": "INV1032"
+      },
+      "date": {
+        "valid": false,
+        "value": null,
+        "error": "Missing required field: date"
+      },
+      "total_amount": {
+        "valid": true,
+        "value": "6949.71"
+      },
+      "po_number": {
+        "valid": true,
+        "value": "PO0044"
+      }
+    },
+    "processed_doc": {
+      "text": "Invoice INV1032\nInvoice Information\nInvoice Number:\nINV1032\nPO Number:\nPO0044\nInvoice Date:\n2023-09-19\nDue Date:\n2023-10-19\nVendor Information\nName:\nGlobal Supply Co.\nID:\nV002\nLine Items\nDescription\nQuantity\nUnit Price\nTotal\nMonitor\n3\n$299.99\n$899.97\nNetwork Switch\n8\n$299.99\n$2399.92\nKeyboard\n10\n$79.99\n$799.90\nPrinter\n7\n$399.99\n$2799.93\nMouse\n1\n$49.99\n$49.99\nSubtotal:\n$6949.71\nTax Amount:\n$694.97\nTotal Amount:\n$7644.68\n\nPayment Terms:\nNet 30\nCurrency:\nUSD\n",
+      "has_images": true
+    }
+  },
+  "validation_results": null,
+  "matching_results": {
+    "match_status": "validation_failed",
+    "po_match": false,
+    "receipt_match": false,
+    "amount_match": false,
+    "discrepancies": [
+      "Missing required field: vendor_info.tax_id",
+      "Missing required field: currency"
+    ],
+    "confidence_scores": {},
+    "po_details": {
+      "number": "PO0044",
+      "status": "completed",
+      "total_amount": 10229.769999999999
+    },
+    "gr_details": {
+      "number": "GR0044",
+      "status": null,
+      "received_date": null
+    }
+  },
+  "analysis_results": null,
+  "processing_log": [
+    {
+      "timestamp": "2025-02-02T01:34:43.193011",
+      "status": "loading",
+      "message": "Loading document for processing",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:34:43.193583",
+      "status": "processing",
+      "message": "Extracting data from document",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:34:43.199532",
+      "status": "erp_connection",
+      "message": "Retrieving data from ERP system",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:34:43.200110",
+      "status": "po_retrieval",
+      "message": "Retrieving PO: PO0044",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:34:43.200839",
+      "status": "gr_retrieval",
+      "message": "Retrieving Goods Receipt for PO: PO0044",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:34:43.201472",
+      "status": "matching",
+      "message": "Performing three-way match validation",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-02T01:34:43.202519",
+      "status": "completed_with_discrepancies",
+      "message": "Processing completed with 2 matching discrepancies",
+      "error": null
+    }
+  ],
+  "retry_count": 0,
+  "processing_time": 0.0103,
+  "error": null
+}

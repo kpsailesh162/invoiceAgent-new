@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Processing System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">Invoice Processing System</h1>
+        
+        <!-- Upload Section -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-xl font-semibold mb-4">Upload Invoice</h2>
+            <form id="uploadForm" class="space-y-4">
+                <div class="flex items-center space-x-4">
+                    <input type="file" 
+                           id="invoiceFile" 
+                           accept=".pdf"
+                           class="border rounded p-2 flex-grow"
+                           required>
+                    <button type="submit"
+                            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Upload
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Status Section -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold mb-4">Invoice Status</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="px-4 py-2 text-left">Filename</th>
+                            <th class="px-4 py-2 text-left">Status</th>
+                            <th class="px-4 py-2 text-left">Upload Time</th>
+                            <th class="px-4 py-2 text-left">Error Message</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoiceList">
+                        <!-- Invoices will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const API_BASE_URL = '/api/v1';
+        
+        // Handle file upload
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('invoiceFile');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                alert('Please select a file to upload');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/invoices/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    alert('Invoice uploaded successfully');
+                    fileInput.value = '';
+                    updateInvoiceList();
+                } else {
+                    alert(`Upload failed: ${result.detail}`);
+                }
+            } catch (error) {
+                alert(`Error uploading file: ${error.message}`);
+            }
+        });
+        
+        // Update invoice list
+        async function updateInvoiceList() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/invoices`);
+                const data = await response.json();
+                
+                const tbody = document.getElementById('invoiceList');
+                tbody.innerHTML = '';
+                
+                data.invoices.forEach(invoice => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="border px-4 py-2">${invoice.filename}</td>
+                        <td class="border px-4 py-2">
+                            <span class="px-2 py-1 rounded ${getStatusClass(invoice.status)}">
+                                ${invoice.status}
+                            </span>
+                        </td>
+                        <td class="border px-4 py-2">${formatDate(invoice.upload_time)}</td>
+                        <td class="border px-4 py-2">${invoice.error_message || ''}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error updating invoice list:', error);
+            }
+        }
+        
+        // Helper functions
+        function getStatusClass(status) {
+            const classes = {
+                'PENDING': 'bg-yellow-100 text-yellow-800',
+                'PROCESSING': 'bg-blue-100 text-blue-800',
+                'COMPLETED': 'bg-green-100 text-green-800',
+                'FAILED': 'bg-red-100 text-red-800'
+            };
+            return classes[status] || 'bg-gray-100';
+        }
+        
+        function formatDate(dateString) {
+            return new Date(dateString).toLocaleString();
+        }
+        
+        // Update invoice list periodically
+        updateInvoiceList();
+        setInterval(updateInvoiceList, 5000);
+    </script>
+</body>
+</html> 

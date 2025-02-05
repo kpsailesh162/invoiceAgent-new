@@ -1,0 +1,22 @@
+Invoice Information
+Invoice Number:,INV1005
+PO Number:,PO0008
+Invoice Date:,2023-06-19
+Due Date:,2023-07-19
+
+Vendor Information
+Name:,Hardware Wholesale Inc.
+ID:,V006
+
+Line Items
+Description,Quantity,Unit Price,Total
+Docking Station,5,$199.99,$999.95
+Desktop Computer,4,$899.99,$3599.96
+Keyboard,3,$79.99,$239.97
+
+,,Subtotal:,$4839.88
+,,Tax Amount:,$483.99
+,,Total Amount:,$5323.87
+
+Payment Terms:,Net 30
+Currency:,USD
