@@ -1,0 +1,12 @@
+Invoice Number,INV0049,,
+Date,2023-02-06,,
+PO Number,PO0049,,
+Vendor,Global Supply Co.,,
+,,,
+Description,Quantity,Unit Price,Total
+Mouse,1,49.99,49.99
+Keyboard,8,79.99,639.92
+,,,
+Subtotal,,,689.91
+Tax,,,68.99
+Total,,,758.90

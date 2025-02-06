@@ -1,0 +1,14 @@
+Invoice Number,INV0013,,
+Date,2023-01-09,,
+PO Number,PO0013,,
+Vendor,Software Solutions Pro,,
+,,,
+Description,Quantity,Unit Price,Total
+UPS Battery,6,599.99,3599.94
+Docking Station,2,199.99,399.98
+Printer,2,399.99,799.98
+Mouse,1,49.99,49.99
+,,,
+Subtotal,,,4849.89
+Tax,,,484.99
+Total,,,5334.88

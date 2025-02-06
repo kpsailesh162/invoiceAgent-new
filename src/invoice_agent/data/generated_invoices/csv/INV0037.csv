@@ -1,0 +1,14 @@
+Invoice Number,INV0037,,
+Date,2023-02-26,,
+PO Number,PO0037,,
+Vendor,Office Essentials Ltd.,,
+,,,
+Description,Quantity,Unit Price,Total
+Desktop Computer,10,899.99,8999.9
+Monitor,8,299.99,2399.92
+Mouse,6,49.99,299.94
+Server Rack,9,899.99,8099.91
+,,,
+Subtotal,,,19799.67
+Tax,,,1979.97
+Total,,,21779.64

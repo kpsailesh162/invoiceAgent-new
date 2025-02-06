@@ -1,0 +1,107 @@
+{
+  "id": "5e61fc4d-761f-40b6-a0e3-d4724a05b0a3",
+  "template_id": "default",
+  "document_path": "temp_invoice_INV1009_normal.pdf",
+  "status": "completed_with_discrepancies",
+  "created_at": "2025-02-05T20:57:51.080572",
+  "updated_at": "2025-02-05T20:57:51.112003",
+  "created_by": null,
+  "extraction_results": {
+    "po_number": "PO0013",
+    "invoice_number": "INV1009",
+    "total_amount": "9949.79",
+    "validation_results": {
+      "invoice_number": {
+        "valid": true,
+        "value": "INV1009"
+      },
+      "date": {
+        "valid": false,
+        "value": null,
+        "error": "Missing required field: date"
+      },
+      "total_amount": {
+        "valid": true,
+        "value": "9949.79"
+      },
+      "po_number": {
+        "valid": true,
+        "value": "PO0013"
+      }
+    },
+    "processed_doc": {
+      "text": "Invoice INV1009\nInvoice Information\nInvoice Number:\nINV1009\nPO Number:\nPO0013\nInvoice Date:\n2023-12-11\nDue Date:\n2024-01-10\nVendor Information\nName:\nDigital Systems LLC\nID:\nV005\nLine Items\nDescription\nQuantity\nUnit Price\nTotal\nMouse\n5\n$49.99\n$249.95\nNetwork Switch\n7\n$299.99\n$2099.93\nDesktop Computer\n8\n$899.99\n$7199.92\nPrinter\n1\n$399.99\n$399.99\nSubtotal:\n$9949.79\nTax Amount:\n$994.98\nTotal Amount:\n$10944.77\nPayment Terms:\nNet 30\n\nCurrency:\nUSD\n",
+      "has_images": true
+    }
+  },
+  "validation_results": null,
+  "matching_results": {
+    "match_status": "validation_failed",
+    "po_match": false,
+    "receipt_match": false,
+    "amount_match": false,
+    "discrepancies": [
+      "Missing required field: vendor_info.tax_id",
+      "Missing required field: currency"
+    ],
+    "confidence_scores": {},
+    "po_details": {
+      "number": "PO0013",
+      "status": "completed",
+      "total_amount": 13859.85
+    },
+    "gr_details": {
+      "number": "GR0013",
+      "status": null,
+      "received_date": null
+    }
+  },
+  "analysis_results": null,
+  "processing_log": [
+    {
+      "timestamp": "2025-02-05T20:57:51.082052",
+      "status": "loading",
+      "message": "Loading document for processing",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T20:57:51.083680",
+      "status": "processing",
+      "message": "Extracting data from document",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T20:57:51.108012",
+      "status": "erp_connection",
+      "message": "Retrieving data from ERP system",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T20:57:51.108743",
+      "status": "po_retrieval",
+      "message": "Retrieving PO: PO0013",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T20:57:51.109617",
+      "status": "gr_retrieval",
+      "message": "Retrieving Goods Receipt for PO: PO0013",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T20:57:51.110135",
+      "status": "matching",
+      "message": "Performing three-way match validation",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T20:57:51.111583",
+      "status": "completed_with_discrepancies",
+      "message": "Processing completed with 2 matching discrepancies",
+      "error": null
+    }
+  ],
+  "retry_count": 0,
+  "processing_time": 0.03222,
+  "error": null
+}

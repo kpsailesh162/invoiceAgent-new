@@ -1,0 +1,15 @@
+Invoice Number,INV0043,,
+Date,2023-07-23,,
+PO Number,PO0043,,
+Vendor,Industrial Parts Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+Docking Station,4,199.99,799.96
+UPS Battery,1,599.99,599.99
+Monitor,2,299.99,599.98
+Server Rack,4,899.99,3599.96
+Docking Station,9,199.99,1799.91
+,,,
+Subtotal,,,7399.80
+Tax,,,739.98
+Total,,,8139.78

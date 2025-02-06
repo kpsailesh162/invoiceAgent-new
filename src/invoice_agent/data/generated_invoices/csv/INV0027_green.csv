@@ -1,0 +1,15 @@
+Invoice Number,INV0027,,
+Date,2023-01-17,,
+PO Number,PO0027,,
+Vendor,Software Solutions Pro,,
+,,,
+Description,Quantity,Unit Price,Total
+UPS Battery,7,599.99,4199.93
+Laptop,8,1299.99,10399.92
+Docking Station,6,199.99,1199.94
+Server Rack,10,899.99,8999.9
+Monitor,8,299.99,2399.92
+,,,
+Subtotal,,,27199.61
+Tax,,,2719.96
+Total,,,29919.57

@@ -1,0 +1,107 @@
+{
+  "id": "c6dec404-a297-43ba-ab14-935f0cde3f9b",
+  "template_id": "default",
+  "document_path": "temp_invoice_INV1007_normal.pdf",
+  "status": "completed_with_discrepancies",
+  "created_at": "2025-02-05T21:34:45.510519",
+  "updated_at": "2025-02-05T21:34:45.544093",
+  "created_by": null,
+  "extraction_results": {
+    "po_number": "PO0010",
+    "invoice_number": "INV1007",
+    "total_amount": "8859.79",
+    "validation_results": {
+      "invoice_number": {
+        "valid": true,
+        "value": "INV1007"
+      },
+      "date": {
+        "valid": false,
+        "value": null,
+        "error": "Missing required field: date"
+      },
+      "total_amount": {
+        "valid": true,
+        "value": "8859.79"
+      },
+      "po_number": {
+        "valid": true,
+        "value": "PO0010"
+      }
+    },
+    "processed_doc": {
+      "text": "Invoice INV1007\nInvoice Information\nInvoice Number:\nINV1007\nPO Number:\nPO0010\nInvoice Date:\n2023-07-05\nDue Date:\n2023-08-04\nVendor Information\nName:\nGlobal Supply Co.\nID:\nV002\nLine Items\nDescription\nQuantity\nUnit Price\nTotal\nUPS Battery\n10\n$599.99\n$5999.90\nNetwork Switch\n9\n$299.99\n$2699.91\nKeyboard\n2\n$79.99\n$159.98\nSubtotal:\n$8859.79\nTax Amount:\n$885.98\nTotal Amount:\n$9745.77\nPayment Terms:\nNet 30\nCurrency:\nUSD\n",
+      "has_images": true
+    }
+  },
+  "validation_results": null,
+  "matching_results": {
+    "match_status": "validation_failed",
+    "po_match": false,
+    "receipt_match": false,
+    "amount_match": false,
+    "discrepancies": [
+      "Missing required field: vendor_info.tax_id",
+      "Missing required field: currency"
+    ],
+    "confidence_scores": {},
+    "po_details": {
+      "number": "PO0010",
+      "status": "completed",
+      "total_amount": 10889.84
+    },
+    "gr_details": {
+      "number": "GR0010",
+      "status": null,
+      "received_date": null
+    }
+  },
+  "analysis_results": null,
+  "processing_log": [
+    {
+      "timestamp": "2025-02-05T21:34:45.512537",
+      "status": "loading",
+      "message": "Loading document for processing",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T21:34:45.513992",
+      "status": "processing",
+      "message": "Extracting data from document",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T21:34:45.540061",
+      "status": "erp_connection",
+      "message": "Retrieving data from ERP system",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T21:34:45.540691",
+      "status": "po_retrieval",
+      "message": "Retrieving PO: PO0010",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T21:34:45.541338",
+      "status": "gr_retrieval",
+      "message": "Retrieving Goods Receipt for PO: PO0010",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T21:34:45.542262",
+      "status": "matching",
+      "message": "Performing three-way match validation",
+      "error": null
+    },
+    {
+      "timestamp": "2025-02-05T21:34:45.543728",
+      "status": "completed_with_discrepancies",
+      "message": "Processing completed with 2 matching discrepancies",
+      "error": null
+    }
+  ],
+  "retry_count": 0,
+  "processing_time": 0.034286,
+  "error": null
+}

@@ -1,0 +1,14 @@
+Invoice Number,INV0012,,
+Date,2023-06-12,,
+PO Number,PO0012,,
+Vendor,Digital Systems LLC,,
+,,,
+Description,Quantity,Unit Price,Total
+Docking Station,6,199.99,1199.94
+Network Switch,4,299.99,1199.96
+Printer,3,399.99,1199.97
+UPS Battery,5,599.99,2999.95
+,,,
+Subtotal,,,6599.82
+Tax,,,659.98
+Total,,,7259.80

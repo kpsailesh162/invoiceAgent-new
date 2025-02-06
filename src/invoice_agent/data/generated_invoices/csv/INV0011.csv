@@ -1,0 +1,15 @@
+Invoice Number,INV0011,,
+Date,2023-06-09,,
+PO Number,PO0011,,
+Vendor,Industrial Parts Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+Keyboard,6,79.99,479.94
+Server Rack,7,899.99,6299.93
+Laptop,6,1299.99,7799.94
+Laptop,4,1299.99,5199.96
+Docking Station,9,199.99,1799.91
+,,,
+Subtotal,,,21579.68
+Tax,,,2157.97
+Total,,,23737.65

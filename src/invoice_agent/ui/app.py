@@ -15,6 +15,9 @@ import sys
 import logging
 import threading
 import signal
+import numpy as np
+from streamlit_option_menu import option_menu
+from invoice_agent.database.db_manager import DatabaseManager
 
 # Configure logging to file instead of stdout
 logging.basicConfig(
@@ -128,6 +131,78 @@ def run_streamlit():
     try:
         if not app_running:
             return
+            
+        # Add custom CSS for navigation and layout
+        st.markdown("""
+            <style>
+                /* Navigation Header */
+                .nav-header {
+                    padding: 1rem;
+                    text-align: center;
+                    border-bottom: 1px solid rgba(255,255,255,0.1);
+                    margin-bottom: 1rem;
+                }
+                .nav-header h2 {
+                    color: #FF4B4B;
+                    margin: 0;
+                    font-size: 1.5rem;
+                }
+                
+                /* Navigation Menu */
+                section[data-testid="stSidebar"] {
+                    background-color: #262730;
+                    border-right: 1px solid rgba(255,255,255,0.1);
+                }
+                
+                /* User Info Footer */
+                .nav-footer {
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: #1E1E1E;
+                    padding: 1rem;
+                    border-top: 1px solid rgba(255,255,255,0.1);
+                }
+                
+                .user-info {
+                    color: #FFFFFF;
+                    font-size: 0.9rem;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                }
+                
+                /* Option Menu Customization */
+                .stOptionMenu {
+                    margin-top: 1rem;
+                }
+                
+                .stOptionMenu div[role="button"] {
+                    transition: all 0.3s ease;
+                }
+                
+                .stOptionMenu div[role="button"]:hover {
+                    transform: translateX(5px);
+                }
+                
+                /* Main Content Area */
+                .main .block-container {
+                    padding-top: 2rem;
+                }
+                
+                /* Streamlit's default padding adjustments */
+                .block-container {
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    max-width: 95%;
+                }
+                
+                /* Hide Streamlit's default footer */
+                footer {
+                    visibility: hidden;
+                }
+            </style>
+        """, unsafe_allow_html=True)
             
         # Start the main application
         main()
@@ -320,435 +395,151 @@ def show_dashboard():
         st.metric("Average Processing Time", f"{current_metrics['avg_processing_time']}s")
 
 def show_workflow_search():
-    """Display workflow search interface with improved connection handling"""
+    st.title("Search Workflows")
+    db_manager = DatabaseManager()
+    
     try:
-        st.subheader("Search Workflows")
-        
-        # Initialize view mode in session state if not present
-        if 'workflow_view_mode' not in st.session_state:
-            st.session_state.workflow_view_mode = "Table"
-        
-        # Update last activity time
-        st.session_state.last_activity = time.time()
-        
-        # Search filters in a form for better performance
-        with st.form("workflow_search_form"):
+        # Search filters
             col1, col2, col3 = st.columns(3)
-            with col1:
-                search_term = st.text_input("Search by ID or document name")
-            with col2:
-                status_filter = st.multiselect(
-                    "Filter by status",
-                    ["created", "processing", "completed", "failed", "completed_with_discrepancies"]
-                )
-            with col3:
-                date_range = st.date_input(
-                    "Date range",
-                    value=(datetime.now() - timedelta(days=7), datetime.now()),
-                    max_value=datetime.now()
-                )
-            
-            submitted = st.form_submit_button("Search")
         
-        # Store workflows in session state
-        if submitted:
-            with st.spinner("Fetching workflows..."):
-                workflows = workflow_manager.get_workflows(
-                    search_term=search_term,
-                    status_filter=status_filter,
-                    date_range=date_range
+            with col1:
+                status_filter = st.multiselect(
+                "Status",
+                ["pending", "processing", "completed", "completed_with_discrepancies", "failed"]
                 )
-                if workflows:
-                    st.session_state.current_workflows = workflows
-                else:
-                    st.session_state.current_workflows = None
-
-        # Display workflows if they exist in session state
-        if hasattr(st.session_state, 'current_workflows') and st.session_state.current_workflows:
-            workflows = st.session_state.current_workflows
+        
+        with col2:
+                date_range = st.date_input(
+                "Date Range",
+                value=(datetime.now() - timedelta(days=30), datetime.now())
+            )
+        
+        # Get invoices from database
+        invoices = db_manager.get_all_invoices(
+            status=status_filter[0] if status_filter else None,
+            date_from=date_range[0] if len(date_range) > 0 else None,
+            date_to=date_range[1] if len(date_range) > 1 else None
+        )
+        
+        if invoices:
+            # Display results
+            st.subheader(f"Found {len(invoices)} invoices")
             
-            # Display workflows in chunks for better performance
-            CHUNK_SIZE = 10
-            total_workflows = len(workflows)
+            # Create DataFrame
+            df = pd.DataFrame(invoices)
             
-            if 'workflow_page' not in st.session_state:
-                st.session_state.workflow_page = 0
+            # Add status badges
+            def status_badge(status):
+                colors = {
+                    'pending': 'blue',
+                    'processing': 'orange',
+                    'completed': 'green',
+                    'completed_with_discrepancies': 'yellow',
+                    'failed': 'red'
+                }
+                return f'<span style="color: {colors.get(status, "gray")}">●</span> {status.title()}'
             
-            start_idx = st.session_state.workflow_page * CHUNK_SIZE
-            end_idx = min(start_idx + CHUNK_SIZE, total_workflows)
+            df['status'] = df['status'].apply(status_badge)
             
-            current_chunk = workflows[start_idx:end_idx]
+            # Display table
+            st.markdown("""
+                <style>
+                    .dataframe td { text-align: left !important }
+                </style>
+            """, unsafe_allow_html=True)
             
-            # Display workflows in current chunk
-            workflow_data = []
-            for w in current_chunk:
-                # Safely get matching results with proper null checks
-                matching_results = w.get('matching_results') or {}
-                match_status = "⏳"  # Default status
-                if matching_results:
-                    match_successful = matching_results.get('match_successful')
-                    if match_successful is not None:
-                        match_status = "✅" if match_successful else "❌"
-                
-                # Handle processing time formatting safely
-                processing_time = w.get('processing_time')
-                if processing_time is not None:
-                    processing_time_str = f"{float(processing_time):.2f}s"
-                else:
-                    processing_time_str = "N/A"
-                
-                workflow_data.append({
-                    "ID": w.get('id', '')[:8] + "...",
-                    "Status": w.get('status', 'unknown'),
-                    "Document": w.get('document_path', 'unknown'),
-                    "Created": datetime.fromisoformat(w.get('created_at', datetime.now().isoformat())).strftime("%Y-%m-%d %H:%M"),
-                    "Processing Time": processing_time_str,
-                    "Match Status": match_status
-                })
-            
-            if workflow_data:
-                # Add view toggle and update session state
-                st.session_state.workflow_view_mode = st.radio(
-                    "View Mode",
-                    ["Table", "Cards"],
-                    horizontal=True,
-                    key="workflow_view_toggle",
-                    index=0 if st.session_state.workflow_view_mode == "Table" else 1
-                )
-                
-                if st.session_state.workflow_view_mode == "Table":
                     st.dataframe(
-                        pd.DataFrame(workflow_data),
+                df,
                         column_config={
-                            "ID": st.column_config.TextColumn("ID", width="small"),
-                            "Status": st.column_config.TextColumn("Status", width="medium"),
-                            "Document": st.column_config.TextColumn("Document", width="large"),
-                            "Created": st.column_config.TextColumn("Created", width="medium"),
-                            "Processing Time": st.column_config.TextColumn("Processing Time", width="small"),
-                            "Match Status": st.column_config.TextColumn("Match", width="small"),
+                    "id": "ID",
+                    "invoice_number": "Invoice Number",
+                    "vendor_name": "Vendor",
+                    "total_amount": st.column_config.NumberColumn("Amount", format="%.2f"),
+                    "status": st.column_config.Column("Status", help="Current status of the invoice"),
+                    "created_at": "Created",
                         },
                         hide_index=True,
                         use_container_width=True
                     )
-                else:
-                    # Card view
-                    for w in workflow_data:
-                        st.markdown(f"""
-                        <div style='padding: 1rem; border-radius: 0.5rem; background-color: #262730; margin-bottom: 1rem;'>
-                            <div style='display: flex; justify-content: space-between; align-items: center;'>
-                                <h4 style='margin: 0; color: #FFFFFF;'>{w['ID']}</h4>
-                                <span style='background-color: {"#28a745" if w["Status"] == "completed" else "#dc3545" if w["Status"] == "failed" else "#17a2b8"}; 
-                                            padding: 0.2rem 0.6rem; border-radius: 1rem; color: white;'>
-                                    {w["Status"]}
-                                </span>
-                            </div>
-                            <p style='margin: 0.5rem 0; color: #FFFFFF;'>{w["Document"]}</p>
-                            <div style='display: flex; justify-content: space-between; font-size: 0.9rem; color: #FFFFFF;'>
-                                <span>{w["Created"]}</span>
-                                <span>{w["Processing Time"]}</span>
-                                <span>{w["Match Status"]}</span>
-                            </div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                
-                # Pagination controls
-                col1, col2, col3 = st.columns([1, 2, 1])
-                with col2:
-                    if st.session_state.workflow_page > 0:
-                        if st.button("← Previous"):
-                            st.session_state.workflow_page -= 1
-                            st.experimental_rerun()
-                            
-                    st.write(f"Page {st.session_state.workflow_page + 1} of {(total_workflows - 1) // CHUNK_SIZE + 1}")
-                    
-                    if end_idx < total_workflows:
-                        if st.button("Next →"):
-                            st.session_state.workflow_page += 1
-                            st.experimental_rerun()
-                
-                # Allow clicking on a workflow to view details
-                selected_workflow = st.selectbox(
-                    "Select workflow to view details",
-                    [w.get('id', '') for w in current_chunk],
-                    format_func=lambda x: f"{x[:8]}... - {next((w.get('document_path', '') for w in current_chunk if w.get('id') == x), '')}"
-                )
-                
-                if selected_workflow:
-                    st.markdown("---")
-                    show_workflow_details(selected_workflow)
+            
+            # Show details for selected invoice
+            selected_invoice = st.selectbox(
+                "Select invoice to view details",
+                [inv['id'] for inv in invoices],
+                format_func=lambda x: f"Invoice {x} - {next((inv['invoice_number'] for inv in invoices if inv['id'] == x), '')}"
+            )
+            
+            if selected_invoice:
+                invoice_details = db_manager.get_invoice(selected_invoice)
+                if invoice_details:
+                    show_invoice_details(invoice_details)
+        
         else:
-            if submitted:
-                st.info("No workflows found matching the criteria")
-        
-        # Check connection health periodically
-        if not check_connection_health():
-            st.warning("Connection issues detected. Please refresh the page.")
-            return
-            
-    except Exception as e:
-        print(f"Error in workflow search: {str(e)}")
-        st.error("An error occurred while searching workflows. Please try again.")
-        # Reset page state on error
-        if 'workflow_page' in st.session_state:
-            del st.session_state.workflow_page
-
-def show_workflow_details(workflow_id: str):
-    """Display detailed information about a specific workflow"""
-    workflow_data = workflow_manager.get_workflow(workflow_id)
+            st.info("No invoices found matching the criteria")
     
-    if workflow_data:
-        # Initialize results view mode in session state if not present
-        if 'results_view_mode' not in st.session_state:
-            st.session_state.results_view_mode = "Formatted"
-            
-        st.subheader("Workflow Details")
-        
-        # Status Badge
-        status_color = {
-            "completed": "🟢",
-            "failed": "🔴",
-            "processing": "🟡",
-            "completed_with_discrepancies": "🟠"
-        }.get(workflow_data.get('status', ''), "⚪")
-        
-        # Basic Information in a card-like layout with darker background
+    finally:
+        db_manager.close()
+
+def show_invoice_details(invoice_details):
+    """Show detailed information about an invoice"""
+                    st.markdown("---")
+    st.subheader("Invoice Details")
+    
+    # Basic Information
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Invoice Number", invoice_details['invoice']['invoice_number'])
+    with col2:
+        st.metric("Vendor", invoice_details['invoice']['vendor_name'])
+    with col3:
+        st.metric("Amount", f"{invoice_details['invoice']['total_amount']:.2f}")
+    
+    # Status Timeline
+    st.subheader("Processing Timeline")
+    for status in invoice_details['workflow_status']:
         st.markdown(f"""
-        <div style='padding: 1rem; border-radius: 0.5rem; background-color: #262730; color: #FFFFFF;'>
-            <h3>{status_color} Workflow {workflow_id}</h3>
-            <p style='color: #FFFFFF;'>Status: {workflow_data.get('status', 'Unknown').title()}</p>
-            <p style='color: #FFFFFF;'>Document: {workflow_data.get('document_path', 'Unknown')}</p>
-            <p style='color: #FFFFFF;'>Template: {workflow_data.get('template_id', 'Default')}</p>
+            <div style="padding: 10px; border-left: 3px solid {'green' if status['status'] == 'completed' else 'red' if status['status'] == 'failed' else 'orange'};">
+                <strong>{status['status'].title()}</strong><br>
+                {status['created_at']}<br>
+                {status['message'] if status['message'] else ''}
         </div>
         """, unsafe_allow_html=True)
         
-        # Timing Information
-        created_at = workflow_data.get('created_at')
-        updated_at = workflow_data.get('updated_at')
+    # Extracted Data
+    if invoice_details['extracted_data']:
+        st.subheader("Extracted Data")
+        extracted_df = pd.DataFrame(invoice_details['extracted_data'])
+        st.dataframe(extracted_df)
+    
+    # Matching Results
+    if invoice_details['matching_result']:
+        st.subheader("Matching Results")
+        match_result = invoice_details['matching_result']
         
-        if created_at and updated_at:
-            created_time = datetime.fromisoformat(created_at)
-            updated_time = datetime.fromisoformat(updated_at)
-            processing_duration = updated_time - created_time
-            
-            timing_col1, timing_col2, timing_col3 = st.columns(3)
-            with timing_col1:
-                st.metric("Created", created_time.strftime("%H:%M:%S"))
-            with timing_col2:
-                st.metric("Updated", updated_time.strftime("%H:%M:%S"))
-            with timing_col3:
-                st.metric("Duration", f"{processing_duration.total_seconds():.2f}s")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric("PO Match", "✅" if match_result['po_match_status'] else "❌")
+        with col2:
+            st.metric("GR Match", "✅" if match_result['gr_match_status'] else "❌")
         
-        # Processing Log with Timeline
-        if workflow_data.get('processing_log'):
-            st.subheader("Processing Timeline")
-            
-            # Custom CSS for timeline
-            st.markdown("""
-            <style>
-            .timeline-container {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                padding: 20px;
-                background: #262730;
-                border-radius: 8px;
-                overflow-x: auto;
-                position: relative;
-                margin-bottom: 20px;
-            }
-            .timeline-container::after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                right: 0;
-                height: 2px;
-                background: #4a4a4a;
-                z-index: 1;
-            }
-            .timeline-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                min-width: 120px;
-                position: relative;
-                z-index: 2;
-                background: #262730;
-                padding: 0 10px;
-            }
-            .timeline-dot {
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                margin-bottom: 8px;
-                border: 2px solid currentColor;
-                background: #262730;
-            }
-            .timeline-label {
-                font-size: 0.85em;
-                font-weight: 500;
-                text-align: center;
-                margin-bottom: 4px;
-                color: currentColor;
-            }
-            .timeline-time {
-                font-size: 0.75em;
-                opacity: 0.8;
-                color: #FFFFFF;
-            }
-            </style>
-            """, unsafe_allow_html=True)
-            
-            # Build timeline HTML
-            timeline_items = []
-            for log_entry in workflow_data['processing_log']:
-                entry_time = datetime.fromisoformat(log_entry.get('timestamp', created_at))
-                status = log_entry.get('status', '').lower()
+        if match_result['discrepancies']:
+            st.warning("Discrepancies Found:")
+            for disc in json.loads(match_result['discrepancies']):
+                st.write(f"- {disc}")
                 
-                # Map status to colors
-                status_color = {
-                    "completed": "#28a745",
-                    "failed": "#dc3545",
-                    "processing": "#17a2b8",
-                    "loading": "#ffc107",
-                    "erp_connection": "#6f42c1",
-                    "matching": "#fd7e14",
-                    "po_retrieval": "#20c997",
-                    "gr_retrieval": "#e83e8c",
-                    "completed_with_discrepancies": "#fd7e14"
-                }.get(status, "#6c757d")
-                
-                # Format status label
-                status_label = status.replace('_', ' ').title()
-                
-                # Create timeline item
-                timeline_items.append(
-                    f'<div class="timeline-item">'
-                    f'<div class="timeline-dot" style="border-color: {status_color};"></div>'
-                    f'<div class="timeline-label" style="color: {status_color};">{status_label}</div>'
-                    f'<div class="timeline-time">{entry_time.strftime("%H:%M:%S")}</div>'
-                    f'</div>'
+    # Document Preview
+    if invoice_details['invoice']['file_path']:
+        st.subheader("Document Preview")
+        try:
+            with open(invoice_details['invoice']['file_path'], "rb") as file:
+                st.download_button(
+                    "Download Original Document",
+                    file,
+                    file_name=os.path.basename(invoice_details['invoice']['file_path']),
+                    mime="application/pdf"
                 )
-            
-            # Combine all items into the container
-            timeline_html = f'<div class="timeline-container">{"".join(timeline_items)}</div>'
-            
-            # Render the timeline
-            st.markdown(timeline_html, unsafe_allow_html=True)
-            
-            # Add expandable details section
-            with st.expander("View Details"):
-                for log_entry in workflow_data['processing_log']:
-                    entry_time = datetime.fromisoformat(log_entry.get('timestamp', created_at))
-                    status = log_entry.get('status', '').lower()
-                    status_color = {
-                        "completed": "#28a745",
-                        "failed": "#dc3545",
-                        "processing": "#17a2b8",
-                        "loading": "#ffc107",
-                        "erp_connection": "#6f42c1",
-                        "matching": "#fd7e14",
-                        "po_retrieval": "#20c997",
-                        "gr_retrieval": "#e83e8c",
-                        "completed_with_discrepancies": "#fd7e14"
-                    }.get(status, "#6c757d")
-                    
-                    st.markdown(
-                        f'<div style="padding: 8px; border-left: 3px solid {status_color}; '
-                        f'margin-bottom: 8px; background: #262730; border-radius: 4px;">'
-                        f'<div style="color: {status_color}; font-weight: 500;">'
-                        f'{entry_time.strftime("%H:%M:%S")} - {status.replace("_", " ").title()}</div>'
-                        f'<div style="color: #FFFFFF; margin-top: 4px;">{log_entry.get("message", "")}</div>'
-                        f'</div>',
-                        unsafe_allow_html=True
-                    )
-        
-        # Toggle between Raw and Formatted Data with session state
-        st.subheader("Processing Results")
-        st.session_state.results_view_mode = st.radio(
-            "View Mode",
-            ["Formatted", "Raw"],
-            horizontal=True,
-            key="results_view_toggle",
-            index=0 if st.session_state.results_view_mode == "Formatted" else 1
-        )
-        
-        tab1, tab2 = st.tabs(["Extraction Results", "Matching Results"])
-        
-        with tab1:
-            if workflow_data.get('extraction_results'):
-                if st.session_state.results_view_mode == "Raw":
-                    st.json(workflow_data['extraction_results'])
-                else:
-                    # Format extraction results in a table
-                    extraction_data = workflow_data['extraction_results']
-                    if isinstance(extraction_data, dict):
-                        df = pd.DataFrame([
-                            {"Field": k, "Value": str(v)} 
-                            for k, v in extraction_data.items() 
-                            if not isinstance(v, (dict, list))
-                        ])
-                        st.dataframe(
-                            df,
-                            column_config={
-                                "Field": st.column_config.TextColumn("Field", width="medium"),
-                                "Value": st.column_config.TextColumn("Value", width="large")
-                            },
-                            hide_index=True,
-                            use_container_width=True
-                        )
-                        
-                        # Show nested data in expandable sections
-                        for k, v in extraction_data.items():
-                            if isinstance(v, (dict, list)):
-                                with st.expander(f"{k} Details"):
-                                    st.json(v)
-            else:
-                st.info("No extraction results available")
-        
-        with tab2:
-            if workflow_data.get('matching_results'):
-                if st.session_state.results_view_mode == "Raw":
-                    st.json(workflow_data['matching_results'])
-                else:
-                    # Format matching results in a table
-                    matching_data = workflow_data['matching_results']
-                    if isinstance(matching_data, dict):
-                        # Summary table
-                        summary_data = {
-                            "Match Status": "✅ Matched" if matching_data.get('match_successful') else "❌ Not Matched",
-                            "PO Number": matching_data.get('po_details', {}).get('number', 'N/A'),
-                            "GR Number": matching_data.get('gr_details', {}).get('number', 'N/A'),
-                            "Total Amount": matching_data.get('po_details', {}).get('total_amount', 'N/A')
-                        }
-                        st.dataframe(
-                            pd.DataFrame([summary_data]),
-                            hide_index=True,
-                            use_container_width=True
-                        )
-                        
-                        # Show discrepancies if any
-                        if matching_data.get('discrepancies'):
-                            st.markdown("### Discrepancies")
-                            for disc in matching_data['discrepancies']:
-                                st.warning(disc)
-                                
-                        # Show detailed comparisons in expandable sections
-                        with st.expander("View Detailed Comparison"):
-                            col1, col2, col3 = st.columns(3)
-                            with col1:
-                                st.markdown("#### Invoice Data")
-                                st.json(matching_data.get('invoice_data', {}))
-                            with col2:
-                                st.markdown("#### PO Data")
-                                st.json(matching_data.get('po_details', {}))
-                            with col3:
-                                st.markdown("#### GR Data")
-                                st.json(matching_data.get('gr_details', {}))
-            else:
-                st.info("No matching results available")
-    else:
-        st.error(f"No workflow found with ID: {workflow_id}")
+        except Exception as e:
+            st.error(f"Error loading document: {str(e)}")
 
 def show_invoice_processing():
     st.title("Invoice Processing")
@@ -789,6 +580,7 @@ def show_invoice_processing():
 def process_single_invoice(uploaded_file, status_container, result_container):
     """Process a single invoice file"""
     start_time = datetime.now()
+    db_manager = DatabaseManager()
     
     # Save the file temporarily
     temp_path = f"temp_{uploaded_file.name}"
@@ -796,164 +588,78 @@ def process_single_invoice(uploaded_file, status_container, result_container):
         f.write(uploaded_file.getbuffer())
     
     try:
-        # Create and display workflow ID
-        workflow_id = workflow_manager.create_workflow(
-            template_id="default",
-            document_path=temp_path,
-            user_id=st.session_state.user_info.get("client_id")
-        )
-        st.info(f"Workflow ID: {workflow_id}")
+        status_container.info("📄 Processing invoice...")
         
-        # Document Loading
-        status_container.info("📄 Loading document...")
-        workflow_manager.update_workflow_status(
-            workflow_id,
-            "loading",
-            message="Loading document for processing"
-        )
+        # Process invoice
+        result = invoice_agent.process_invoice(temp_path)
+        invoice_id = result['invoice_id']
+        workflow_id = result['workflow_id']
         
-        # Processing
-        status_container.warning("⚙️ Processing invoice...")
-        workflow_manager.update_workflow_status(
-            workflow_id,
-            "processing",
-            message="Extracting data from document"
-        )
+        # Get complete invoice details from database
+        invoice_details = db_manager.get_invoice(invoice_id)
         
-        # Process document and store results
-        result = invoice_agent.process_document(temp_path)
-        workflow_manager.update_workflow(
-            workflow_id,
-            extraction_results=result
-        )
-        
-        # ERP Connection
-        status_container.warning("🔌 Connecting to ERP...")
-        workflow_manager.update_workflow_status(
-            workflow_id,
-            "erp_connection",
-            message="Retrieving data from ERP system"
-        )
-        
-        # Extract invoice details for matching
-        invoice_number = result.get('invoice_number')
-        po_number = result.get('po_number')
-        
-        # Get PO data from ERP
-        status_container.warning("📋 Retrieving Purchase Order...")
-        workflow_manager.update_workflow_status(
-            workflow_id,
-            "po_retrieval",
-            message=f"Retrieving PO: {po_number}"
-        )
-        po_data = invoice_agent.get_purchase_order(po_number)
-        
-        # Get Goods Receipt data
-        status_container.warning("📦 Retrieving Goods Receipt...")
-        workflow_manager.update_workflow_status(
-            workflow_id,
-            "gr_retrieval",
-            message=f"Retrieving Goods Receipt for PO: {po_number}"
-        )
-        gr_data = invoice_agent.get_goods_receipt(po_number)
-        
-        # Perform three-way match
-        status_container.warning("🔍 Performing three-way match...")
-        workflow_manager.update_workflow_status(
-            workflow_id,
-            "matching",
-            message="Performing three-way match validation"
-        )
-        
-        match_result = invoice_agent.perform_three_way_match(
-            invoice_data=result,
-            po_data=po_data,
-            gr_data=gr_data
-        )
-        
-        # Store matching results
-        workflow_manager.update_workflow(
-            workflow_id,
-            matching_results=match_result
-        )
-        
-        # Validation based on match results
-        if match_result.get('match_successful'):
-            status_container.success("✅ Three-way match successful!")
-        else:
-            discrepancies = match_result.get('discrepancies', [])
-            status_container.warning(f"⚠️ Match discrepancies found: {len(discrepancies)} issues")
-            for disc in discrepancies:
-                st.warning(f"- {disc}")
-        
-        # Calculate processing time
+        if invoice_details:
+            # Show success message with workflow ID
+            status_message = f"Workflow ID: {workflow_id}"
+            if invoice_details['invoice']['status'] == 'completed':
+                status_container.success(f"✅ Invoice processed successfully! {status_message}")
+            elif invoice_details['invoice']['status'] == 'completed_with_discrepancies':
+                status_container.warning(f"⚠️ Invoice processed with discrepancies. {status_message}")
+            else:
+                status_container.error(f"❌ Invoice processing failed. {status_message}")
+            
+            # Show detailed results
+            with result_container.expander("Processing Results", expanded=True):
+                # Workflow Information
+                st.subheader("Workflow Information")
+                st.info(f"Workflow ID: {workflow_id}")
+                
+                # Invoice Details
+                st.subheader("Invoice Details")
+                invoice_df = pd.DataFrame([invoice_details['invoice']])
+                st.dataframe(invoice_df)
+                
+                # Extracted Data
+                st.subheader("Extracted Data")
+                extracted_df = pd.DataFrame(invoice_details['extracted_data'])
+                st.dataframe(extracted_df)
+                
+                # Workflow Status
+                st.subheader("Processing Timeline")
+                for status in invoice_details['workflow_status']:
+                    st.markdown(f"""
+                        **{status['status'].title()}** - {status['created_at']}  
+                        {status['message'] if status['message'] else ''}
+                    """)
+                
+                # Matching Results
+                if invoice_details['matching_result']:
+                    st.subheader("Matching Results")
+                    match_result = invoice_details['matching_result']
+                    
+                    col1, col2 = st.columns(2)
+                    with col1:
+                        st.metric("PO Match", "✅" if match_result['po_match_status'] else "❌")
+                    with col2:
+                        st.metric("GR Match", "✅" if match_result['gr_match_status'] else "❌")
+                    
+                    if match_result['discrepancies']:
+                        st.warning("Discrepancies Found:")
+                        for disc in json.loads(match_result['discrepancies']):
+                            st.write(f"- {disc}")
+                
+                # Processing Time
         end_time = datetime.now()
         processing_time = (end_time - start_time).total_seconds()
-        
-        # Update final status based on match results
-        if match_result.get('match_successful'):
-            workflow_manager.update_workflow_status(
-                workflow_id,
-                "completed",
-                message="Processing and matching completed successfully"
-            )
-        else:
-            workflow_manager.update_workflow_status(
-                workflow_id,
-                "completed_with_discrepancies",
-                message=f"Processing completed with {len(match_result.get('discrepancies', []))} matching discrepancies"
-            )
-        
-        workflow_manager.update_workflow(
-            workflow_id,
-            processing_time=processing_time
-        )
-        
-        # Show detailed results
-        with result_container.expander("Processing Results", expanded=True):
-            st.subheader("Extracted Data")
-            st.json(result)
-            
-            st.subheader("Purchase Order Data")
-            st.json(po_data)
-            
-            st.subheader("Goods Receipt Data")
-            st.json(gr_data)
-            
-            st.subheader("Matching Results")
-            st.json(match_result)
-            
             st.metric("Processing Time", f"{processing_time:.2f} seconds")
         
     except Exception as e:
-        error_message = str(e)
-        if 'workflow_id' in locals():
-            workflow_manager.update_workflow_status(
-                workflow_id,
-                "failed",
-                message=f"Processing failed: {error_message}",
-                error=error_message
-            )
-            
-            # Show detailed error status
-            status_container.error(f"""
-            ❌ Error processing invoice:
-            - Workflow ID: {workflow_id}
-            - Error: {error_message}
-            - Status: Failed
-            """)
-            
-            # Show workflow details in expander
-            with result_container.expander("Workflow Details", expanded=True):
-                workflow_data = workflow_manager.get_workflow(workflow_id)
-                if workflow_data:
-                    st.json(workflow_data)
-        else:
-            status_container.error(f"❌ Error before workflow creation: {error_message}")
+        status_container.error(f"❌ Error processing invoice: {str(e)}")
     
     finally:
         if os.path.exists(temp_path):
             os.remove(temp_path)
+        db_manager.close()
 
 def process_batch_invoices(batch_files, status_container, result_container):
     """Process multiple invoice files"""
@@ -1239,6 +945,165 @@ def show_reports():
         else:
             st.error("Error: End date must be after start date")
 
+def show_settings():
+    """Show settings page"""
+    st.title("⚙️ Settings")
+    
+    # Create tabs for different settings categories
+    tab1, tab2, tab3 = st.tabs(["General", "Notifications", "API Configuration"])
+    
+    with tab1:
+        st.subheader("General Settings")
+        
+        # Theme settings
+        theme = st.selectbox(
+            "Theme",
+            ["Dark", "Light", "System Default"],
+            index=0
+        )
+        
+        # Language settings
+        language = st.selectbox(
+            "Language",
+            ["English", "Spanish", "French", "German"],
+            index=0
+        )
+        
+        # Time zone settings
+        timezone = st.selectbox(
+            "Time Zone",
+            ["UTC", "US/Pacific", "US/Eastern", "Europe/London"],
+            index=0
+        )
+        
+        if st.button("Save General Settings"):
+            st.success("Settings saved successfully!")
+    
+    with tab2:
+        st.subheader("Notification Settings")
+        
+        # Email notifications
+        st.checkbox("Email notifications", value=True)
+        st.checkbox("Processing completion alerts", value=True)
+        st.checkbox("Error notifications", value=True)
+        
+        # Notification frequency
+        st.select_slider(
+            "Notification frequency",
+            options=["Real-time", "Hourly", "Daily", "Weekly"],
+            value="Daily"
+        )
+        
+        if st.button("Save Notification Settings"):
+            st.success("Notification settings saved!")
+    
+    with tab3:
+        st.subheader("API Configuration")
+        
+        # API credentials
+        api_key = st.text_input("API Key", type="password")
+        api_secret = st.text_input("API Secret", type="password")
+        
+        # API endpoints
+        api_url = st.text_input("API URL", value="https://api.example.com")
+        
+        if st.button("Save API Settings"):
+            st.success("API settings saved successfully!")
+
+def show_analytics():
+    """Show analytics page"""
+    st.title("📈 Analytics")
+    
+    # Date range selector
+    col1, col2 = st.columns(2)
+    with col1:
+        start_date = st.date_input("Start Date")
+    with col2:
+        end_date = st.date_input("End Date")
+    
+    # Metrics overview
+    st.subheader("Key Metrics")
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric("Total Processed", "1,234")
+    with col2:
+        st.metric("Success Rate", "95%")
+    with col3:
+        st.metric("Avg. Processing Time", "2.3s")
+    with col4:
+        st.metric("Error Rate", "5%")
+    
+    # Processing volume chart
+    st.subheader("Processing Volume")
+    chart_data = pd.DataFrame({
+        'Date': pd.date_range(start='2024-01-01', end='2024-01-31', freq='D'),
+        'Volume': np.random.randint(50, 200, size=31)
+    })
+    st.line_chart(chart_data.set_index('Date'))
+    
+    # Error analysis
+    st.subheader("Error Analysis")
+    error_data = pd.DataFrame({
+        'Error Type': ['Validation', 'Processing', 'Network', 'Other'],
+        'Count': [45, 23, 12, 8]
+    })
+    st.bar_chart(error_data.set_index('Error Type'))
+
+def show_help():
+    """Show help page"""
+    st.title("❓ Help & Support")
+    
+    # FAQ section
+    st.subheader("Frequently Asked Questions")
+    
+    with st.expander("How do I process an invoice?"):
+        st.write("""
+            1. Navigate to the Invoice Processing page
+            2. Upload your invoice file
+            3. Select the appropriate template
+            4. Click 'Process Invoice'
+            5. Review the results
+        """)
+    
+    with st.expander("What file formats are supported?"):
+        st.write("""
+            We support the following file formats:
+            - PDF
+            - PNG/JPEG images
+            - TIFF files
+            - Scanned documents
+        """)
+    
+    with st.expander("How do I create a custom template?"):
+        st.write("""
+            1. Go to the Templates page
+            2. Click 'Create New Template'
+            3. Define the fields and patterns
+            4. Save your template
+        """)
+    
+    # Contact support
+    st.subheader("Contact Support")
+    
+    with st.form("support_form"):
+        st.text_input("Subject")
+        st.text_area("Message")
+        st.selectbox("Priority", ["Low", "Medium", "High"])
+        submitted = st.form_submit_button("Submit Ticket")
+        
+        if submitted:
+            st.success("Support ticket submitted successfully! We'll get back to you soon.")
+    
+    # Documentation
+    st.subheader("Documentation")
+    st.markdown("""
+        - [User Guide](https://example.com/docs/user-guide)
+        - [API Documentation](https://example.com/docs/api)
+        - [Best Practices](https://example.com/docs/best-practices)
+        - [Troubleshooting](https://example.com/docs/troubleshooting)
+    """)
+
 def main():
     """Main application entry point with improved error handling"""
     try:
@@ -1298,23 +1163,40 @@ def main():
 
                 # Navigation sidebar
                 with st.sidebar:
-                    st.markdown('<div class="nav-header"><h2>Navigation</h2></div>', unsafe_allow_html=True)
+                    st.markdown('<div class="nav-header"><h2>Invoice Agent</h2></div>', unsafe_allow_html=True)
                     
                     # Create container for navigation items
                     nav_container = st.container()
                     
                     with nav_container:
                         pages = {
-                            "Dashboard": show_dashboard,
-                            "Invoice Processing": show_invoice_processing,
-                            "Templates": show_templates
+                            "📊 Dashboard": show_dashboard,
+                            "📄 Invoice Processing": show_invoice_processing,
+                            "🔍 Workflow Search": show_workflow_search,
+                            "📝 Templates": show_templates,
+                            "⚙️ Settings": show_settings,
+                            "📈 Analytics": show_analytics,
+                            "❓ Help": show_help
                         }
                         
-                        selected_page = st.selectbox(
-                            "",
-                            list(pages.keys()),
-                            key="navigation",
-                            format_func=lambda x: f"📍 {x}"
+                        # Replace dropdown with option_menu
+                        selected_page = option_menu(
+                            menu_title=None,
+                            options=list(pages.keys()),
+                            icons=[icon.split()[0] for icon in pages.keys()],  # Extract emojis as icons
+                            menu_icon="cast",
+                            default_index=0,
+                            styles={
+                                "container": {"padding": "0!important", "background-color": "#262730"},
+                                "icon": {"color": "orange", "font-size": "20px"}, 
+                                "nav-link": {
+                                    "font-size": "16px",
+                                    "text-align": "left",
+                                    "margin": "0px",
+                                    "--hover-color": "#31343a",
+                                },
+                                "nav-link-selected": {"background-color": "#FF4B4B"},
+                            }
                         )
                     
                     # Add spacing before user info
@@ -1326,18 +1208,39 @@ def main():
                         <div class="nav-footer">
                             <div class="user-info">
                                 👤 {st.session_state.user_info.get('username', 'Unknown')}
+                                <br>
+                                <small style="opacity: 0.7;">Last login: {datetime.now().strftime('%Y-%m-%d %H:%M')}</small>
                             </div>
                         </div>
                         """,
                         unsafe_allow_html=True
                     )
                     
-                    # Logout button
+                    # Logout button with improved styling
+                    st.markdown("""
+                        <style>
+                            div[data-testid="stButton"] button {
+                                background-color: #FF4B4B;
+                                color: white;
+                                border: none;
+                                padding: 0.5rem 1rem;
+                                border-radius: 4px;
+                                cursor: pointer;
+                                width: 100%;
+                                margin-top: 0.5rem;
+                            }
+                            div[data-testid="stButton"] button:hover {
+                                background-color: #FF3333;
+                            }
+                        </style>
+                    """, unsafe_allow_html=True)
                     if st.button("🚪 Logout", key="logout_btn"):
                         handle_logout()
                 
                 # Show selected page
                 try:
+                    # Remove the emoji from the selected page name to get the function
+                    page_name = " ".join(selected_page.split()[1:])
                     pages[selected_page]()
                 except Exception as e:
                     st.error(f"Error displaying page {selected_page}: {str(e)}")

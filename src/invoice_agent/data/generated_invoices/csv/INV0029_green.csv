@@ -1,0 +1,14 @@
+Invoice Number,INV0029,,
+Date,2023-09-21,,
+PO Number,PO0029,,
+Vendor,Office Essentials Ltd.,,
+,,,
+Description,Quantity,Unit Price,Total
+Printer,5,399.99,1999.95
+UPS Battery,2,599.99,1199.98
+Server Rack,3,899.99,2699.97
+Desktop Computer,9,899.99,8099.91
+,,,
+Subtotal,,,13999.81
+Tax,,,1399.98
+Total,,,15399.79

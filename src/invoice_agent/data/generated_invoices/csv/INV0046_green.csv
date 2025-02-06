@@ -1,0 +1,15 @@
+Invoice Number,INV0046,,
+Date,2023-11-10,,
+PO Number,PO0046,,
+Vendor,Industrial Parts Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+Desktop Computer,10,899.99,8999.9
+Printer,9,399.99,3599.91
+UPS Battery,3,599.99,1799.97
+Desktop Computer,8,899.99,7199.92
+Printer,2,399.99,799.98
+,,,
+Subtotal,,,22399.68
+Tax,,,2239.97
+Total,,,24639.65

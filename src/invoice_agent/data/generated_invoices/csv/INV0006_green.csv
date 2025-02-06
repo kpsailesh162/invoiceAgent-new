@@ -1,0 +1,14 @@
+Invoice Number,INV0006,,
+Date,2023-04-03,,
+PO Number,PO0006,,
+Vendor,Tech Solutions Inc.,,
+,,,
+Description,Quantity,Unit Price,Total
+Laptop,7,1299.99,9099.93
+Desktop Computer,6,899.99,5399.94
+Server Rack,5,899.99,4499.95
+UPS Battery,10,599.99,5999.9
+,,,
+Subtotal,,,24999.72
+Tax,,,2499.97
+Total,,,27499.69

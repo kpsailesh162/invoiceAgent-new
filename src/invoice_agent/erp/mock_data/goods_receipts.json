@@ -1,19 +1,13 @@
 [
   {
-    "gr_number": "GR0002",
-    "po_number": "PO0002",
+    "gr_number": "GR0001",
+    "po_number": "PO0001",
     "vendor_info": {
-      "id": "V007",
-      "name": "Software Solutions Pro"
+      "id": "V004",
+      "name": "Industrial Parts Corp."
     },
-    "receipt_date": "2023-03-22",
+    "receipt_date": "2023-06-17",
     "items": [
-      {
-        "description": "UPS Battery",
-        "ordered_quantity": 2,
-        "received_quantity": 2,
-        "unit_price": 599.99
-      },
       {
         "description": "Keyboard",
         "ordered_quantity": 1,
@@ -21,22 +15,57 @@
         "unit_price": 79.99
       },
       {
+        "description": "Monitor",
+        "ordered_quantity": 6,
+        "received_quantity": 6,
+        "unit_price": 299.99
+      },
+      {
+        "description": "Mouse",
+        "ordered_quantity": 10,
+        "received_quantity": 8,
+        "unit_price": 49.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0002",
+    "po_number": "PO0002",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "receipt_date": "2023-03-20",
+    "items": [
+      {
+        "description": "Laptop",
+        "ordered_quantity": 2,
+        "received_quantity": 2,
+        "unit_price": 1299.99
+      },
+      {
+        "description": "Printer",
+        "ordered_quantity": 7,
+        "received_quantity": 7,
+        "unit_price": 399.99
+      },
+      {
         "description": "Docking Station",
-        "ordered_quantity": 4,
-        "received_quantity": 3,
+        "ordered_quantity": 7,
+        "received_quantity": 7,
         "unit_price": 199.99
       },
       {
-        "description": "Server Rack",
-        "ordered_quantity": 2,
-        "received_quantity": 2,
-        "unit_price": 899.99
+        "description": "Laptop",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 1299.99
       },
       {
-        "description": "Laptop",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
-        "unit_price": 1299.99
+        "description": "UPS Battery",
+        "ordered_quantity": 5,
+        "received_quantity": 5,
+        "unit_price": 599.99
       }
     ]
   },
@@ -44,28 +73,98 @@
     "gr_number": "GR0003",
     "po_number": "PO0003",
     "vendor_info": {
-      "id": "V003",
-      "name": "Office Essentials Ltd."
+      "id": "V010",
+      "name": "IT Equipment Direct"
     },
-    "receipt_date": "2023-10-08",
+    "receipt_date": "2023-10-20",
     "items": [
       {
-        "description": "Laptop",
-        "ordered_quantity": 6,
-        "received_quantity": 6,
-        "unit_price": 1299.99
+        "description": "Network Switch",
+        "ordered_quantity": 3,
+        "received_quantity": 3,
+        "unit_price": 299.99
       },
       {
-        "description": "Monitor",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 299.99
+        "description": "Printer",
+        "ordered_quantity": 7,
+        "received_quantity": 7,
+        "unit_price": 399.99
+      },
+      {
+        "description": "Server Rack",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 899.99
+      },
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 3,
+        "received_quantity": 3,
+        "unit_price": 199.99
+      },
+      {
+        "description": "Printer",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 399.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0004",
+    "po_number": "PO0004",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "receipt_date": "2023-01-31",
+    "items": [
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 9,
+        "received_quantity": 8,
+        "unit_price": 199.99
+      },
+      {
+        "description": "Printer",
+        "ordered_quantity": 5,
+        "received_quantity": 5,
+        "unit_price": 399.99
       },
       {
         "description": "Server Rack",
         "ordered_quantity": 6,
         "received_quantity": 6,
         "unit_price": 899.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0005",
+    "po_number": "PO0005",
+    "vendor_info": {
+      "id": "V003",
+      "name": "Office Essentials Ltd."
+    },
+    "receipt_date": "2023-07-23",
+    "items": [
+      {
+        "description": "Monitor",
+        "ordered_quantity": 6,
+        "received_quantity": 6,
+        "unit_price": 299.99
+      },
+      {
+        "description": "Laptop",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 1299.99
+      },
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 199.99
       }
     ]
   },
@@ -73,28 +172,16 @@
     "gr_number": "GR0007",
     "po_number": "PO0007",
     "vendor_info": {
-      "id": "V003",
-      "name": "Office Essentials Ltd."
+      "id": "V002",
+      "name": "Global Supply Co."
     },
-    "receipt_date": "2023-05-01",
+    "receipt_date": "2023-09-26",
     "items": [
       {
-        "description": "Printer",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 399.99
-      },
-      {
-        "description": "Desktop Computer",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 899.99
-      },
-      {
-        "description": "Server Rack",
-        "ordered_quantity": 10,
-        "received_quantity": 10,
-        "unit_price": 899.99
+        "description": "UPS Battery",
+        "ordered_quantity": 5,
+        "received_quantity": 5,
+        "unit_price": 599.99
       }
     ]
   },
@@ -102,75 +189,34 @@
     "gr_number": "GR0008",
     "po_number": "PO0008",
     "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
+      "id": "V003",
+      "name": "Office Essentials Ltd."
     },
-    "receipt_date": "2023-04-05",
+    "receipt_date": "2023-03-01",
     "items": [
       {
-        "description": "UPS Battery",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 599.99
-      },
-      {
-        "description": "Laptop",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
-        "unit_price": 1299.99
+        "description": "Network Switch",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 299.99
       },
       {
         "description": "Mouse",
         "ordered_quantity": 7,
-        "received_quantity": 7,
+        "received_quantity": 6,
         "unit_price": 49.99
       },
       {
-        "description": "Desktop Computer",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
-        "unit_price": 899.99
-      },
-      {
-        "description": "Docking Station",
+        "description": "Mouse",
         "ordered_quantity": 2,
         "received_quantity": 2,
-        "unit_price": 199.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0009",
-    "po_number": "PO0009",
-    "vendor_info": {
-      "id": "V007",
-      "name": "Software Solutions Pro"
-    },
-    "receipt_date": "2023-01-24",
-    "items": [
-      {
-        "description": "Printer",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 399.99
+        "unit_price": 49.99
       },
       {
-        "description": "UPS Battery",
+        "description": "Laptop",
         "ordered_quantity": 7,
-        "received_quantity": 7,
-        "unit_price": 599.99
-      },
-      {
-        "description": "Keyboard",
-        "ordered_quantity": 5,
-        "received_quantity": 5,
-        "unit_price": 79.99
-      },
-      {
-        "description": "Docking Station",
-        "ordered_quantity": 5,
-        "received_quantity": 5,
-        "unit_price": 199.99
+        "received_quantity": 6,
+        "unit_price": 1299.99
       }
     ]
   },
@@ -178,28 +224,34 @@
     "gr_number": "GR0010",
     "po_number": "PO0010",
     "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
+      "id": "V001",
+      "name": "Tech Solutions Inc."
     },
-    "receipt_date": "2023-10-16",
+    "receipt_date": "2023-05-07",
     "items": [
       {
-        "description": "Desktop Computer",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 899.99
-      },
-      {
         "description": "Keyboard",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
+        "ordered_quantity": 6,
+        "received_quantity": 6,
         "unit_price": 79.99
       },
       {
-        "description": "Docking Station",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
-        "unit_price": 199.99
+        "description": "Desktop Computer",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 899.99
+      },
+      {
+        "description": "Mouse",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 49.99
+      },
+      {
+        "description": "Network Switch",
+        "ordered_quantity": 6,
+        "received_quantity": 6,
+        "unit_price": 299.99
       }
     ]
   },
@@ -207,16 +259,22 @@
     "gr_number": "GR0011",
     "po_number": "PO0011",
     "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
+      "id": "V005",
+      "name": "Digital Systems LLC"
     },
-    "receipt_date": "2023-07-05",
+    "receipt_date": "2023-10-01",
     "items": [
       {
         "description": "Keyboard",
-        "ordered_quantity": 8,
-        "received_quantity": 8,
+        "ordered_quantity": 9,
+        "received_quantity": 9,
         "unit_price": 79.99
+      },
+      {
+        "description": "Laptop",
+        "ordered_quantity": 2,
+        "received_quantity": 2,
+        "unit_price": 1299.99
       }
     ]
   },
@@ -224,28 +282,22 @@
     "gr_number": "GR0012",
     "po_number": "PO0012",
     "vendor_info": {
-      "id": "V010",
-      "name": "IT Equipment Direct"
+      "id": "V007",
+      "name": "Software Solutions Pro"
     },
-    "receipt_date": "2023-04-05",
+    "receipt_date": "2023-03-15",
     "items": [
       {
         "description": "Mouse",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
+        "ordered_quantity": 3,
+        "received_quantity": 3,
         "unit_price": 49.99
       },
       {
-        "description": "Server Rack",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 899.99
-      },
-      {
-        "description": "Keyboard",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 79.99
+        "description": "Monitor",
+        "ordered_quantity": 2,
+        "received_quantity": 2,
+        "unit_price": 299.99
       }
     ]
   },
@@ -253,80 +305,45 @@
     "gr_number": "GR0013",
     "po_number": "PO0013",
     "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
+      "id": "V008",
+      "name": "Electronics Depot Corp."
     },
-    "receipt_date": "2023-11-29",
+    "receipt_date": "2023-05-25",
     "items": [
       {
-        "description": "Printer",
-        "ordered_quantity": 2,
-        "received_quantity": 2,
-        "unit_price": 399.99
-      },
-      {
         "description": "Server Rack",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
+        "ordered_quantity": 9,
+        "received_quantity": 9,
         "unit_price": 899.99
       },
       {
-        "description": "Monitor",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 299.99
+        "description": "Mouse",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 49.99
       }
     ]
   },
   {
-    "gr_number": "GR0016",
-    "po_number": "PO0016",
+    "gr_number": "GR0014",
+    "po_number": "PO0014",
     "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
     },
-    "receipt_date": "2023-09-07",
+    "receipt_date": "2023-08-17",
     "items": [
       {
-        "description": "Printer",
-        "ordered_quantity": 6,
-        "received_quantity": 6,
-        "unit_price": 399.99
-      },
-      {
         "description": "Mouse",
-        "ordered_quantity": 9,
-        "received_quantity": 7,
+        "ordered_quantity": 10,
+        "received_quantity": 10,
         "unit_price": 49.99
       },
       {
-        "description": "Docking Station",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 199.99
-      },
-      {
-        "description": "Laptop",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
-        "unit_price": 1299.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0017",
-    "po_number": "PO0017",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "receipt_date": "2023-04-10",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 599.99
+        "description": "Monitor",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 299.99
       },
       {
         "description": "Desktop Computer",
@@ -335,21 +352,26 @@
         "unit_price": 899.99
       },
       {
-        "description": "Laptop",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 1299.99
-      },
+        "description": "Docking Station",
+        "ordered_quantity": 2,
+        "received_quantity": 2,
+        "unit_price": 199.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0017",
+    "po_number": "PO0017",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "receipt_date": "2023-09-23",
+    "items": [
       {
-        "description": "Printer",
-        "ordered_quantity": 10,
-        "received_quantity": 10,
-        "unit_price": 399.99
-      },
-      {
         "description": "Laptop",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
+        "ordered_quantity": 2,
+        "received_quantity": 2,
         "unit_price": 1299.99
       }
     ]
@@ -361,25 +383,37 @@
       "id": "V005",
       "name": "Digital Systems LLC"
     },
-    "receipt_date": "2023-08-02",
+    "receipt_date": "2023-08-17",
     "items": [
       {
-        "description": "Docking Station",
-        "ordered_quantity": 6,
-        "received_quantity": 6,
-        "unit_price": 199.99
+        "description": "Network Switch",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 299.99
+      },
+      {
+        "description": "Keyboard",
+        "ordered_quantity": 4,
+        "received_quantity": 4,
+        "unit_price": 79.99
+      },
+      {
+        "description": "UPS Battery",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 599.99
+      },
+      {
+        "description": "Server Rack",
+        "ordered_quantity": 5,
+        "received_quantity": 5,
+        "unit_price": 899.99
       },
       {
         "description": "Laptop",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
+        "ordered_quantity": 6,
+        "received_quantity": 5,
         "unit_price": 1299.99
-      },
-      {
-        "description": "Desktop Computer",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 899.99
       }
     ]
   },
@@ -387,16 +421,40 @@
     "gr_number": "GR0019",
     "po_number": "PO0019",
     "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
+      "id": "V008",
+      "name": "Electronics Depot Corp."
     },
-    "receipt_date": "2023-12-29",
+    "receipt_date": "2023-10-26",
     "items": [
       {
-        "description": "Server Rack",
-        "ordered_quantity": 10,
-        "received_quantity": 10,
+        "description": "Mouse",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 49.99
+      },
+      {
+        "description": "Desktop Computer",
+        "ordered_quantity": 7,
+        "received_quantity": 6,
         "unit_price": 899.99
+      },
+      {
+        "description": "Laptop",
+        "ordered_quantity": 4,
+        "received_quantity": 4,
+        "unit_price": 1299.99
+      },
+      {
+        "description": "Printer",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 399.99
+      },
+      {
+        "description": "Monitor",
+        "ordered_quantity": 6,
+        "received_quantity": 6,
+        "unit_price": 299.99
       }
     ]
   },
@@ -404,74 +462,10 @@
     "gr_number": "GR0020",
     "po_number": "PO0020",
     "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
+      "id": "V008",
+      "name": "Electronics Depot Corp."
     },
-    "receipt_date": "2023-01-23",
-    "items": [
-      {
-        "description": "Printer",
-        "ordered_quantity": 6,
-        "received_quantity": 6,
-        "unit_price": 399.99
-      },
-      {
-        "description": "Network Switch",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 299.99
-      },
-      {
-        "description": "Mouse",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
-        "unit_price": 49.99
-      },
-      {
-        "description": "Laptop",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 1299.99
-      },
-      {
-        "description": "Monitor",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
-        "unit_price": 299.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0021",
-    "po_number": "PO0021",
-    "vendor_info": {
-      "id": "V010",
-      "name": "IT Equipment Direct"
-    },
-    "receipt_date": "2023-07-12",
-    "items": [
-      {
-        "description": "Docking Station",
-        "ordered_quantity": 8,
-        "received_quantity": 8,
-        "unit_price": 199.99
-      },
-      {
-        "description": "Network Switch",
-        "ordered_quantity": 2,
-        "received_quantity": 2,
-        "unit_price": 299.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0022",
-    "po_number": "PO0022",
-    "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
-    },
-    "receipt_date": "2023-03-05",
+    "receipt_date": "2023-10-15",
     "items": [
       {
         "description": "Monitor",
@@ -481,8 +475,159 @@
       },
       {
         "description": "Keyboard",
+        "ordered_quantity": 8,
+        "received_quantity": 8,
+        "unit_price": 79.99
+      },
+      {
+        "description": "Monitor",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 299.99
+      },
+      {
+        "description": "Printer",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 399.99
+      },
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 4,
+        "received_quantity": 4,
+        "unit_price": 199.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0023",
+    "po_number": "PO0023",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "receipt_date": "2023-08-26",
+    "items": [
+      {
+        "description": "Server Rack",
+        "ordered_quantity": 4,
+        "received_quantity": 3,
+        "unit_price": 899.99
+      },
+      {
+        "description": "Desktop Computer",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 899.99
+      },
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 7,
+        "received_quantity": 7,
+        "unit_price": 199.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0024",
+    "po_number": "PO0024",
+    "vendor_info": {
+      "id": "V005",
+      "name": "Digital Systems LLC"
+    },
+    "receipt_date": "2023-10-10",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 899.99
+      },
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 6,
+        "received_quantity": 6,
+        "unit_price": 199.99
+      },
+      {
+        "description": "Network Switch",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 299.99
+      },
+      {
+        "description": "Keyboard",
+        "ordered_quantity": 4,
+        "received_quantity": 4,
+        "unit_price": 79.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0026",
+    "po_number": "PO0026",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "receipt_date": "2023-05-12",
+    "items": [
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 199.99
+      },
+      {
+        "description": "UPS Battery",
         "ordered_quantity": 3,
         "received_quantity": 3,
+        "unit_price": 599.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0029",
+    "po_number": "PO0029",
+    "vendor_info": {
+      "id": "V004",
+      "name": "Industrial Parts Corp."
+    },
+    "receipt_date": "2023-02-08",
+    "items": [
+      {
+        "description": "Keyboard",
+        "ordered_quantity": 2,
+        "received_quantity": 2,
+        "unit_price": 79.99
+      },
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 199.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0032",
+    "po_number": "PO0032",
+    "vendor_info": {
+      "id": "V005",
+      "name": "Digital Systems LLC"
+    },
+    "receipt_date": "2023-03-26",
+    "items": [
+      {
+        "description": "Docking Station",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
+        "unit_price": 199.99
+      },
+      {
+        "description": "Keyboard",
+        "ordered_quantity": 7,
+        "received_quantity": 7,
         "unit_price": 79.99
       },
       {
@@ -492,91 +637,33 @@
         "unit_price": 1299.99
       },
       {
-        "description": "Printer",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 399.99
-      },
-      {
-        "description": "Keyboard",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
-        "unit_price": 79.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0024",
-    "po_number": "PO0024",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "receipt_date": "2024-01-09",
-    "items": [
-      {
-        "description": "Printer",
-        "ordered_quantity": 8,
-        "received_quantity": 8,
-        "unit_price": 399.99
-      },
-      {
-        "description": "Keyboard",
-        "ordered_quantity": 10,
+        "description": "Laptop",
+        "ordered_quantity": 9,
         "received_quantity": 9,
-        "unit_price": 79.99
+        "unit_price": 1299.99
       },
-      {
-        "description": "Monitor",
-        "ordered_quantity": 10,
-        "received_quantity": 9,
-        "unit_price": 299.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0025",
-    "po_number": "PO0025",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "receipt_date": "2023-05-04",
-    "items": [
-      {
-        "description": "Desktop Computer",
-        "ordered_quantity": 8,
-        "received_quantity": 8,
-        "unit_price": 899.99
-      },
-      {
-        "description": "Monitor",
-        "ordered_quantity": 6,
-        "received_quantity": 6,
-        "unit_price": 299.99
-      },
-      {
-        "description": "Desktop Computer",
-        "ordered_quantity": 5,
-        "received_quantity": 5,
-        "unit_price": 899.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0026",
-    "po_number": "PO0026",
-    "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
-    },
-    "receipt_date": "2023-07-05",
-    "items": [
       {
         "description": "UPS Battery",
-        "ordered_quantity": 8,
-        "received_quantity": 8,
+        "ordered_quantity": 6,
+        "received_quantity": 5,
         "unit_price": 599.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0033",
+    "po_number": "PO0033",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "receipt_date": "2023-09-16",
+    "items": [
+      {
+        "description": "Mouse",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
+        "unit_price": 49.99
       },
       {
         "description": "UPS Battery",
@@ -585,90 +672,9 @@
         "unit_price": 599.99
       },
       {
-        "description": "UPS Battery",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
-        "unit_price": 599.99
-      },
-      {
-        "description": "UPS Battery",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
-        "unit_price": 599.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0027",
-    "po_number": "PO0027",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "receipt_date": "2023-08-08",
-    "items": [
-      {
-        "description": "Mouse",
+        "description": "Network Switch",
         "ordered_quantity": 1,
         "received_quantity": 1,
-        "unit_price": 49.99
-      },
-      {
-        "description": "Keyboard",
-        "ordered_quantity": 5,
-        "received_quantity": 4,
-        "unit_price": 79.99
-      },
-      {
-        "description": "Mouse",
-        "ordered_quantity": 8,
-        "received_quantity": 8,
-        "unit_price": 49.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0030",
-    "po_number": "PO0030",
-    "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
-    },
-    "receipt_date": "2023-11-06",
-    "items": [
-      {
-        "description": "Monitor",
-        "ordered_quantity": 1,
-        "received_quantity": 1,
-        "unit_price": 299.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0032",
-    "po_number": "PO0032",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "receipt_date": "2023-07-10",
-    "items": [
-      {
-        "description": "Docking Station",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
-        "unit_price": 199.99
-      },
-      {
-        "description": "Mouse",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
-        "unit_price": 49.99
-      },
-      {
-        "description": "Monitor",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
         "unit_price": 299.99
       }
     ]
@@ -677,63 +683,57 @@
     "gr_number": "GR0034",
     "po_number": "PO0034",
     "vendor_info": {
-      "id": "V005",
-      "name": "Digital Systems LLC"
+      "id": "V001",
+      "name": "Tech Solutions Inc."
     },
-    "receipt_date": "2023-11-06",
+    "receipt_date": "2023-02-23",
     "items": [
       {
-        "description": "Monitor",
-        "ordered_quantity": 5,
-        "received_quantity": 4,
-        "unit_price": 299.99
-      },
-      {
-        "description": "UPS Battery",
-        "ordered_quantity": 2,
-        "received_quantity": 2,
-        "unit_price": 599.99
-      },
-      {
-        "description": "Server Rack",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
+        "description": "Desktop Computer",
+        "ordered_quantity": 1,
+        "received_quantity": 1,
         "unit_price": 899.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0041",
-    "po_number": "PO0041",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "receipt_date": "2023-09-30",
-    "items": [
+      },
       {
         "description": "Laptop",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
+        "ordered_quantity": 6,
+        "received_quantity": 6,
         "unit_price": 1299.99
       }
     ]
   },
   {
-    "gr_number": "GR0044",
-    "po_number": "PO0044",
+    "gr_number": "GR0036",
+    "po_number": "PO0036",
     "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
+      "id": "V009",
+      "name": "Manufacturing Supplies Co."
     },
-    "receipt_date": "2023-07-30",
+    "receipt_date": "2023-06-06",
     "items": [
       {
-        "description": "UPS Battery",
-        "ordered_quantity": 3,
-        "received_quantity": 3,
-        "unit_price": 599.99
+        "description": "Network Switch",
+        "ordered_quantity": 8,
+        "received_quantity": 8,
+        "unit_price": 299.99
       },
+      {
+        "description": "Mouse",
+        "ordered_quantity": 8,
+        "received_quantity": 7,
+        "unit_price": 49.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0038",
+    "po_number": "PO0038",
+    "vendor_info": {
+      "id": "V008",
+      "name": "Electronics Depot Corp."
+    },
+    "receipt_date": "2023-12-28",
+    "items": [
       {
         "description": "Keyboard",
         "ordered_quantity": 2,
@@ -741,57 +741,108 @@
         "unit_price": 79.99
       },
       {
-        "description": "Network Switch",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
+        "description": "Keyboard",
+        "ordered_quantity": 6,
+        "received_quantity": 6,
+        "unit_price": 79.99
+      },
+      {
+        "description": "Desktop Computer",
+        "ordered_quantity": 7,
+        "received_quantity": 7,
+        "unit_price": 899.99
+      },
+      {
+        "description": "Monitor",
+        "ordered_quantity": 9,
+        "received_quantity": 9,
         "unit_price": 299.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0040",
+    "po_number": "PO0040",
+    "vendor_info": {
+      "id": "V009",
+      "name": "Manufacturing Supplies Co."
+    },
+    "receipt_date": "2023-11-01",
+    "items": [
+      {
+        "description": "Mouse",
+        "ordered_quantity": 7,
+        "received_quantity": 7,
+        "unit_price": 49.99
       },
       {
         "description": "Mouse",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
+        "ordered_quantity": 10,
+        "received_quantity": 9,
         "unit_price": 49.99
       }
     ]
   },
   {
-    "gr_number": "GR0047",
-    "po_number": "PO0047",
+    "gr_number": "GR0045",
+    "po_number": "PO0045",
     "vendor_info": {
       "id": "V001",
       "name": "Tech Solutions Inc."
     },
-    "receipt_date": "2023-09-20",
+    "receipt_date": "2023-12-24",
     "items": [
       {
-        "description": "UPS Battery",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 599.99
+        "description": "Server Rack",
+        "ordered_quantity": 8,
+        "received_quantity": 8,
+        "unit_price": 899.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0046",
+    "po_number": "PO0046",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "receipt_date": "2023-12-17",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 899.99
       },
       {
-        "description": "Laptop",
-        "ordered_quantity": 7,
-        "received_quantity": 7,
-        "unit_price": 1299.99
+        "description": "Docking Station",
+        "ordered_quantity": 8,
+        "received_quantity": 8,
+        "unit_price": 199.99
       },
       {
-        "description": "Monitor",
-        "ordered_quantity": 6,
-        "received_quantity": 6,
-        "unit_price": 299.99
-      },
-      {
-        "description": "UPS Battery",
+        "description": "Mouse",
         "ordered_quantity": 2,
         "received_quantity": 2,
-        "unit_price": 599.99
-      },
+        "unit_price": 49.99
+      }
+    ]
+  },
+  {
+    "gr_number": "GR0048",
+    "po_number": "PO0048",
+    "vendor_info": {
+      "id": "V002",
+      "name": "Global Supply Co."
+    },
+    "receipt_date": "2023-09-17",
+    "items": [
       {
-        "description": "Network Switch",
-        "ordered_quantity": 4,
-        "received_quantity": 4,
-        "unit_price": 299.99
+        "description": "Printer",
+        "ordered_quantity": 10,
+        "received_quantity": 10,
+        "unit_price": 399.99
       }
     ]
   },
@@ -799,51 +850,16 @@
     "gr_number": "GR0049",
     "po_number": "PO0049",
     "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
+      "id": "V009",
+      "name": "Manufacturing Supplies Co."
     },
-    "receipt_date": "2023-12-19",
+    "receipt_date": "2023-03-25",
     "items": [
       {
-        "description": "Server Rack",
+        "description": "Mouse",
         "ordered_quantity": 2,
         "received_quantity": 2,
-        "unit_price": 899.99
-      },
-      {
-        "description": "Server Rack",
-        "ordered_quantity": 5,
-        "received_quantity": 5,
-        "unit_price": 899.99
-      }
-    ]
-  },
-  {
-    "gr_number": "GR0050",
-    "po_number": "PO0050",
-    "vendor_info": {
-      "id": "V008",
-      "name": "Electronics Depot Corp."
-    },
-    "receipt_date": "2023-11-23",
-    "items": [
-      {
-        "description": "Network Switch",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
-        "unit_price": 299.99
-      },
-      {
-        "description": "Network Switch",
-        "ordered_quantity": 9,
-        "received_quantity": 9,
-        "unit_price": 299.99
-      },
-      {
-        "description": "Network Switch",
-        "ordered_quantity": 2,
-        "received_quantity": 2,
-        "unit_price": 299.99
+        "unit_price": 49.99
       }
     ]
   }

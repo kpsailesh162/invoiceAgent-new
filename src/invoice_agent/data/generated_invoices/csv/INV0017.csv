@@ -1,0 +1,12 @@
+Invoice Number,INV0017,,
+Date,2023-05-10,,
+PO Number,PO0017,,
+Vendor,Manufacturing Supplies Co.,,
+,,,
+Description,Quantity,Unit Price,Total
+Network Switch,5,299.99,1499.95
+Monitor,1,299.99,299.99
+,,,
+Subtotal,,,1799.94
+Tax,,,179.99
+Total,,,1979.93

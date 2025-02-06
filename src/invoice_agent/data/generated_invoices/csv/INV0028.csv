@@ -1,0 +1,15 @@
+Invoice Number,INV0028,,
+Date,2023-12-19,,
+PO Number,PO0028,,
+Vendor,Tech Solutions Inc.,,
+,,,
+Description,Quantity,Unit Price,Total
+Server Rack,4,899.99,3599.96
+Server Rack,7,899.99,6299.93
+Printer,4,399.99,1599.96
+Docking Station,3,199.99,599.97
+Network Switch,10,299.99,2999.9
+,,,
+Subtotal,,,15099.72
+Tax,,,1509.97
+Total,,,16609.69

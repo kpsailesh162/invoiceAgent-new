@@ -1,0 +1,11 @@
+Invoice Number,INV0044,,
+Date,2023-11-13,,
+PO Number,PO0044,,
+Vendor,Industrial Parts Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+Monitor,3,299.99,899.97
+,,,
+Subtotal,,,899.97
+Tax,,,90.00
+Total,,,989.97

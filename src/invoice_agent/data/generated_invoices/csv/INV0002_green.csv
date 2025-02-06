@@ -1,0 +1,11 @@
+Invoice Number,INV0002,,
+Date,2023-09-20,,
+PO Number,PO0002,,
+Vendor,Hardware Wholesale Inc.,,
+,,,
+Description,Quantity,Unit Price,Total
+Desktop Computer,10,899.99,8999.9
+,,,
+Subtotal,,,8999.90
+Tax,,,899.99
+Total,,,9899.89

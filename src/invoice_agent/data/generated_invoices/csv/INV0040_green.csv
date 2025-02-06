@@ -1,0 +1,11 @@
+Invoice Number,INV0040,,
+Date,2023-01-31,,
+PO Number,PO0040,,
+Vendor,Electronics Depot Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+UPS Battery,8,599.99,4799.92
+,,,
+Subtotal,,,4799.92
+Tax,,,479.99
+Total,,,5279.91

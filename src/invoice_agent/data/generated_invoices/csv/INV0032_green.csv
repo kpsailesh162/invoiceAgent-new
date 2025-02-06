@@ -1,0 +1,14 @@
+Invoice Number,INV0032,,
+Date,2023-02-13,,
+PO Number,PO0032,,
+Vendor,Software Solutions Pro,,
+,,,
+Description,Quantity,Unit Price,Total
+Mouse,8,49.99,399.92
+UPS Battery,7,599.99,4199.93
+Monitor,2,299.99,599.98
+UPS Battery,5,599.99,2999.95
+,,,
+Subtotal,,,8199.78
+Tax,,,819.98
+Total,,,9019.76

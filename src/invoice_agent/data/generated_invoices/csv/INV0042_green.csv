@@ -1,0 +1,13 @@
+Invoice Number,INV0042,,
+Date,2023-08-02,,
+PO Number,PO0042,,
+Vendor,Office Essentials Ltd.,,
+,,,
+Description,Quantity,Unit Price,Total
+Laptop,8,1299.99,10399.92
+Monitor,8,299.99,2399.92
+UPS Battery,5,599.99,2999.95
+,,,
+Subtotal,,,15799.79
+Tax,,,1579.98
+Total,,,17379.77

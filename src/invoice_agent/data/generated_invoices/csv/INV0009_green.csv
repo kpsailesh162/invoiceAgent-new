@@ -1,0 +1,12 @@
+Invoice Number,INV0009,,
+Date,2023-03-15,,
+PO Number,PO0009,,
+Vendor,Hardware Wholesale Inc.,,
+,,,
+Description,Quantity,Unit Price,Total
+Network Switch,4,299.99,1199.96
+UPS Battery,9,599.99,5399.91
+,,,
+Subtotal,,,6599.87
+Tax,,,1319.97
+Total,,,7919.84

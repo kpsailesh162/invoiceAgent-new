@@ -1,0 +1,11 @@
+Invoice Number,INV0036,,
+Date,2023-03-28,,
+PO Number,PO0036,,
+Vendor,Digital Systems LLC,,
+,,,
+Description,Quantity,Unit Price,Total
+Laptop,7,1299.99,9099.93
+,,,
+Subtotal,,,9099.93
+Tax,,,909.99
+Total,,,10009.92

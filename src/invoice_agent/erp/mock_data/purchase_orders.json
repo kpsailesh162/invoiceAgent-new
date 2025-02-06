@@ -2,39 +2,11 @@
   {
     "po_number": "PO0001",
     "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
+      "id": "V004",
+      "name": "Industrial Parts Corp."
     },
-    "order_date": "2023-08-10",
+    "order_date": "2023-06-09",
     "items": [
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 6,
-        "total": 1799.94
-      }
-    ],
-    "subtotal": 1799.94,
-    "tax_amount": 179.99,
-    "total_amount": 1979.93,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0002",
-    "vendor_info": {
-      "id": "V007",
-      "name": "Software Solutions Pro"
-    },
-    "order_date": "2023-03-19",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 2,
-        "total": 1199.98
-      },
       {
         "description": "Keyboard",
         "unit_price": 79.99,
@@ -42,50 +14,136 @@
         "total": 79.99
       },
       {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 4,
-        "total": 799.96
+        "description": "Monitor",
+        "unit_price": 299.99,
+        "quantity": 6,
+        "total": 1799.94
       },
       {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 2,
-        "total": 1799.98
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 9,
-        "total": 11699.91
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 10,
+        "total": 499.9
       }
     ],
-    "subtotal": 15579.82,
-    "tax_amount": 1557.98,
-    "total_amount": 17137.8,
+    "subtotal": 2379.83,
+    "tax_amount": 237.98,
+    "total_amount": 2617.81,
     "currency": "USD",
     "status": "completed",
-    "payment_terms": "Net 30"
+    "payment_terms": "Net 45"
   },
   {
-    "po_number": "PO0003",
+    "po_number": "PO0002",
     "vendor_info": {
-      "id": "V003",
-      "name": "Office Essentials Ltd."
+      "id": "V007",
+      "name": "Software Solutions Pro"
     },
-    "order_date": "2023-09-30",
+    "order_date": "2023-03-18",
     "items": [
       {
         "description": "Laptop",
         "unit_price": 1299.99,
-        "quantity": 6,
-        "total": 7799.94
+        "quantity": 2,
+        "total": 2599.98
       },
       {
-        "description": "Monitor",
-        "unit_price": 299.99,
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 7,
+        "total": 2799.93
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 7,
+        "total": 1399.93
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
         "quantity": 1,
-        "total": 299.99
+        "total": 1299.99
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 5,
+        "total": 2999.95
+      }
+    ],
+    "subtotal": 11099.779999999999,
+    "tax_amount": 1109.98,
+    "total_amount": 12209.759999999998,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0003",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "order_date": "2023-10-12",
+    "items": [
+      {
+        "description": "Network Switch",
+        "unit_price": 299.99,
+        "quantity": 3,
+        "total": 899.97
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 7,
+        "total": 2799.93
+      },
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 10,
+        "total": 8999.9
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 3,
+        "total": 599.97
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 10,
+        "total": 3999.9
+      }
+    ],
+    "subtotal": 17299.67,
+    "tax_amount": 1729.97,
+    "total_amount": 19029.64,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0004",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "order_date": "2023-01-27",
+    "items": [
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 9,
+        "total": 1799.91
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 5,
+        "total": 1999.95
       },
       {
         "description": "Server Rack",
@@ -94,57 +152,11 @@
         "total": 5399.94
       }
     ],
-    "subtotal": 13499.869999999999,
-    "tax_amount": 1349.99,
-    "total_amount": 14849.859999999999,
+    "subtotal": 9199.8,
+    "tax_amount": 919.98,
+    "total_amount": 10119.779999999999,
     "currency": "USD",
     "status": "completed",
-    "payment_terms": "Net 30"
-  },
-  {
-    "po_number": "PO0004",
-    "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
-    },
-    "order_date": "2023-06-18",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 3,
-        "total": 1199.97
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 9,
-        "total": 1799.91
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 6,
-        "total": 1199.94
-      },
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 4,
-        "total": 1199.96
-      },
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 5,
-        "total": 1999.95
-      }
-    ],
-    "subtotal": 7399.73,
-    "tax_amount": 739.97,
-    "total_amount": 8139.7,
-    "currency": "USD",
-    "status": "pending",
     "payment_terms": "2% 10 Net 30"
   },
   {
@@ -153,689 +165,47 @@
       "id": "V003",
       "name": "Office Essentials Ltd."
     },
-    "order_date": "2023-04-01",
+    "order_date": "2023-07-15",
     "items": [
       {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 4,
-        "total": 199.96
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 2,
-        "total": 1799.98
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 6,
-        "total": 479.94
-      },
-      {
-        "description": "Network Switch",
+        "description": "Monitor",
         "unit_price": 299.99,
-        "quantity": 2,
-        "total": 599.98
+        "quantity": 6,
+        "total": 1799.94
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 1,
+        "total": 1299.99
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 1,
+        "total": 199.99
       }
     ],
-    "subtotal": 3079.86,
-    "tax_amount": 307.99,
-    "total_amount": 3387.8500000000004,
+    "subtotal": 3299.92,
+    "tax_amount": 329.99,
+    "total_amount": 3629.91,
     "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "Net 30"
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
   },
   {
     "po_number": "PO0006",
     "vendor_info": {
-      "id": "V007",
-      "name": "Software Solutions Pro"
-    },
-    "order_date": "2023-02-15",
-    "items": [
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 8,
-        "total": 399.92
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 3,
-        "total": 2699.97
-      }
-    ],
-    "subtotal": 3099.89,
-    "tax_amount": 309.99,
-    "total_amount": 3409.88,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "Net 30"
-  },
-  {
-    "po_number": "PO0007",
-    "vendor_info": {
-      "id": "V003",
-      "name": "Office Essentials Ltd."
-    },
-    "order_date": "2023-04-29",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 1,
-        "total": 399.99
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 10,
-        "total": 8999.9
-      }
-    ],
-    "subtotal": 12999.849999999999,
-    "tax_amount": 1299.98,
-    "total_amount": 14299.829999999998,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "Net 30"
-  },
-  {
-    "po_number": "PO0008",
-    "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
-    },
-    "order_date": "2023-03-27",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 1,
-        "total": 599.99
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 7,
-        "total": 9099.93
-      },
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 7,
-        "total": 349.93
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 7,
-        "total": 6299.93
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 2,
-        "total": 399.98
-      }
-    ],
-    "subtotal": 16749.760000000002,
-    "tax_amount": 1674.98,
-    "total_amount": 18424.74,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0009",
-    "vendor_info": {
-      "id": "V007",
-      "name": "Software Solutions Pro"
-    },
-    "order_date": "2023-01-16",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 4,
-        "total": 1599.96
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 7,
-        "total": 4199.93
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 5,
-        "total": 399.95
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 5,
-        "total": 999.95
-      }
-    ],
-    "subtotal": 7199.79,
-    "tax_amount": 719.98,
-    "total_amount": 7919.77,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "Net 30"
-  },
-  {
-    "po_number": "PO0010",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "order_date": "2023-10-07",
-    "items": [
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 7,
-        "total": 559.93
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 3,
-        "total": 599.97
-      }
-    ],
-    "subtotal": 4759.860000000001,
-    "tax_amount": 475.99,
-    "total_amount": 5235.85,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0011",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "order_date": "2023-06-25",
-    "items": [
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 8,
-        "total": 639.92
-      }
-    ],
-    "subtotal": 639.92,
-    "tax_amount": 63.99,
-    "total_amount": 703.91,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0012",
-    "vendor_info": {
       "id": "V010",
       "name": "IT Equipment Direct"
     },
-    "order_date": "2023-04-04",
-    "items": [
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 1,
-        "total": 49.99
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 4,
-        "total": 319.96
-      }
-    ],
-    "subtotal": 3969.91,
-    "tax_amount": 396.99,
-    "total_amount": 4366.9,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0013",
-    "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
-    },
-    "order_date": "2023-11-22",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 2,
-        "total": 799.98
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 3,
-        "total": 2699.97
-      },
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 4,
-        "total": 1199.96
-      }
-    ],
-    "subtotal": 4699.91,
-    "tax_amount": 469.99,
-    "total_amount": 5169.9,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0014",
-    "vendor_info": {
-      "id": "V005",
-      "name": "Digital Systems LLC"
-    },
-    "order_date": "2023-09-27",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 7,
-        "total": 4199.93
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 2,
-        "total": 2599.98
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 9,
-        "total": 5399.91
-      }
-    ],
-    "subtotal": 12199.82,
-    "tax_amount": 1219.98,
-    "total_amount": 13419.8,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0015",
-    "vendor_info": {
-      "id": "V010",
-      "name": "IT Equipment Direct"
-    },
-    "order_date": "2023-02-21",
-    "items": [
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      },
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 1,
-        "total": 49.99
-      },
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 8,
-        "total": 2399.92
-      }
-    ],
-    "subtotal": 6049.87,
-    "tax_amount": 604.99,
-    "total_amount": 6654.86,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0016",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "order_date": "2023-09-02",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 6,
-        "total": 2399.94
-      },
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 9,
-        "total": 449.91
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 4,
-        "total": 799.96
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 3,
-        "total": 3899.97
-      }
-    ],
-    "subtotal": 7549.78,
-    "tax_amount": 754.98,
-    "total_amount": 8304.76,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0017",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "order_date": "2023-04-07",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 1,
-        "total": 599.99
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 5,
-        "total": 4499.95
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 1,
-        "total": 1299.99
-      },
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 10,
-        "total": 3999.9
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 4,
-        "total": 5199.96
-      }
-    ],
-    "subtotal": 15599.79,
-    "tax_amount": 1559.98,
-    "total_amount": 17159.77,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0018",
-    "vendor_info": {
-      "id": "V005",
-      "name": "Digital Systems LLC"
-    },
-    "order_date": "2023-07-27",
-    "items": [
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 6,
-        "total": 1199.94
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 9,
-        "total": 11699.91
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      }
-    ],
-    "subtotal": 16499.81,
-    "tax_amount": 1649.98,
-    "total_amount": 18149.79,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0019",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "order_date": "2023-12-21",
+    "order_date": "2023-08-14",
     "items": [
       {
         "description": "Server Rack",
         "unit_price": 899.99,
         "quantity": 10,
         "total": 8999.9
-      }
-    ],
-    "subtotal": 8999.9,
-    "tax_amount": 899.99,
-    "total_amount": 9899.89,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0020",
-    "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
-    },
-    "order_date": "2023-01-18",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 6,
-        "total": 2399.94
-      },
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 4,
-        "total": 1199.96
-      },
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 9,
-        "total": 449.91
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 1,
-        "total": 1299.99
-      },
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 3,
-        "total": 899.97
-      }
-    ],
-    "subtotal": 6249.77,
-    "tax_amount": 624.98,
-    "total_amount": 6874.75,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0021",
-    "vendor_info": {
-      "id": "V010",
-      "name": "IT Equipment Direct"
-    },
-    "order_date": "2023-07-10",
-    "items": [
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 8,
-        "total": 1599.92
-      },
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 2,
-        "total": 599.98
-      }
-    ],
-    "subtotal": 2199.9,
-    "tax_amount": 219.99,
-    "total_amount": 2419.8900000000003,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0022",
-    "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
-    },
-    "order_date": "2023-02-28",
-    "items": [
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 8,
-        "total": 2399.92
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 3,
-        "total": 239.97
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 10,
-        "total": 12999.9
-      },
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 1,
-        "total": 399.99
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 3,
-        "total": 239.97
-      }
-    ],
-    "subtotal": 16279.749999999998,
-    "tax_amount": 1627.97,
-    "total_amount": 17907.719999999998,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0023",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "order_date": "2023-04-16",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 1,
-        "total": 399.99
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 3,
-        "total": 1799.97
-      }
-    ],
-    "subtotal": 2199.96,
-    "tax_amount": 220.0,
-    "total_amount": 2419.96,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0024",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "order_date": "2023-12-30",
-    "items": [
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 8,
-        "total": 3199.92
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 10,
-        "total": 799.9
       },
       {
         "description": "Monitor",
@@ -844,258 +214,48 @@
         "total": 2999.9
       }
     ],
-    "subtotal": 6999.72,
-    "tax_amount": 699.97,
-    "total_amount": 7699.6900000000005,
+    "subtotal": 11999.8,
+    "tax_amount": 1199.98,
+    "total_amount": 13199.779999999999,
     "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
+    "status": "pending",
+    "payment_terms": "Net 45"
   },
   {
-    "po_number": "PO0025",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "order_date": "2023-04-25",
-    "items": [
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 8,
-        "total": 7199.92
-      },
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 6,
-        "total": 1799.94
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 5,
-        "total": 4499.95
-      }
-    ],
-    "subtotal": 13499.810000000001,
-    "tax_amount": 1349.98,
-    "total_amount": 14849.79,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0026",
-    "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
-    },
-    "order_date": "2023-07-04",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 8,
-        "total": 4799.92
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 4,
-        "total": 2399.96
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 7,
-        "total": 4199.93
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 3,
-        "total": 1799.97
-      }
-    ],
-    "subtotal": 13199.78,
-    "tax_amount": 1319.98,
-    "total_amount": 14519.76,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0027",
+    "po_number": "PO0007",
     "vendor_info": {
       "id": "V002",
       "name": "Global Supply Co."
     },
-    "order_date": "2023-08-07",
+    "order_date": "2023-09-23",
     "items": [
       {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 1,
-        "total": 49.99
-      },
-      {
-        "description": "Keyboard",
-        "unit_price": 79.99,
+        "description": "UPS Battery",
+        "unit_price": 599.99,
         "quantity": 5,
-        "total": 399.95
-      },
-      {
-        "description": "Mouse",
-        "unit_price": 49.99,
-        "quantity": 8,
-        "total": 399.92
+        "total": 2999.95
       }
     ],
-    "subtotal": 849.86,
-    "tax_amount": 84.99,
-    "total_amount": 934.85,
+    "subtotal": 2999.95,
+    "tax_amount": 300.0,
+    "total_amount": 3299.95,
     "currency": "USD",
     "status": "completed",
-    "payment_terms": "2% 10 Net 30"
+    "payment_terms": "Net 45"
   },
   {
-    "po_number": "PO0028",
+    "po_number": "PO0008",
     "vendor_info": {
       "id": "V003",
       "name": "Office Essentials Ltd."
     },
-    "order_date": "2023-01-09",
+    "order_date": "2023-02-26",
     "items": [
       {
         "description": "Network Switch",
         "unit_price": 299.99,
-        "quantity": 9,
-        "total": 2699.91
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 7,
-        "total": 9099.93
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 6,
-        "total": 5399.94
-      }
-    ],
-    "subtotal": 17199.78,
-    "tax_amount": 1719.98,
-    "total_amount": 18919.76,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "Net 30"
-  },
-  {
-    "po_number": "PO0029",
-    "vendor_info": {
-      "id": "V005",
-      "name": "Digital Systems LLC"
-    },
-    "order_date": "2023-04-04",
-    "items": [
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 7,
-        "total": 6299.93
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 2,
-        "total": 1199.98
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 2,
-        "total": 1799.98
-      }
-    ],
-    "subtotal": 12899.849999999999,
-    "tax_amount": 1289.98,
-    "total_amount": 14189.829999999998,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0030",
-    "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
-    },
-    "order_date": "2023-10-29",
-    "items": [
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 1,
-        "total": 299.99
-      }
-    ],
-    "subtotal": 299.99,
-    "tax_amount": 30.0,
-    "total_amount": 329.99,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0031",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "order_date": "2023-10-14",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 8,
-        "total": 4799.92
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 8,
-        "total": 7199.92
-      }
-    ],
-    "subtotal": 11999.84,
-    "tax_amount": 1199.98,
-    "total_amount": 13199.82,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0032",
-    "vendor_info": {
-      "id": "V002",
-      "name": "Global Supply Co."
-    },
-    "order_date": "2023-07-09",
-    "items": [
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 9,
-        "total": 1799.91
+        "quantity": 10,
+        "total": 2999.9
       },
       {
         "description": "Mouse",
@@ -1104,224 +264,32 @@
         "total": 349.93
       },
       {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 9,
-        "total": 2699.91
-      }
-    ],
-    "subtotal": 4849.75,
-    "tax_amount": 484.98,
-    "total_amount": 5334.73,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0033",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "order_date": "2023-12-06",
-    "items": [
-      {
         "description": "Mouse",
         "unit_price": 49.99,
-        "quantity": 1,
-        "total": 49.99
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
         "quantity": 2,
-        "total": 399.98
+        "total": 99.98
       },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 5,
-        "total": 999.95
-      }
-    ],
-    "subtotal": 1449.92,
-    "tax_amount": 144.99,
-    "total_amount": 1594.91,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0034",
-    "vendor_info": {
-      "id": "V005",
-      "name": "Digital Systems LLC"
-    },
-    "order_date": "2023-11-03",
-    "items": [
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 5,
-        "total": 1499.95
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 2,
-        "total": 1199.98
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 4,
-        "total": 3599.96
-      }
-    ],
-    "subtotal": 6299.89,
-    "tax_amount": 629.99,
-    "total_amount": 6929.88,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0035",
-    "vendor_info": {
-      "id": "V009",
-      "name": "Manufacturing Supplies Co."
-    },
-    "order_date": "2023-09-13",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 9,
-        "total": 5399.91
-      },
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 8,
-        "total": 2399.92
-      }
-    ],
-    "subtotal": 7799.83,
-    "tax_amount": 779.98,
-    "total_amount": 8579.81,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0036",
-    "vendor_info": {
-      "id": "V003",
-      "name": "Office Essentials Ltd."
-    },
-    "order_date": "2023-07-12",
-    "items": [
       {
         "description": "Laptop",
         "unit_price": 1299.99,
-        "quantity": 2,
-        "total": 2599.98
-      },
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 9,
-        "total": 2699.91
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 3,
-        "total": 2699.97
-      },
-      {
-        "description": "Desktop Computer",
-        "unit_price": 899.99,
-        "quantity": 9,
-        "total": 8099.91
+        "quantity": 7,
+        "total": 9099.93
       }
     ],
-    "subtotal": 16099.769999999999,
-    "tax_amount": 1609.98,
-    "total_amount": 17709.75,
+    "subtotal": 12549.74,
+    "tax_amount": 1254.97,
+    "total_amount": 13804.71,
     "currency": "USD",
-    "status": "pending",
-    "payment_terms": "Net 30"
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
   },
   {
-    "po_number": "PO0037",
+    "po_number": "PO0009",
     "vendor_info": {
       "id": "V010",
       "name": "IT Equipment Direct"
     },
-    "order_date": "2023-04-26",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 1,
-        "total": 599.99
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 10,
-        "total": 1999.9
-      }
-    ],
-    "subtotal": 2599.8900000000003,
-    "tax_amount": 259.99,
-    "total_amount": 2859.88,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0038",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "order_date": "2023-08-12",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 6,
-        "total": 3599.94
-      },
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 5,
-        "total": 999.95
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 2,
-        "total": 1799.98
-      }
-    ],
-    "subtotal": 6399.870000000001,
-    "tax_amount": 639.99,
-    "total_amount": 7039.860000000001,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0039",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "order_date": "2023-06-17",
+    "order_date": "2023-09-14",
     "items": [
       {
         "description": "Mouse",
@@ -1335,196 +303,146 @@
     "total_amount": 164.97,
     "currency": "USD",
     "status": "pending",
-    "payment_terms": "2% 10 Net 30"
+    "payment_terms": "Net 45"
   },
   {
-    "po_number": "PO0040",
+    "po_number": "PO0010",
     "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
+      "id": "V001",
+      "name": "Tech Solutions Inc."
     },
-    "order_date": "2023-06-17",
-    "items": [
-      {
-        "description": "Docking Station",
-        "unit_price": 199.99,
-        "quantity": 5,
-        "total": 999.95
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 5,
-        "total": 2999.95
-      }
-    ],
-    "subtotal": 3999.8999999999996,
-    "tax_amount": 399.99,
-    "total_amount": 4399.889999999999,
-    "currency": "USD",
-    "status": "pending",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0041",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "order_date": "2023-09-29",
-    "items": [
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 7,
-        "total": 9099.93
-      }
-    ],
-    "subtotal": 9099.93,
-    "tax_amount": 909.99,
-    "total_amount": 10009.92,
-    "currency": "USD",
-    "status": "completed",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0042",
-    "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
-    },
-    "order_date": "2023-04-14",
+    "order_date": "2023-04-29",
     "items": [
       {
         "description": "Keyboard",
         "unit_price": 79.99,
-        "quantity": 3,
-        "total": 239.97
-      },
-      {
-        "description": "Printer",
-        "unit_price": 399.99,
-        "quantity": 4,
-        "total": 1599.96
-      }
-    ],
-    "subtotal": 1839.93,
-    "tax_amount": 183.99,
-    "total_amount": 2023.92,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0043",
-    "vendor_info": {
-      "id": "V010",
-      "name": "IT Equipment Direct"
-    },
-    "order_date": "2023-12-01",
-    "items": [
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 9,
-        "total": 11699.91
-      },
-      {
-        "description": "Monitor",
-        "unit_price": 299.99,
-        "quantity": 4,
-        "total": 1199.96
-      },
-      {
-        "description": "Server Rack",
-        "unit_price": 899.99,
         "quantity": 6,
-        "total": 5399.94
-      }
-    ],
-    "subtotal": 18299.809999999998,
-    "tax_amount": 1829.98,
-    "total_amount": 20129.789999999997,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0044",
-    "vendor_info": {
-      "id": "V006",
-      "name": "Hardware Wholesale Inc."
-    },
-    "order_date": "2023-07-28",
-    "items": [
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 3,
-        "total": 1799.97
+        "total": 479.94
       },
       {
-        "description": "Keyboard",
-        "unit_price": 79.99,
-        "quantity": 2,
-        "total": 159.98
-      },
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 4,
-        "total": 1199.96
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 9,
+        "total": 8099.91
       },
       {
         "description": "Mouse",
         "unit_price": 49.99,
-        "quantity": 4,
-        "total": 199.96
+        "quantity": 1,
+        "total": 49.99
+      },
+      {
+        "description": "Network Switch",
+        "unit_price": 299.99,
+        "quantity": 6,
+        "total": 1799.94
       }
     ],
-    "subtotal": 3359.87,
-    "tax_amount": 335.99,
-    "total_amount": 3695.8599999999997,
+    "subtotal": 10429.78,
+    "tax_amount": 1042.98,
+    "total_amount": 11472.76,
     "currency": "USD",
     "status": "completed",
     "payment_terms": "2% 10 Net 30"
   },
   {
-    "po_number": "PO0045",
-    "vendor_info": {
-      "id": "V007",
-      "name": "Software Solutions Pro"
-    },
-    "order_date": "2023-01-15",
-    "items": [
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 9,
-        "total": 2699.91
-      },
-      {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 6,
-        "total": 7799.94
-      }
-    ],
-    "subtotal": 10499.849999999999,
-    "tax_amount": 1049.98,
-    "total_amount": 11549.829999999998,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "Net 30"
-  },
-  {
-    "po_number": "PO0046",
+    "po_number": "PO0011",
     "vendor_info": {
       "id": "V005",
       "name": "Digital Systems LLC"
     },
-    "order_date": "2023-09-28",
+    "order_date": "2023-09-26",
     "items": [
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 9,
+        "total": 719.91
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 2,
+        "total": 2599.98
+      }
+    ],
+    "subtotal": 3319.89,
+    "tax_amount": 331.99,
+    "total_amount": 3651.88,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0012",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "order_date": "2023-03-11",
+    "items": [
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 3,
+        "total": 149.97
+      },
+      {
+        "description": "Monitor",
+        "unit_price": 299.99,
+        "quantity": 2,
+        "total": 599.98
+      }
+    ],
+    "subtotal": 749.95,
+    "tax_amount": 75.0,
+    "total_amount": 824.95,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0013",
+    "vendor_info": {
+      "id": "V008",
+      "name": "Electronics Depot Corp."
+    },
+    "order_date": "2023-05-21",
+    "items": [
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 9,
+        "total": 8099.91
+      },
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 1,
+        "total": 49.99
+      }
+    ],
+    "subtotal": 8149.9,
+    "tax_amount": 814.99,
+    "total_amount": 8964.89,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0014",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "order_date": "2023-08-08",
+    "items": [
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 10,
+        "total": 499.9
+      },
       {
         "description": "Monitor",
         "unit_price": 299.99,
@@ -1532,124 +450,260 @@
         "total": 2999.9
       },
       {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 5,
+        "total": 4499.95
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 2,
+        "total": 399.98
+      }
+    ],
+    "subtotal": 8399.73,
+    "tax_amount": 839.97,
+    "total_amount": 9239.699999999999,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0015",
+    "vendor_info": {
+      "id": "V002",
+      "name": "Global Supply Co."
+    },
+    "order_date": "2023-02-06",
+    "items": [
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 1,
+        "total": 79.99
+      },
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 6,
+        "total": 299.94
+      }
+    ],
+    "subtotal": 379.93,
+    "tax_amount": 37.99,
+    "total_amount": 417.92,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0016",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "order_date": "2023-03-22",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 3,
+        "total": 2699.97
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 5,
+        "total": 4499.95
+      }
+    ],
+    "subtotal": 7199.92,
+    "tax_amount": 719.99,
+    "total_amount": 7919.91,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0017",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "order_date": "2023-09-21",
+    "items": [
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 2,
+        "total": 2599.98
+      }
+    ],
+    "subtotal": 2599.98,
+    "tax_amount": 260.0,
+    "total_amount": 2859.98,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0018",
+    "vendor_info": {
+      "id": "V005",
+      "name": "Digital Systems LLC"
+    },
+    "order_date": "2023-08-14",
+    "items": [
+      {
         "description": "Network Switch",
         "unit_price": 299.99,
         "quantity": 9,
         "total": 2699.91
-      }
-    ],
-    "subtotal": 5699.8099999999995,
-    "tax_amount": 569.98,
-    "total_amount": 6269.789999999999,
-    "currency": "USD",
-    "status": "cancelled",
-    "payment_terms": "2% 10 Net 30"
-  },
-  {
-    "po_number": "PO0047",
-    "vendor_info": {
-      "id": "V001",
-      "name": "Tech Solutions Inc."
-    },
-    "order_date": "2023-09-17",
-    "items": [
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 4,
+        "total": 319.96
+      },
       {
         "description": "UPS Battery",
         "unit_price": 599.99,
-        "quantity": 4,
-        "total": 2399.96
+        "quantity": 1,
+        "total": 599.99
+      },
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 5,
+        "total": 4499.95
       },
       {
         "description": "Laptop",
         "unit_price": 1299.99,
+        "quantity": 6,
+        "total": 7799.94
+      }
+    ],
+    "subtotal": 15919.75,
+    "tax_amount": 1591.98,
+    "total_amount": 17511.73,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0019",
+    "vendor_info": {
+      "id": "V008",
+      "name": "Electronics Depot Corp."
+    },
+    "order_date": "2023-10-16",
+    "items": [
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 9,
+        "total": 449.91
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
         "quantity": 7,
-        "total": 9099.93
+        "total": 6299.93
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 4,
+        "total": 5199.96
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 1,
+        "total": 399.99
       },
       {
         "description": "Monitor",
         "unit_price": 299.99,
         "quantity": 6,
         "total": 1799.94
-      },
-      {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 2,
-        "total": 1199.98
-      },
-      {
-        "description": "Network Switch",
-        "unit_price": 299.99,
-        "quantity": 4,
-        "total": 1199.96
       }
     ],
-    "subtotal": 15699.77,
-    "tax_amount": 1569.98,
-    "total_amount": 17269.75,
+    "subtotal": 14149.73,
+    "tax_amount": 1414.97,
+    "total_amount": 15564.699999999999,
     "currency": "USD",
     "status": "completed",
     "payment_terms": "2% 10 Net 30"
   },
   {
-    "po_number": "PO0048",
+    "po_number": "PO0020",
     "vendor_info": {
       "id": "V008",
       "name": "Electronics Depot Corp."
     },
-    "order_date": "2023-07-19",
+    "order_date": "2023-10-07",
     "items": [
       {
-        "description": "Laptop",
-        "unit_price": 1299.99,
-        "quantity": 6,
-        "total": 7799.94
-      },
-      {
-        "description": "Network Switch",
+        "description": "Monitor",
         "unit_price": 299.99,
         "quantity": 8,
         "total": 2399.92
       },
       {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 6,
-        "total": 3599.94
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 8,
+        "total": 639.92
       },
       {
-        "description": "Laptop",
-        "unit_price": 1299.99,
+        "description": "Monitor",
+        "unit_price": 299.99,
         "quantity": 10,
-        "total": 12999.9
+        "total": 2999.9
       },
       {
-        "description": "UPS Battery",
-        "unit_price": 599.99,
-        "quantity": 7,
-        "total": 4199.93
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 9,
+        "total": 3599.91
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 4,
+        "total": 799.96
       }
     ],
-    "subtotal": 30999.63,
-    "tax_amount": 3099.96,
-    "total_amount": 34099.590000000004,
+    "subtotal": 10439.61,
+    "tax_amount": 1043.96,
+    "total_amount": 11483.57,
     "currency": "USD",
-    "status": "pending",
+    "status": "completed",
     "payment_terms": "2% 10 Net 30"
   },
   {
-    "po_number": "PO0049",
+    "po_number": "PO0021",
     "vendor_info": {
-      "id": "V004",
-      "name": "Industrial Parts Corp."
+      "id": "V008",
+      "name": "Electronics Depot Corp."
     },
-    "order_date": "2023-12-12",
+    "order_date": "2023-12-15",
     "items": [
       {
-        "description": "Server Rack",
-        "unit_price": 899.99,
-        "quantity": 2,
-        "total": 1799.98
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 4,
+        "total": 5199.96
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 9,
+        "total": 3599.91
       },
       {
         "description": "Server Rack",
@@ -1658,45 +712,937 @@
         "total": 4499.95
       }
     ],
-    "subtotal": 6299.93,
-    "tax_amount": 629.99,
-    "total_amount": 6929.92,
+    "subtotal": 13299.82,
+    "tax_amount": 1329.98,
+    "total_amount": 14629.8,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0022",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "order_date": "2023-01-28",
+    "items": [
+      {
+        "description": "Monitor",
+        "unit_price": 299.99,
+        "quantity": 1,
+        "total": 299.99
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 2,
+        "total": 1799.98
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 3,
+        "total": 599.97
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 3,
+        "total": 1799.97
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 8,
+        "total": 7199.92
+      }
+    ],
+    "subtotal": 11699.830000000002,
+    "tax_amount": 1169.98,
+    "total_amount": 12869.810000000001,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0023",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "order_date": "2023-08-21",
+    "items": [
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 4,
+        "total": 3599.96
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 1,
+        "total": 899.99
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 7,
+        "total": 1399.93
+      }
+    ],
+    "subtotal": 5899.88,
+    "tax_amount": 589.99,
+    "total_amount": 6489.87,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0024",
+    "vendor_info": {
+      "id": "V005",
+      "name": "Digital Systems LLC"
+    },
+    "order_date": "2023-10-02",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 9,
+        "total": 8099.91
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 6,
+        "total": 1199.94
+      },
+      {
+        "description": "Network Switch",
+        "unit_price": 299.99,
+        "quantity": 10,
+        "total": 2999.9
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 4,
+        "total": 319.96
+      }
+    ],
+    "subtotal": 12619.71,
+    "tax_amount": 1261.97,
+    "total_amount": 13881.679999999998,
     "currency": "USD",
     "status": "completed",
     "payment_terms": "2% 10 Net 30"
   },
   {
-    "po_number": "PO0050",
+    "po_number": "PO0025",
+    "vendor_info": {
+      "id": "V002",
+      "name": "Global Supply Co."
+    },
+    "order_date": "2023-09-08",
+    "items": [
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 9,
+        "total": 3599.91
+      }
+    ],
+    "subtotal": 3599.91,
+    "tax_amount": 359.99,
+    "total_amount": 3959.8999999999996,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0026",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "order_date": "2023-05-09",
+    "items": [
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 1,
+        "total": 199.99
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 3,
+        "total": 1799.97
+      }
+    ],
+    "subtotal": 1999.96,
+    "tax_amount": 200.0,
+    "total_amount": 2199.96,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0027",
     "vendor_info": {
       "id": "V008",
       "name": "Electronics Depot Corp."
     },
-    "order_date": "2023-11-13",
+    "order_date": "2023-07-17",
     "items": [
       {
-        "description": "Network Switch",
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 10,
+        "total": 1999.9
+      }
+    ],
+    "subtotal": 1999.9,
+    "tax_amount": 199.99,
+    "total_amount": 2199.8900000000003,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0028",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "order_date": "2023-09-12",
+    "items": [
+      {
+        "description": "Monitor",
         "unit_price": 299.99,
+        "quantity": 1,
+        "total": 299.99
+      },
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 8,
+        "total": 7199.92
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 2,
+        "total": 1199.98
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 1,
+        "total": 399.99
+      }
+    ],
+    "subtotal": 9099.88,
+    "tax_amount": 909.99,
+    "total_amount": 10009.869999999999,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0029",
+    "vendor_info": {
+      "id": "V004",
+      "name": "Industrial Parts Corp."
+    },
+    "order_date": "2023-02-02",
+    "items": [
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 2,
+        "total": 159.98
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
         "quantity": 9,
-        "total": 2699.91
+        "total": 1799.91
+      }
+    ],
+    "subtotal": 1959.89,
+    "tax_amount": 195.99,
+    "total_amount": 2155.88,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0030",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "order_date": "2023-07-24",
+    "items": [
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 7,
+        "total": 4199.93
+      }
+    ],
+    "subtotal": 4199.93,
+    "tax_amount": 419.99,
+    "total_amount": 4619.92,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0031",
+    "vendor_info": {
+      "id": "V002",
+      "name": "Global Supply Co."
+    },
+    "order_date": "2023-08-09",
+    "items": [
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 6,
+        "total": 2399.94
+      }
+    ],
+    "subtotal": 2399.94,
+    "tax_amount": 239.99,
+    "total_amount": 2639.9300000000003,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0032",
+    "vendor_info": {
+      "id": "V005",
+      "name": "Digital Systems LLC"
+    },
+    "order_date": "2023-03-16",
+    "items": [
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 1,
+        "total": 199.99
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 7,
+        "total": 559.93
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 10,
+        "total": 12999.9
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 9,
+        "total": 11699.91
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 6,
+        "total": 3599.94
+      }
+    ],
+    "subtotal": 29059.67,
+    "tax_amount": 2905.97,
+    "total_amount": 31965.64,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0033",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "order_date": "2023-09-06",
+    "items": [
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 9,
+        "total": 449.91
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 4,
+        "total": 2399.96
       },
       {
         "description": "Network Switch",
         "unit_price": 299.99,
+        "quantity": 1,
+        "total": 299.99
+      }
+    ],
+    "subtotal": 3149.8599999999997,
+    "tax_amount": 314.99,
+    "total_amount": 3464.8499999999995,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0034",
+    "vendor_info": {
+      "id": "V001",
+      "name": "Tech Solutions Inc."
+    },
+    "order_date": "2023-02-13",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 1,
+        "total": 899.99
+      },
+      {
+        "description": "Laptop",
+        "unit_price": 1299.99,
+        "quantity": 6,
+        "total": 7799.94
+      }
+    ],
+    "subtotal": 8699.93,
+    "tax_amount": 869.99,
+    "total_amount": 9569.92,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0035",
+    "vendor_info": {
+      "id": "V001",
+      "name": "Tech Solutions Inc."
+    },
+    "order_date": "2023-07-14",
+    "items": [
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 10,
+        "total": 3999.9
+      }
+    ],
+    "subtotal": 3999.9,
+    "tax_amount": 399.99,
+    "total_amount": 4399.89,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0036",
+    "vendor_info": {
+      "id": "V009",
+      "name": "Manufacturing Supplies Co."
+    },
+    "order_date": "2023-05-27",
+    "items": [
+      {
+        "description": "Network Switch",
+        "unit_price": 299.99,
+        "quantity": 8,
+        "total": 2399.92
+      },
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 8,
+        "total": 399.92
+      }
+    ],
+    "subtotal": 2799.84,
+    "tax_amount": 279.98,
+    "total_amount": 3079.82,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0037",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "order_date": "2023-10-20",
+    "items": [
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 9,
+        "total": 5399.91
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 7,
+        "total": 559.93
+      },
+      {
+        "description": "Monitor",
+        "unit_price": 299.99,
+        "quantity": 2,
+        "total": 599.98
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 3,
+        "total": 599.97
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 3,
+        "total": 599.97
+      }
+    ],
+    "subtotal": 7759.76,
+    "tax_amount": 775.98,
+    "total_amount": 8535.74,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0038",
+    "vendor_info": {
+      "id": "V008",
+      "name": "Electronics Depot Corp."
+    },
+    "order_date": "2023-12-23",
+    "items": [
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 2,
+        "total": 159.98
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 6,
+        "total": 479.94
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 7,
+        "total": 6299.93
+      },
+      {
+        "description": "Monitor",
+        "unit_price": 299.99,
         "quantity": 9,
         "total": 2699.91
+      }
+    ],
+    "subtotal": 9639.76,
+    "tax_amount": 963.98,
+    "total_amount": 10603.74,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0039",
+    "vendor_info": {
+      "id": "V004",
+      "name": "Industrial Parts Corp."
+    },
+    "order_date": "2023-06-11",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 6,
+        "total": 5399.94
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 6,
+        "total": 1199.94
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 7,
+        "total": 4199.93
+      },
+      {
+        "description": "Monitor",
+        "unit_price": 299.99,
+        "quantity": 4,
+        "total": 1199.96
+      }
+    ],
+    "subtotal": 11999.77,
+    "tax_amount": 1199.98,
+    "total_amount": 13199.75,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0040",
+    "vendor_info": {
+      "id": "V009",
+      "name": "Manufacturing Supplies Co."
+    },
+    "order_date": "2023-10-22",
+    "items": [
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 7,
+        "total": 349.93
+      },
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 10,
+        "total": 499.9
+      }
+    ],
+    "subtotal": 849.8299999999999,
+    "tax_amount": 84.98,
+    "total_amount": 934.81,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0041",
+    "vendor_info": {
+      "id": "V007",
+      "name": "Software Solutions Pro"
+    },
+    "order_date": "2023-04-08",
+    "items": [
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 4,
+        "total": 319.96
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 6,
+        "total": 3599.94
+      },
+      {
+        "description": "Network Switch",
+        "unit_price": 299.99,
+        "quantity": 7,
+        "total": 2099.93
+      }
+    ],
+    "subtotal": 6019.83,
+    "tax_amount": 601.98,
+    "total_amount": 6621.8099999999995,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0042",
+    "vendor_info": {
+      "id": "V010",
+      "name": "IT Equipment Direct"
+    },
+    "order_date": "2023-07-16",
+    "items": [
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 1,
+        "total": 599.99
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 9,
+        "total": 1799.91
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 6,
+        "total": 479.94
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 8,
+        "total": 7199.92
+      }
+    ],
+    "subtotal": 10079.76,
+    "tax_amount": 1007.98,
+    "total_amount": 11087.74,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0043",
+    "vendor_info": {
+      "id": "V002",
+      "name": "Global Supply Co."
+    },
+    "order_date": "2023-08-07",
+    "items": [
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 10,
+        "total": 1999.9
+      },
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 8,
+        "total": 7199.92
+      },
+      {
+        "description": "Network Switch",
+        "unit_price": 299.99,
+        "quantity": 1,
+        "total": 299.99
       },
       {
         "description": "Network Switch",
         "unit_price": 299.99,
         "quantity": 2,
         "total": 599.98
+      },
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 10,
+        "total": 8999.9
       }
     ],
-    "subtotal": 5999.799999999999,
-    "tax_amount": 599.98,
-    "total_amount": 6599.779999999999,
+    "subtotal": 19099.69,
+    "tax_amount": 1909.97,
+    "total_amount": 21009.66,
+    "currency": "USD",
+    "status": "cancelled",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0044",
+    "vendor_info": {
+      "id": "V003",
+      "name": "Office Essentials Ltd."
+    },
+    "order_date": "2023-01-05",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 7,
+        "total": 6299.93
+      },
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 3,
+        "total": 1199.97
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 5,
+        "total": 399.95
+      }
+    ],
+    "subtotal": 7899.85,
+    "tax_amount": 789.99,
+    "total_amount": 8689.84,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0045",
+    "vendor_info": {
+      "id": "V001",
+      "name": "Tech Solutions Inc."
+    },
+    "order_date": "2023-12-18",
+    "items": [
+      {
+        "description": "Server Rack",
+        "unit_price": 899.99,
+        "quantity": 8,
+        "total": 7199.92
+      }
+    ],
+    "subtotal": 7199.92,
+    "tax_amount": 719.99,
+    "total_amount": 7919.91,
     "currency": "USD",
     "status": "completed",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0046",
+    "vendor_info": {
+      "id": "V006",
+      "name": "Hardware Wholesale Inc."
+    },
+    "order_date": "2023-12-12",
+    "items": [
+      {
+        "description": "Desktop Computer",
+        "unit_price": 899.99,
+        "quantity": 10,
+        "total": 8999.9
+      },
+      {
+        "description": "Docking Station",
+        "unit_price": 199.99,
+        "quantity": 8,
+        "total": 1599.92
+      },
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 2,
+        "total": 99.98
+      }
+    ],
+    "subtotal": 10699.8,
+    "tax_amount": 1069.98,
+    "total_amount": 11769.779999999999,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0047",
+    "vendor_info": {
+      "id": "V001",
+      "name": "Tech Solutions Inc."
+    },
+    "order_date": "2023-04-23",
+    "items": [
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 5,
+        "total": 2999.95
+      },
+      {
+        "description": "UPS Battery",
+        "unit_price": 599.99,
+        "quantity": 6,
+        "total": 3599.94
+      },
+      {
+        "description": "Keyboard",
+        "unit_price": 79.99,
+        "quantity": 1,
+        "total": 79.99
+      }
+    ],
+    "subtotal": 6679.879999999999,
+    "tax_amount": 667.99,
+    "total_amount": 7347.869999999999,
+    "currency": "USD",
+    "status": "pending",
+    "payment_terms": "2% 10 Net 30"
+  },
+  {
+    "po_number": "PO0048",
+    "vendor_info": {
+      "id": "V002",
+      "name": "Global Supply Co."
+    },
+    "order_date": "2023-09-15",
+    "items": [
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 10,
+        "total": 3999.9
+      }
+    ],
+    "subtotal": 3999.9,
+    "tax_amount": 399.99,
+    "total_amount": 4399.89,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 45"
+  },
+  {
+    "po_number": "PO0049",
+    "vendor_info": {
+      "id": "V009",
+      "name": "Manufacturing Supplies Co."
+    },
+    "order_date": "2023-03-18",
+    "items": [
+      {
+        "description": "Mouse",
+        "unit_price": 49.99,
+        "quantity": 2,
+        "total": 99.98
+      }
+    ],
+    "subtotal": 99.98,
+    "tax_amount": 10.0,
+    "total_amount": 109.98,
+    "currency": "USD",
+    "status": "completed",
+    "payment_terms": "Net 30"
+  },
+  {
+    "po_number": "PO0050",
+    "vendor_info": {
+      "id": "V005",
+      "name": "Digital Systems LLC"
+    },
+    "order_date": "2023-08-24",
+    "items": [
+      {
+        "description": "Printer",
+        "unit_price": 399.99,
+        "quantity": 3,
+        "total": 1199.97
+      }
+    ],
+    "subtotal": 1199.97,
+    "tax_amount": 120.0,
+    "total_amount": 1319.97,
+    "currency": "USD",
+    "status": "cancelled",
     "payment_terms": "2% 10 Net 30"
   }
 ]

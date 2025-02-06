@@ -1,0 +1,11 @@
+Invoice Number,INV0007,,
+Date,2023-12-06,,
+PO Number,PO0007,,
+Vendor,IT Equipment Direct,,
+,,,
+Description,Quantity,Unit Price,Total
+Mouse,1,49.99,49.99
+,,,
+Subtotal,,,49.99
+Tax,,,5.00
+Total,,,54.99

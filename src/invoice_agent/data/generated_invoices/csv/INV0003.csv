@@ -1,0 +1,15 @@
+Invoice Number,INV0003,,
+Date,2023-05-20,,
+PO Number,PO0003,,
+Vendor,Tech Solutions Inc.,,
+,,,
+Description,Quantity,Unit Price,Total
+Network Switch,6,299.99,1799.94
+Laptop,6,1299.99,7799.94
+Server Rack,7,899.99,6299.93
+Keyboard,2,79.99,159.98
+Desktop Computer,9,899.99,8099.91
+,,,
+Subtotal,,,24159.70
+Tax,,,2415.97
+Total,,,26575.67

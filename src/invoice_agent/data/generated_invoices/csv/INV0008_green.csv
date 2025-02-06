@@ -1,0 +1,12 @@
+Invoice Number,INV0008,,
+Date,2023-05-04,,
+PO Number,PO0008,,
+Vendor,Industrial Parts Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+Network Switch,6,299.99,1799.94
+Keyboard,2,79.99,159.98
+,,,
+Subtotal,,,1959.92
+Tax,,,0.00
+Total,,,1959.92

@@ -1,0 +1,14 @@
+Invoice Number,INV0026,,
+Date,2023-10-30,,
+PO Number,PO0026,,
+Vendor,Software Solutions Pro,,
+,,,
+Description,Quantity,Unit Price,Total
+Laptop,3,1299.99,3899.97
+Mouse,9,49.99,449.91
+Printer,8,399.99,3199.92
+Monitor,2,299.99,599.98
+,,,
+Subtotal,,,8149.78
+Tax,,,814.98
+Total,,,8964.76

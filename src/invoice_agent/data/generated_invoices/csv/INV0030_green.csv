@@ -1,0 +1,14 @@
+Invoice Number,INV0030,,
+Date,2023-05-29,,
+PO Number,PO0030,,
+Vendor,Global Supply Co.,,
+,,,
+Description,Quantity,Unit Price,Total
+Server Rack,10,899.99,8999.9
+Server Rack,2,899.99,1799.98
+Server Rack,7,899.99,6299.93
+Keyboard,1,79.99,79.99
+,,,
+Subtotal,,,17179.80
+Tax,,,1717.98
+Total,,,18897.78

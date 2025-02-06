@@ -1,0 +1,13 @@
+Invoice Number,INV0010,,
+Date,2023-10-22,,
+PO Number,PO0010,,
+Vendor,Digital Systems LLC,,
+,,,
+Description,Quantity,Unit Price,Total
+Network Switch,37,299.99,11099.63
+Desktop Computer,41,899.99,36899.59
+Laptop,50,1299.99,64999.5
+,,,
+Subtotal,,,112998.72
+Tax,,,11299.87
+Total,,,124298.59

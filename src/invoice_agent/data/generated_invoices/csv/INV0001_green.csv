@@ -1,0 +1,13 @@
+Invoice Number,INV0001,,
+Date,2023-02-19,,
+PO Number,PO0001,,
+Vendor,Software Solutions Pro,,
+,,,
+Description,Quantity,Unit Price,Total
+Monitor,9,299.99,2699.91
+Laptop,1,1299.99,1299.99
+Network Switch,4,299.99,1199.96
+,,,
+Subtotal,,,5199.86
+Tax,,,519.99
+Total,,,5719.85

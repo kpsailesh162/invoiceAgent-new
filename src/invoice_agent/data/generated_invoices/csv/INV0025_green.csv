@@ -1,0 +1,14 @@
+Invoice Number,INV0025,,
+Date,2023-03-17,,
+PO Number,PO0025,,
+Vendor,Industrial Parts Corp.,,
+,,,
+Description,Quantity,Unit Price,Total
+Printer,7,399.99,2799.93
+Network Switch,7,299.99,2099.93
+Network Switch,7,299.99,2099.93
+Docking Station,4,199.99,799.96
+,,,
+Subtotal,,,7799.75
+Tax,,,779.97
+Total,,,8579.72
